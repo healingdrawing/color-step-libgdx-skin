@@ -11,7 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton
 import com.badlogic.gdx.scenes.scene2d.ui.Window
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener
 import com.badlogic.gdx.utils.viewport.FitViewport
-import gui.ColorStepSkin
+import colorstepskin.ColorStepSkin
 
 /** [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.  */
 class Demo : ApplicationAdapter() {
