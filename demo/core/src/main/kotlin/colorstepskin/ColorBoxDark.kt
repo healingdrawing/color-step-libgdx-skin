@@ -9,7 +9,8 @@ class ColorBoxDark {
     fun color(hue:Int):Color{return if (hue in 0..100) c[hue] else c[100]}
     /**hsv h hueStep*/
     private val hs = arrayOf(
-            0/360f,30/360f,60/360f,90/360f,120/360f,150/360f,180/360f,210/360f,240/360f,270/360f,300/360f,330/360f
+            0/360f,30/360f,60/360f,90/360f,120/360f,150/360f,180/360f,210/360f,240/360f,270/360f,300/360f,330/360f,
+            1f
     )
     /**hsv v colorValue*/
     private val cv = arrayOf(

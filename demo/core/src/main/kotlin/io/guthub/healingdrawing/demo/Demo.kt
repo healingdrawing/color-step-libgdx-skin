@@ -18,9 +18,10 @@ class Demo : ApplicationAdapter() {
     private var stage: Stage? = null
     private var skin: Skin? = null
     override fun create() {
-        stage = Stage(FitViewport(640f, 480f))
+        stage = Stage(FitViewport(1280f, 720f))
     
         val css = ColorStepSkin() //new skin template
+        css.prepare()
         
         skin = Skin(Gdx.files.internal("skin/skin.json"))
         val window = Window("Example screen", skin, "border")
