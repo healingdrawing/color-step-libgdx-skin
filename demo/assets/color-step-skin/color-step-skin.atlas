@@ -6,187 +6,7 @@ filter: Nearest,Nearest
 repeat: none
 button-checked
   rotate: false
-  xy: 254, 172
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-button-down
-  rotate: false
-  xy: 582, 172
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-button-up
-  rotate: false
-  xy: 336, 172
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-check-disabled
-  rotate: false
-  xy: 486, 138
-  size: 32, 32
-  split: 30, 30, 30, 30
-  pad: 30, 30, 30, 30
-  orig: 80, 80
-  offset: 24, 24
-  index: -1
-check-off
-  rotate: false
-  xy: 520, 138
-  size: 32, 32
-  split: 30, 30, 30, 30
-  pad: 30, 30, 30, 30
-  orig: 80, 80
-  offset: 24, 24
-  index: -1
-check-on
-  rotate: false
-  xy: 254, 106
-  size: 64, 64
-  split: 14, 14, 14, 14
-  pad: 14, 14, 14, 14
-  orig: 80, 80
-  offset: 8, 8
-  index: -1
-label-background
-  rotate: false
-  xy: 746, 172
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-list-down
-  rotate: false
-  xy: 910, 176
-  size: 76, 76
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 2, 2
-  index: -1
-list-selection
-  rotate: false
-  xy: 172, 86
-  size: 76, 76
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 2, 2
-  index: -1
-progress-background
-  rotate: false
-  xy: 590, 154
-  size: 16, 16
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-progress-disabledbackground
-  rotate: false
-  xy: 572, 154
-  size: 16, 16
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-progress-disabledknobbefore
-  rotate: false
-  xy: 166, 78
-  size: 4, 4
-  split: 7, 7, 7, 7
-  pad: 7, 7, 7, 7
-  orig: 16, 16
-  offset: 6, 6
-  index: -1
-progress-knobbefore
-  rotate: false
-  xy: 172, 80
-  size: 4, 4
-  split: 7, 7, 7, 7
-  pad: 7, 7, 7, 7
-  orig: 16, 16
-  offset: 6, 6
-  index: -1
-select-background
-  rotate: false
-  xy: 664, 172
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-select-disabled
-  rotate: false
-  xy: 828, 172
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-slider-disabledknob
-  rotate: false
-  xy: 386, 122
-  size: 48, 48
-  split: 22, 22, 22, 22
-  pad: 22, 22, 22, 22
-  orig: 80, 80
-  offset: 16, 16
-  index: -1
-slider-knob
-  rotate: false
-  xy: 436, 122
-  size: 48, 48
-  split: 22, 22, 22, 22
-  pad: 22, 22, 22, 22
-  orig: 80, 80
-  offset: 16, 16
-  index: -1
-splitpane
-  rotate: false
-  xy: 554, 154
-  size: 16, 16
-  split: 38, 38, 38, 38
-  pad: 38, 38, 38, 38
-  orig: 20, 20
-  offset: 2, 2
-  index: -1
-textfield-background
-  rotate: false
-  xy: 84, 2
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-textfield-cursor
-  rotate: false
-  xy: 988, 176
-  size: 8, 8
-  split: 2, 2, 2, 2
-  pad: 2, 2, 2, 2
-  orig: 8, 8
-  offset: 0, 0
-  index: -1
-textfield-disabled
-  rotate: false
-  xy: 500, 172
+  xy: 326, 92
   size: 80, 80
   split: 6, 6, 6, 6
   pad: 6, 6, 6, 6
@@ -195,14 +15,53 @@ textfield-disabled
   index: -1
 button-disabled
   rotate: false
-  xy: 500, 172
+  xy: 736, 92
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-textfield-focused
+button-down
   rotate: false
-  xy: 418, 172
+  xy: 408, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+button-up
+  rotate: false
+  xy: 326, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+check-disabled
+  rotate: false
+  xy: 490, 10
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+check-off
+  rotate: false
+  xy: 572, 10
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+check-on
+  rotate: false
+  xy: 244, 2
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+label-background
+  rotate: false
+  xy: 654, 174
   size: 80, 80
   split: 6, 6, 6, 6
   pad: 6, 6, 6, 6
@@ -211,21 +70,158 @@ textfield-focused
   index: -1
 list-background
   rotate: false
-  xy: 418, 172
+  xy: 818, 174
   size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+list-down
+  rotate: false
+  xy: 654, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+list-selection
+  rotate: false
+  xy: 326, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+progress-background
+  rotate: false
+  xy: 852, 156
+  size: 16, 16
+  split: 6, 6, 6, 6
+  pad: 1, 1, 1, 1
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+progress-disabledbackground
+  rotate: false
+  xy: 736, 40
+  size: 16, 16
+  split: 6, 6, 6, 6
+  pad: 1, 1, 1, 1
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+progress-disabledknobbefore
+  rotate: false
+  xy: 770, 74
+  size: 16, 16
+  split: 7, 7, 7, 7
+  pad: 7, 7, 7, 7
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+progress-knobbefore
+  rotate: false
+  xy: 818, 122
+  size: 16, 16
+  split: 7, 7, 7, 7
+  pad: 7, 7, 7, 7
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+select-background
+  rotate: false
+  xy: 572, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+select-disabled
+  rotate: false
+  xy: 654, 92
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+slider-disabledknob
+  rotate: false
+  xy: 490, 92
+  size: 80, 80
+  split: 22, 22, 22, 22
+  pad: 22, 22, 22, 22
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+slider-knob
+  rotate: false
+  xy: 572, 92
+  size: 80, 80
+  split: 22, 22, 22, 22
+  pad: 22, 22, 22, 22
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+splitpane
+  rotate: false
+  xy: 900, 234
+  size: 20, 20
+  split: 8, 8, 8, 8
+  pad: 8, 8, 8, 8
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+textfield-background
+  rotate: false
+  xy: 408, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+textfield-cursor
+  rotate: false
+  xy: 922, 246
+  size: 8, 8
+  split: 2, 2, 2, 2
+  pad: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+textfield-disabled
+  rotate: false
+  xy: 490, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+textfield-focused
+  rotate: false
+  xy: 408, 92
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
   orig: 80, 80
   offset: 0, 0
   index: -1
 tree-background
   rotate: false
-  xy: 418, 172
+  xy: 408, 92
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 textfield-selection
   rotate: false
-  xy: 486, 128
+  xy: 900, 224
   size: 8, 8
   split: 2, 2, 2, 2
   pad: 2, 2, 2, 2
@@ -234,35 +230,35 @@ textfield-selection
   index: -1
 touchpad-background
   rotate: false
-  xy: 2, 84
-  size: 168, 168
+  xy: 2, 14
+  size: 240, 240
   orig: 240, 240
-  offset: 36, 36
+  offset: 0, 0
   index: -1
 touchpad-knob
   rotate: false
-  xy: 320, 106
-  size: 64, 64
+  xy: 736, 174
+  size: 80, 80
   orig: 80, 80
-  offset: 8, 8
+  offset: 0, 0
   index: -1
 tree-minus
   rotate: false
-  xy: 988, 220
+  xy: 736, 58
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 tree-plus
   rotate: false
-  xy: 988, 186
+  xy: 818, 140
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 tree-selection
   rotate: false
-  xy: 554, 144
+  xy: 736, 30
   size: 8, 8
   split: 2, 2, 2, 2
   pad: 2, 2, 2, 2
@@ -271,7 +267,7 @@ tree-selection
   index: -1
 vscroll
   rotate: false
-  xy: 2, 2
+  xy: 244, 84
   size: 80, 80
   split: 6, 6, 6, 6
   pad: 0, 0, 0, 0
@@ -280,28 +276,28 @@ vscroll
   index: -1
 hscroll
   rotate: false
-  xy: 2, 2
+  xy: 244, 84
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 hscrollknob
   rotate: false
-  xy: 2, 2
+  xy: 244, 84
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 vscrollknob
   rotate: false
-  xy: 2, 2
+  xy: 244, 84
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 window-background
   rotate: false
-  xy: 172, 164
+  xy: 244, 166
   size: 80, 88
   split: 6, 6, 80, 6
   pad: 6, 6, 80, 6
@@ -310,7 +306,7 @@ window-background
   index: -1
 window-stagebackground
   rotate: false
-  xy: 386, 112
+  xy: 2, 4
   size: 8, 8
   split: 2, 2, 2, 2
   pad: 2, 2, 2, 2

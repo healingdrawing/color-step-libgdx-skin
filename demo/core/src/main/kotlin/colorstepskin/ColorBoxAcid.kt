@@ -9,8 +9,8 @@ class ColorBoxAcid {
     fun color(hue:Int): Color {return if (hue in 0..100) c[hue] else c[100]}
     /**hsv h hueStep*/
     private val hs = arrayOf(
-            0/360f,30/360f,60/360f,90/360f,120/360f,150/360f,180/360f,210/360f,240/360f,274/360f,300/360f,330/360f,
-            1f
+            0f,30f,60f,90f,120f,150f,180f,210f,240f,274f,300f,330f,
+            360f
     )
     /**hsv s colorSaturation*/
     private val cs = arrayOf(
@@ -24,11 +24,11 @@ class ColorBoxAcid {
     )
     
     private fun grayHsv(hue:Int):FloatArray{
-        return arrayOf(0.0f, 0.0f, hue/100.0f).toFloatArray()
+        return arrayOf(0.0f, 0.0f, 0.7f+hue/100.0f*0.3f).toFloatArray()
     }
     
     private fun hueRange(hue100:Int):Int{
-        val hue = hue100/100f
+        val hue = hue100*3.6f
         return when{
             hue < hs[1] -> 1
             hue < hs[2] -> 2
@@ -47,7 +47,7 @@ class ColorBoxAcid {
     private fun colorHsv(hue100:Int):FloatArray{
         /**rangeNumber 1..12*/
         val rn = hueRange(hue100)
-        val hue = hue100/100f
+        val hue = hue100*3.6f
         val dHueStep = hs[rn] - hs[rn-1]
         val dHue = hue - hs[rn-1]
         val d = dHue / dHueStep
@@ -67,6 +67,7 @@ class ColorBoxAcid {
                 hue in tenGray -> c[hue].fromHsv(grayHsv(hue))
                 else -> c[hue].fromHsv(colorHsv(hue))
             }
+            c[hue].a = 1f
         }
     }
 }
