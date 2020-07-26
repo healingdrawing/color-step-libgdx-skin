@@ -91,7 +91,7 @@ list-selection
   xy: 326, 174
   size: 80, 80
   split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
+  pad: 6, 6, 24, 24
   orig: 80, 80
   offset: 0, 0
   index: -1
