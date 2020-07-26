@@ -188,8 +188,8 @@ class ColorStepSkin : Skin() {
             listDark[hue].fontColorSelected = color
             listDark[hue].fontColorUnselected = color
 
-            selectDark[hue].listStyle = list[hue]
-            selectDark[hue].scrollStyle = scroll[hue]
+            selectDark[hue].listStyle = listDark[hue]
+            selectDark[hue].scrollStyle = scrollDark[hue]
             selectDark[hue].background = newDrawable(getDrawable("select-background"), color)
             selectDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), color)
             selectDark[hue].font = defaultFont
@@ -298,8 +298,8 @@ class ColorStepSkin : Skin() {
             listAcid[hue].fontColorSelected = color
             listAcid[hue].fontColorUnselected = color
         
-            selectAcid[hue].listStyle = list[hue]
-            selectAcid[hue].scrollStyle = scroll[hue]
+            selectAcid[hue].listStyle = listAcid[hue]
+            selectAcid[hue].scrollStyle = scrollAcid[hue]
             selectAcid[hue].background = newDrawable(getDrawable("select-background"), color)
             selectAcid[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), color)
             selectAcid[hue].font = defaultFont
@@ -408,8 +408,8 @@ class ColorStepSkin : Skin() {
             listSun[hue].fontColorSelected = color
             listSun[hue].fontColorUnselected = color
         
-            selectSun[hue].listStyle = list[hue]
-            selectSun[hue].scrollStyle = scroll[hue]
+            selectSun[hue].listStyle = listSun[hue]
+            selectSun[hue].scrollStyle = scrollSun[hue]
             selectSun[hue].background = newDrawable(getDrawable("select-background"), color)
             selectSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), color)
             selectSun[hue].font = defaultFont

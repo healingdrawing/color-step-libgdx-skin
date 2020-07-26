@@ -14,6 +14,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.*
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
 import com.badlogic.gdx.scenes.scene2d.ui.List as UIList
 import com.badlogic.gdx.utils.Array as UIArray
+//import com.badlogic.gdx.scenes.scene2d.ui.Tree
+//import com.badlogic.gdx.scenes.scene2d.ui.Tree.Node
 
 /** [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.  */
 class Demo : ApplicationAdapter() {
@@ -44,7 +46,7 @@ class Demo : ApplicationAdapter() {
         Gdx.input.inputProcessor = stage
         val css = ColorStepSkin() //new skin template
         css.prepare()
-        val styleName = "hue81dark"
+        val styleName = "hue31sun"
         table = Table()
         table!!.setSize(1280f, 720f)
         
@@ -84,9 +86,9 @@ class Demo : ApplicationAdapter() {
                 "testtttttt"
         )
     
-//        selectbox = SelectBox(css, styleName)
-//        selectbox!!.setItems(selectboxArray)
-//        selectbox!!.maxListCount = 3
+        selectbox = SelectBox(css, styleName)
+        selectbox!!.setItems(selectboxArray)
+        selectbox!!.maxListCount = 3
     
         progress = ProgressBar(0f,5f,1f,false,css, styleName)
         progress!!.value = 1f
@@ -104,10 +106,12 @@ class Demo : ApplicationAdapter() {
     
         window = Window("test test test",css, styleName)
 
-        table!!.add(eng_label).expandX().expandY()//.fillX().fillY() //used in scroll
+//        table!!.add(eng_label).expandX().expandY()//.fillX().fillY() //used in scroll
     
+//        val tree = Tree<Tree.Node,Label>(css)
+        
         table!!.add(eng_button).expandX().expandY()//.fillX().fillY()
-//        table!!.add(selectbox).expandX()
+        table!!.add(selectbox).expandX()
         table!!.add(eng_textfield).expandX().expandY().fillX()
         table!!.row()
         table!!.add(eng_cbox).expandX().expandY()//.fillX().fillY()

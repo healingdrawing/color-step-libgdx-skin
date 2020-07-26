@@ -15,7 +15,7 @@ button-checked
   index: -1
 button-disabled
   rotate: false
-  xy: 736, 92
+  xy: 818, 174
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
@@ -47,7 +47,7 @@ check-disabled
   index: -1
 check-off
   rotate: false
-  xy: 572, 10
+  xy: 654, 92
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
@@ -68,18 +68,9 @@ label-background
   orig: 80, 80
   offset: 0, 0
   index: -1
-list-background
-  rotate: false
-  xy: 818, 174
-  size: 80, 80
-  split: 6, 6, 6, 6
-  pad: 6, 6, 6, 6
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
 list-down
   rotate: false
-  xy: 654, 10
+  xy: 736, 92
   size: 80, 80
   split: 6, 6, 6, 6
   pad: 6, 6, 6, 6
@@ -142,7 +133,7 @@ select-background
   index: -1
 select-disabled
   rotate: false
-  xy: 654, 92
+  xy: 736, 174
   size: 80, 80
   split: 6, 6, 6, 6
   pad: 6, 6, 6, 6
@@ -212,19 +203,19 @@ textfield-focused
   orig: 80, 80
   offset: 0, 0
   index: -1
-tree-background
-  rotate: false
-  xy: 408, 92
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
 textfield-selection
   rotate: false
   xy: 900, 224
   size: 8, 8
   split: 2, 2, 2, 2
   pad: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+tree-selection
+  rotate: false
+  xy: 900, 224
+  size: 8, 8
   orig: 8, 8
   offset: 0, 0
   index: -1
@@ -237,7 +228,23 @@ touchpad-background
   index: -1
 touchpad-knob
   rotate: false
-  xy: 736, 174
+  xy: 654, 10
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+tree-background
+  rotate: false
+  xy: 572, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+list-background
+  rotate: false
+  xy: 572, 10
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
@@ -254,15 +261,6 @@ tree-plus
   xy: 818, 140
   size: 32, 32
   orig: 32, 32
-  offset: 0, 0
-  index: -1
-tree-selection
-  rotate: false
-  xy: 736, 30
-  size: 8, 8
-  split: 2, 2, 2, 2
-  pad: 2, 2, 2, 2
-  orig: 8, 8
   offset: 0, 0
   index: -1
 vscroll
