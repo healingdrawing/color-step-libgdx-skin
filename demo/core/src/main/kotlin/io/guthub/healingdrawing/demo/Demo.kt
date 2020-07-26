@@ -14,8 +14,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.*
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
 import com.badlogic.gdx.scenes.scene2d.ui.List as UIList
 import com.badlogic.gdx.utils.Array as UIArray
-//import com.badlogic.gdx.scenes.scene2d.ui.Tree
-//import com.badlogic.gdx.scenes.scene2d.ui.Tree.Node
+import com.badlogic.gdx.scenes.scene2d.ui.Tree
+import com.badlogic.gdx.scenes.scene2d.ui.Tree.Node
 
 /** [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.  */
 class Demo : ApplicationAdapter() {
@@ -108,7 +108,7 @@ class Demo : ApplicationAdapter() {
 
 //        table!!.add(eng_label).expandX().expandY()//.fillX().fillY() //used in scroll
     
-//        val tree = Tree<Tree.Node,Label>(css)
+//        val tree = Tree<Label,Label,Label>(css)
         
         table!!.add(eng_button).expandX().expandY()//.fillX().fillY()
         table!!.add(selectbox).expandX()
