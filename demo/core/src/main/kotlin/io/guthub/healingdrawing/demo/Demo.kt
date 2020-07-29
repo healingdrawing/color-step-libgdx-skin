@@ -55,14 +55,13 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "hue21dark"
+    private val styleName = "hue81sun"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
         Gdx.input.inputProcessor = stage
         
         css.prepare()
-        
         table = Table()
         table!!.setSize(1280f, 720f)
         
