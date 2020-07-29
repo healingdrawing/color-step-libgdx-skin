@@ -1,6 +1,6 @@
 # color-step-libgdx-skin
-skin for libgdx , with `multicolor` internal generated styles.  
-`Mobile oriented` (80px min high of touchable/clickable elements)
+skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` internal generated styles.  
+`Mobile oriented` (80px min high of touchable/clickable elements area)
 
 ## how much styles prebuilded
 Supported internally generated styles is:  
