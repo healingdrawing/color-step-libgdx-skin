@@ -1,8 +1,6 @@
 package colorstepskin
 
-import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.assets.AssetManager
-import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import com.badlogic.gdx.scenes.scene2d.ui.Button.ButtonStyle
@@ -20,6 +18,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle
 import com.badlogic.gdx.scenes.scene2d.ui.Touchpad.TouchpadStyle
 import com.badlogic.gdx.scenes.scene2d.ui.Tree.TreeStyle
 import com.badlogic.gdx.scenes.scene2d.ui.Window.WindowStyle
+
 
 class ColorStepSkin : Skin() {
     /**x100 colors x3 styles dark acid sun , with hue offset. every next 10... 0 10 20 90 100 is gray. other is hue offset based */
@@ -104,6 +103,7 @@ class ColorStepSkin : Skin() {
     private val tpadSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
     private val dialogSun:Array<WindowStyle> = Array(101){WindowStyle()}
     
+    
     fun prepare(){
         dispose()
         asm.load("color-step-skin/rog32.fnt", BitmapFont::class.java)
@@ -118,8 +118,6 @@ class ColorStepSkin : Skin() {
         add("font48", asm.get("color-step-skin/rog48.fnt"), BitmapFont::class.java)
         add("font64", asm.get("color-step-skin/rog64.fnt"), BitmapFont::class.java)
         
-//        load(Gdx.files.internal("color-step-skin/color-step-skin.json")) //now fonts can be used
-//        load(Gdx.files.internal("skin/skin.json")) //now fonts can be used
         addRegions(asm.get("color-step-skin/color-step-skin.atlas"))
     
         font32 = get("font32" ,  BitmapFont::class.java)
@@ -456,9 +454,9 @@ class ColorStepSkin : Skin() {
             add("hue${hue}sun", dialogSun[hue])
         
         }
-    
+        
         /*default*/
-        defaultDark()
+        defaultDark() /*short name binded to dark scheme*/
         for (hue in 0..100){
             
             add("hue$hue", scroll[hue])
@@ -479,6 +477,7 @@ class ColorStepSkin : Skin() {
             add("hue$hue", dialog[hue])
         
         }
+    
     }
     
     fun defaultDark(){
@@ -543,4 +542,5 @@ class ColorStepSkin : Skin() {
             dialog[hue] = dialogSun[hue]
         }
     }
+    
 }

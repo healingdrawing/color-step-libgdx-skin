@@ -4,7 +4,6 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.scenes.scene2d.Stage
-import com.badlogic.gdx.scenes.scene2d.ui.Skin
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton
 import com.badlogic.gdx.scenes.scene2d.ui.Window
 import com.badlogic.gdx.utils.viewport.FitViewport
@@ -14,8 +13,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.*
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
 import com.badlogic.gdx.scenes.scene2d.ui.List as UIList
 import com.badlogic.gdx.utils.Array as UIArray
-import com.badlogic.gdx.scenes.scene2d.ui.Tree
-import com.badlogic.gdx.scenes.scene2d.ui.Tree.Node
+
 
 /** [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.  */
 class Demo : ApplicationAdapter() {
@@ -41,12 +39,30 @@ class Demo : ApplicationAdapter() {
     private var touchpad:Touchpad? = null
     private var splitpane:SplitPane? = null
     
+    private val css = ColorStepSkin() //new skin instance
+    /**can be x4 variants 0..100
+     * hue0dark..hue100dark
+     * hue0acid..hue100acid
+     * hue0sun..hue100sun
+     * hue0..hue100 is default binded to dark,but can be switched, after css.prepare() executed, to
+     *
+     * css.defaultDark() - dark scheme... used in init time
+     * css.defaultAcid()
+     * css.defaultSun
+     *
+     * Use this calls, before get style from skin to Actor etc.
+     * Every ten style is gray based 0 10 .. 90 100.
+     *
+     * Other styles is manually prebalanced hue offset scheme based.
+     * */
+    private val styleName = "hue21dark"
+    
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
         Gdx.input.inputProcessor = stage
-        val css = ColorStepSkin() //new skin template
+        
         css.prepare()
-        val styleName = "hue31sun"
+        
         table = Table()
         table!!.setSize(1280f, 720f)
         
@@ -54,12 +70,18 @@ class Demo : ApplicationAdapter() {
         println(bs.fontColor)
         eng_button = TextButton("", css, styleName)
         eng_button!!.setText("TesttExt")
-    
+        
         eng_cbox = CheckBox("",css, styleName)
         eng_cbox!!.setText("TesttExt")
     
         eng_label = Label("", css, styleName)
         eng_label!!.setText("TesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExt")
@@ -107,18 +129,13 @@ class Demo : ApplicationAdapter() {
         window = Window("test test test",css, styleName)
 
 //        table!!.add(eng_label).expandX().expandY()//.fillX().fillY() //used in scroll
-    
-//        val tree = Tree<Label,Label,Label>(css)
         
         table!!.add(eng_button).expandX().expandY()//.fillX().fillY()
         table!!.add(selectbox).expandX()
         table!!.add(eng_textfield).expandX().expandY().fillX()
         table!!.row()
         table!!.add(eng_cbox).expandX().expandY()//.fillX().fillY()
-
-//        table!!.add(progress).expandX().expandY()
-//        table!!.add(slider).expandX().expandY().fill() //used in splitpane
-    
+        
         table!!.row()
         table!!.add(touchpad)
         table!!.add(scroll).expandX().expandY()//.fillX().fillY()
@@ -126,7 +143,7 @@ class Demo : ApplicationAdapter() {
         table!!.add(progressv).expandX().expandY()
         table!!.add(sliderv).expandX().expandY().fill()
 
-//        table!!.add(eng_textarea).expandX().expandY()//.fillX().fillY() //BUGGED
+//        table!!.add(eng_textarea).expandX().expandY()//.fillX().fillY() //BUGGED as official bug
     
         table!!.row()
         table!!.add(splitpane).expand().fill().colspan(3)
@@ -135,9 +152,8 @@ class Demo : ApplicationAdapter() {
         window!!.add(table).expand().fill()
         window!!.titleLabel.setAlignment(-1)
         window!!.pad(10f)
-        window!!.padTop(68f) //work
+        window!!.padTop(84f) //work
         stage!!.addActor(window)
-        
     }
 
     override fun render() {
