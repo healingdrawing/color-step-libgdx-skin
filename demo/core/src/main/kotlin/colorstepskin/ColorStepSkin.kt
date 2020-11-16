@@ -26,7 +26,7 @@ class ColorStepSkin : Skin() {
     
     private val asm:AssetManager = AssetManager()
     private var defaultFont:BitmapFont? = null
-    private var font32:BitmapFont? = null
+    var font32:BitmapFont? = null
     private var font48:BitmapFont? = null
     private var font64:BitmapFont? = null
     
@@ -102,6 +102,24 @@ class ColorStepSkin : Skin() {
     private val windowSun:Array<WindowStyle> = Array(101){WindowStyle()}
     private val tpadSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
     private val dialogSun:Array<WindowStyle> = Array(101){WindowStyle()}
+    
+    /*text*/
+    private val scrollTextSun:Array<ScrollPaneStyle> = Array(101){ScrollPaneStyle()}
+    private val splitTextSun:Array<SplitPaneStyle> = Array(101){SplitPaneStyle()}
+    private val treeTextSun:Array<TreeStyle> = Array(101){TreeStyle()}
+    private val labelTextSun:Array<LabelStyle> = Array(101){LabelStyle()}
+    private val buttonTextSun:Array<ButtonStyle> = Array(101){ButtonStyle()}
+    private val tbuttonTextSun:Array<TextButtonStyle> = Array(101){TextButtonStyle()}
+    private val checkTextSun:Array<CheckBoxStyle> = Array(101){CheckBoxStyle()}
+    private val tfieldTextSun:Array<TextFieldStyle> = Array(101){TextFieldStyle()}
+    private val tareaTextSun:Array<TextFieldStyle> = Array(101){TextFieldStyle()}
+    private val listTextSun:Array<ListStyle> = Array(101){ListStyle()}
+    private val selectTextSun:Array<SelectBoxStyle> = Array(101){SelectBoxStyle()}
+    private val progressTextSun:Array<ProgressBarStyle> = Array(101){ProgressBarStyle()}
+    private val sliderTextSun:Array<SliderStyle> = Array(101){SliderStyle()}
+    private val windowTextSun:Array<WindowStyle> = Array(101){WindowStyle()}
+    private val tpadTextSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
+    private val dialogTextSun:Array<WindowStyle> = Array(101){WindowStyle()}
     
     
     fun prepare(){
@@ -455,26 +473,139 @@ class ColorStepSkin : Skin() {
         
         }
         
+        /*2020-11-16 new stuff*/
+        /*textSun*/
+        for (hue in 0..100){
+            val pairColor = cbox.sun.colorPair(hue)
+            val color = pairColor[0]
+            val bcolor = pairColor[1]
+            
+            scrollTextSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), color)
+            scrollTextSun[hue].vScroll = newDrawable(getDrawable("vscroll"), color)
+            scrollTextSun[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), color)
+            scrollTextSun[hue].hScroll = newDrawable(getDrawable("hscroll"), color)
+        
+            splitTextSun[hue].handle = newDrawable(getDrawable("splitpane"), color)
+        
+            treeTextSun[hue].minus = newDrawable(getDrawable("tree-minus"), color)
+            treeTextSun[hue].plus = newDrawable(getDrawable("tree-plus"), color)
+            treeTextSun[hue].background = newDrawable(getDrawable("tree-background"), bcolor)
+            treeTextSun[hue].selection = newDrawable(getDrawable("tree-selection"), bcolor)
+        
+            labelTextSun[hue].background = newDrawable(getDrawable("label-background"), bcolor)
+            labelTextSun[hue].font = defaultFont
+            labelTextSun[hue].fontColor = color
+        
+            buttonTextSun[hue].up = newDrawable(getDrawable("button-up"), bcolor)
+            buttonTextSun[hue].down = newDrawable(getDrawable("button-down"), color)
+            buttonTextSun[hue].checked = newDrawable(getDrawable("button-checked"), color)
+            buttonTextSun[hue].disabled = newDrawable(getDrawable("button-disabled"), color)
+        
+            tbuttonTextSun[hue].up = newDrawable(getDrawable("button-up"), bcolor)
+            tbuttonTextSun[hue].down = newDrawable(getDrawable("button-down"), color)
+            tbuttonTextSun[hue].checked = newDrawable(getDrawable("button-checked"), color)
+            tbuttonTextSun[hue].disabled = newDrawable(getDrawable("button-disabled"), color)
+            tbuttonTextSun[hue].font = defaultFont
+            tbuttonTextSun[hue].fontColor = color
+        
+            checkTextSun[hue].checkboxOn = newDrawable(getDrawable("check-on"), color)
+            checkTextSun[hue].checkboxOff = newDrawable(getDrawable("check-off"), bcolor)
+            checkTextSun[hue].disabled = newDrawable(getDrawable("check-disabled"), bcolor)
+            checkTextSun[hue].font = defaultFont
+            checkTextSun[hue].fontColor = color
+        
+            tfieldTextSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
+            tfieldTextSun[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
+            tfieldTextSun[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
+            tfieldTextSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
+            tfieldTextSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
+            tfieldTextSun[hue].font = defaultFont
+            tfieldTextSun[hue].fontColor = color
+        
+            tareaTextSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
+            tareaTextSun[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
+            tareaTextSun[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
+            tareaTextSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
+            tareaTextSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
+            tareaTextSun[hue].font = defaultFont
+            tareaTextSun[hue].fontColor = color
+        
+            listTextSun[hue].background = newDrawable(getDrawable("list-background"), bcolor)
+            listTextSun[hue].selection = newDrawable(getDrawable("list-selection"), color)
+            listTextSun[hue].down = newDrawable(getDrawable("list-down"), color)
+            listTextSun[hue].font = defaultFont
+            listTextSun[hue].fontColorSelected = color
+            listTextSun[hue].fontColorUnselected = color
+        
+            selectTextSun[hue].listStyle = listTextSun[hue]
+            selectTextSun[hue].scrollStyle = scrollTextSun[hue]
+            selectTextSun[hue].background = newDrawable(getDrawable("select-background"), bcolor)
+            selectTextSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), bcolor)
+            selectTextSun[hue].font = defaultFont
+            selectTextSun[hue].fontColor = color
+        
+            progressTextSun[hue].background = newDrawable(getDrawable("progress-background"), bcolor)
+            progressTextSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), bcolor)
+            progressTextSun[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), color)
+            progressTextSun[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), color)
+        
+            sliderTextSun[hue].knob = newDrawable(getDrawable("slider-knob"), color)
+            sliderTextSun[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), color)
+            sliderTextSun[hue].background = newDrawable(getDrawable("progress-background"), bcolor)
+            sliderTextSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), bcolor)
+        
+            windowTextSun[hue].background = newDrawable(getDrawable("window-background"), bcolor)
+            windowTextSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), bcolor)
+            windowTextSun[hue].titleFont = defaultFont
+            windowTextSun[hue].titleFontColor = color
+        
+            tpadTextSun[hue].background = newDrawable(getDrawable("touchpad-background"), bcolor)
+            tpadTextSun[hue].knob = newDrawable(getDrawable("touchpad-knob"), color)
+        
+            dialogTextSun[hue].background = newDrawable(getDrawable("window-background"), bcolor)
+            dialogTextSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), bcolor)
+            dialogTextSun[hue].titleFont = defaultFont
+            dialogTextSun[hue].titleFontColor = color
+        
+            add("text${hue}sun", scrollTextSun[hue])
+            add("text${hue}sun", splitTextSun[hue])
+            add("text${hue}sun", treeTextSun[hue])
+            add("text${hue}sun", labelTextSun[hue])
+            add("text${hue}sun", buttonTextSun[hue])
+            add("text${hue}sun", tbuttonTextSun[hue])
+            add("text${hue}sun", checkTextSun[hue])
+            add("text${hue}sun", tfieldTextSun[hue])
+            add("text${hue}sun", tareaTextSun[hue])
+            add("text${hue}sun", listTextSun[hue])
+            add("text${hue}sun", selectTextSun[hue])
+            add("text${hue}sun", progressTextSun[hue])
+            add("text${hue}sun", sliderTextSun[hue])
+            add("text${hue}sun", windowTextSun[hue])
+            add("text${hue}sun", tpadTextSun[hue])
+            add("text${hue}sun", dialogTextSun[hue])
+        
+        }
+        
         /*default*/
-        defaultDark() /*short name binded to dark scheme*/
+        defaultTextSun() /*short name binded to text sun scheme*/
         for (hue in 0..100){
             
-            add("hue$hue", scroll[hue])
-            add("hue$hue", split[hue])
-            add("hue$hue", tree[hue])
-            add("hue$hue", label[hue])
-            add("hue$hue", button[hue])
-            add("hue$hue", tbutton[hue])
-            add("hue$hue", check[hue])
-            add("hue$hue", tfield[hue])
-            add("hue$hue", tarea[hue])
-            add("hue$hue", list[hue])
-            add("hue$hue", select[hue])
-            add("hue$hue", progress[hue])
-            add("hue$hue", slider[hue])
-            add("hue$hue", window[hue])
-            add("hue$hue", tpad[hue])
-            add("hue$hue", dialog[hue])
+            add("$hue", scroll[hue])
+            add("$hue", split[hue])
+            add("$hue", tree[hue])
+            add("$hue", label[hue])
+            add("$hue", button[hue])
+            add("$hue", tbutton[hue])
+            add("$hue", check[hue])
+            add("$hue", tfield[hue])
+            add("$hue", tarea[hue])
+            add("$hue", list[hue])
+            add("$hue", select[hue])
+            add("$hue", progress[hue])
+            add("$hue", slider[hue])
+            add("$hue", window[hue])
+            add("$hue", tpad[hue])
+            add("$hue", dialog[hue])
         
         }
     
@@ -540,6 +671,27 @@ class ColorStepSkin : Skin() {
             window[hue] = windowSun[hue]
             tpad[hue] = tpadSun[hue]
             dialog[hue] = dialogSun[hue]
+        }
+    }
+    
+    fun defaultTextSun(){
+        for (hue in 0..100){
+            scroll[hue] = scrollTextSun[hue]
+            split[hue] = splitTextSun[hue]
+            tree[hue] = treeTextSun[hue]
+            label[hue] = labelTextSun[hue]
+            button[hue] = buttonTextSun[hue]
+            tbutton[hue] = tbuttonTextSun[hue]
+            check[hue] = checkTextSun[hue]
+            tfield[hue] = tfieldTextSun[hue]
+            tarea[hue] = tareaTextSun[hue]
+            list[hue] = listTextSun[hue]
+            select[hue] = selectTextSun[hue]
+            progress[hue] = progressTextSun[hue]
+            slider[hue] = sliderTextSun[hue]
+            window[hue] = windowTextSun[hue]
+            tpad[hue] = tpadTextSun[hue]
+            dialog[hue] = dialogTextSun[hue]
         }
     }
     

@@ -9,7 +9,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Window
 import com.badlogic.gdx.utils.viewport.FitViewport
 
 import colorstepskin.ColorStepSkin
+import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.scenes.scene2d.ui.*
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
 import com.badlogic.gdx.scenes.scene2d.ui.List as UIList
 import com.badlogic.gdx.utils.Array as UIArray
@@ -55,7 +57,7 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "hue81sun"
+    private val styleName = "1"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
@@ -67,12 +69,21 @@ class Demo : ApplicationAdapter() {
         
         val bs:TextButtonStyle = css.get(styleName, TextButtonStyle::class.java)
         println(bs.fontColor)
+        
         eng_button = TextButton("", css, styleName)
         eng_button!!.setText("TesttExt")
         
+        val ls = LabelStyle()
+        ls.fontColor = Color.RED
+        ls.font = css.font32
+        ls.background = css.getDrawable("label-background")
+        val label = Label("why not displayed?",ls)
+//        table!!.add(label).fill().expand()
+//        table!!.row()
+        
         eng_cbox = CheckBox("",css, styleName)
         eng_cbox!!.setText("TesttExt")
-    
+        
         eng_label = Label("", css, styleName)
         eng_label!!.setText("TesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
@@ -86,11 +97,11 @@ class Demo : ApplicationAdapter() {
                 "TesttExt")
     
         eng_textfield = TextField("test", css, styleName)
-    
+
         eng_textarea = TextArea("test\ntestt\ntesttt",css, styleName)
-    
+
         scroll = ScrollPane(eng_label, css, styleName)
-    
+
         list = UIList(css, styleName)
         listArray.add(
                 "testttt",
@@ -99,30 +110,30 @@ class Demo : ApplicationAdapter() {
                 "testtttttt"
         )
         list!!.setItems(listArray)
-    
+
         selectboxArray.add(
                 "testttt",
                 "testtttt",
                 "testttttt",
                 "testtttttt"
         )
-    
+
         selectbox = SelectBox(css, styleName)
         selectbox!!.setItems(selectboxArray)
         selectbox!!.maxListCount = 3
-    
+
         progress = ProgressBar(0f,5f,1f,false,css, styleName)
         progress!!.value = 1f
-    
+
         progressv = ProgressBar(0f,5f,1f,true,css, styleName)
         progressv!!.value = 4f
-    
+
         slider = Slider(0f,10f,1f,false,css, styleName)
-    
+
         sliderv = Slider(0f,10f,1f,true,css, styleName)
-    
+
         touchpad = Touchpad(40f, css, styleName)
-    
+
         splitpane = SplitPane(progress, slider, false, css, styleName)
     
         window = Window("test test test",css, styleName)
@@ -134,7 +145,7 @@ class Demo : ApplicationAdapter() {
         table!!.add(eng_textfield).expandX().expandY().fillX()
         table!!.row()
         table!!.add(eng_cbox).expandX().expandY()//.fillX().fillY()
-        
+
         table!!.row()
         table!!.add(touchpad)
         table!!.add(scroll).expandX().expandY()//.fillX().fillY()
@@ -143,7 +154,7 @@ class Demo : ApplicationAdapter() {
         table!!.add(sliderv).expandX().expandY().fill()
 
 //        table!!.add(eng_textarea).expandX().expandY()//.fillX().fillY() //BUGGED as official bug
-    
+
         table!!.row()
         table!!.add(splitpane).expand().fill().colspan(3)
     
@@ -156,7 +167,7 @@ class Demo : ApplicationAdapter() {
     }
 
     override fun render() {
-        Gdx.gl.glClearColor(0f, 0.5f, 0.5f, 1f)
+        Gdx.gl.glClearColor(0f, 0f, 0f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
         stage!!.act(Gdx.graphics.deltaTime)
         stage!!.draw()
