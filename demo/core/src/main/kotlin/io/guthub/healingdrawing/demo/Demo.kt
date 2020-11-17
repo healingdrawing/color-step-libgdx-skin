@@ -57,7 +57,7 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "1"
+    private val styleName = "51"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
@@ -73,11 +73,11 @@ class Demo : ApplicationAdapter() {
         eng_button = TextButton("", css, styleName)
         eng_button!!.setText("TesttExt")
         
-        val ls = LabelStyle()
-        ls.fontColor = Color.RED
-        ls.font = css.font32
-        ls.background = css.getDrawable("label-background")
-        val label = Label("why not displayed?",ls)
+//        val ls = LabelStyle()
+//        ls.fontColor = Color.RED
+//        ls.font = css.font32
+//        ls.background = css.getDrawable("label-background")
+//        val label = Label("why not displayed?",ls)
 //        table!!.add(label).fill().expand()
 //        table!!.row()
         

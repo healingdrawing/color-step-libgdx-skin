@@ -1,0 +1,1 @@
+buttonstyle.up = newDrawable(getDrawable("not-colored"), myColor)  

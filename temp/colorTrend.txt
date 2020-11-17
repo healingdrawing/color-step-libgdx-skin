@@ -1,0 +1,38 @@
+gray
+hsv v
+10 window back
+
+15
+button border
+window border
+label fill
+
+20
+button fill
+label border
+
+30
+button press/hover
+input border
+
+
+
+------------------
+hue value
+
+dark
+
+0 70
+30 70 0
+60 60 -1
+150 60 0
+180 58 -1
+210 75 +1
+240 75 0
+270 68 -1
+300 64 -1
+330 68 +1
+
+acid
+
+sun

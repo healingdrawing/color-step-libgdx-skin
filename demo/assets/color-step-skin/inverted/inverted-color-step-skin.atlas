@@ -1,0 +1,315 @@
+
+inverted-color-step-skin.png
+size: 1024,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+inverted-button-checked
+  rotate: false
+  xy: 326, 92
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-button-disabled
+  rotate: false
+  xy: 818, 174
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-button-down
+  rotate: false
+  xy: 408, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-button-up
+  rotate: false
+  xy: 326, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-check-disabled
+  rotate: false
+  xy: 490, 10
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-check-off
+  rotate: false
+  xy: 654, 92
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-check-on
+  rotate: false
+  xy: 244, 2
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-label-background
+  rotate: false
+  xy: 654, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-list-background
+  rotate: false
+  xy: 736, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-list-down
+  rotate: false
+  xy: 736, 92
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-list-selection
+  rotate: false
+  xy: 326, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 24, 24
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-progress-background
+  rotate: false
+  xy: 818, 100
+  size: 16, 16
+  split: 6, 6, 6, 6
+  pad: 1, 1, 1, 1
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+inverted-progress-disabledbackground
+  rotate: false
+  xy: 852, 156
+  size: 16, 16
+  split: 6, 6, 6, 6
+  pad: 1, 1, 1, 1
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+inverted-progress-disabledknobbefore
+  rotate: false
+  xy: 900, 204
+  size: 16, 16
+  split: 7, 7, 7, 7
+  pad: 7, 7, 7, 7
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+inverted-progress-knobbefore
+  rotate: false
+  xy: 934, 238
+  size: 16, 16
+  split: 7, 7, 7, 7
+  pad: 7, 7, 7, 7
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+inverted-select-background
+  rotate: false
+  xy: 572, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-select-disabled
+  rotate: false
+  xy: 736, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-slider-disabledknob
+  rotate: false
+  xy: 490, 92
+  size: 80, 80
+  split: 22, 22, 22, 22
+  pad: 22, 22, 22, 22
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-slider-knob
+  rotate: false
+  xy: 572, 92
+  size: 80, 80
+  split: 22, 22, 22, 22
+  pad: 22, 22, 22, 22
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-splitpane
+  rotate: false
+  xy: 818, 118
+  size: 20, 20
+  split: 8, 8, 8, 8
+  pad: 8, 8, 8, 8
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+inverted-textfield-background
+  rotate: false
+  xy: 408, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-textfield-cursor
+  rotate: false
+  xy: 852, 146
+  size: 8, 8
+  split: 2, 2, 2, 2
+  pad: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+inverted-textfield-disabled
+  rotate: false
+  xy: 490, 174
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-textfield-focused
+  rotate: false
+  xy: 408, 92
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-textfield-selection
+  rotate: false
+  xy: 840, 130
+  size: 8, 8
+  split: 2, 2, 2, 2
+  pad: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+inverted-tree-selection
+  rotate: false
+  xy: 840, 130
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+inverted-touchpad-background
+  rotate: false
+  xy: 2, 14
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+inverted-touchpad-knob
+  rotate: false
+  xy: 654, 10
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-tree-background
+  rotate: false
+  xy: 572, 10
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 6, 6, 6, 6
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-tree-minus
+  rotate: false
+  xy: 818, 140
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+inverted-tree-plus
+  rotate: false
+  xy: 900, 222
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+inverted-vscroll
+  rotate: false
+  xy: 244, 84
+  size: 80, 80
+  split: 6, 6, 6, 6
+  pad: 0, 0, 0, 0
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-hscroll
+  rotate: false
+  xy: 244, 84
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-hscrollknob
+  rotate: false
+  xy: 244, 84
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-vscrollknob
+  rotate: false
+  xy: 244, 84
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+inverted-window-background
+  rotate: false
+  xy: 244, 166
+  size: 80, 88
+  split: 6, 6, 80, 6
+  pad: 6, 6, 80, 6
+  orig: 80, 88
+  offset: 0, 0
+  index: -1
+inverted-window-stagebackground
+  rotate: false
+  xy: 2, 4
+  size: 8, 8
+  split: 2, 2, 2, 2
+  pad: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1

@@ -26,9 +26,13 @@ class ColorStepSkin : Skin() {
     
     private val asm:AssetManager = AssetManager()
     private var defaultFont:BitmapFont? = null
-    var font32:BitmapFont? = null
+    private var font32:BitmapFont? = null
     private var font48:BitmapFont? = null
     private var font64:BitmapFont? = null
+    private var defaultFontFon:BitmapFont? = null
+    private var font32fon:BitmapFont? = null
+    private var font48fon:BitmapFont? = null
+    private var font64fon:BitmapFont? = null
     
     /*styles*/
     /*default*/
@@ -121,6 +125,24 @@ class ColorStepSkin : Skin() {
     private val tpadTextSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
     private val dialogTextSun:Array<WindowStyle> = Array(101){WindowStyle()}
     
+    /*fon*/
+    private val scrollFonSun:Array<ScrollPaneStyle> = Array(101){ScrollPaneStyle()}
+    private val splitFonSun:Array<SplitPaneStyle> = Array(101){SplitPaneStyle()}
+    private val treeFonSun:Array<TreeStyle> = Array(101){TreeStyle()}
+    private val labelFonSun:Array<LabelStyle> = Array(101){LabelStyle()}
+    private val buttonFonSun:Array<ButtonStyle> = Array(101){ButtonStyle()}
+    private val tbuttonFonSun:Array<TextButtonStyle> = Array(101){TextButtonStyle()}
+    private val checkFonSun:Array<CheckBoxStyle> = Array(101){CheckBoxStyle()}
+    private val tfieldFonSun:Array<TextFieldStyle> = Array(101){TextFieldStyle()}
+    private val tareaFonSun:Array<TextFieldStyle> = Array(101){TextFieldStyle()}
+    private val listFonSun:Array<ListStyle> = Array(101){ListStyle()}
+    private val selectFonSun:Array<SelectBoxStyle> = Array(101){SelectBoxStyle()}
+    private val progressFonSun:Array<ProgressBarStyle> = Array(101){ProgressBarStyle()}
+    private val sliderFonSun:Array<SliderStyle> = Array(101){SliderStyle()}
+    private val windowFonSun:Array<WindowStyle> = Array(101){WindowStyle()}
+    private val tpadFonSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
+    private val dialogFonSun:Array<WindowStyle> = Array(101){WindowStyle()}
+    
     
     fun prepare(){
         dispose()
@@ -130,18 +152,35 @@ class ColorStepSkin : Skin() {
     
         asm.load("color-step-skin/color-step-skin.atlas", TextureAtlas::class.java)
         
-        asm.finishLoading()
+        asm.load("color-step-skin/inverted/inverted-rog32.fnt", BitmapFont::class.java)
+        asm.load("color-step-skin/inverted/inverted-rog48.fnt", BitmapFont::class.java)
+        asm.load("color-step-skin/inverted/inverted-rog64.fnt", BitmapFont::class.java)
     
+        asm.load("color-step-skin/inverted/inverted-color-step-skin.atlas", TextureAtlas::class.java)
+        
+        asm.finishLoading()
+        
         add("font32", asm.get("color-step-skin/rog32.fnt"), BitmapFont::class.java)
         add("font48", asm.get("color-step-skin/rog48.fnt"), BitmapFont::class.java)
         add("font64", asm.get("color-step-skin/rog64.fnt"), BitmapFont::class.java)
         
         addRegions(asm.get("color-step-skin/color-step-skin.atlas"))
-    
+        
+        add("font32fon", asm.get("color-step-skin/inverted/inverted-rog32.fnt"), BitmapFont::class.java)
+        add("font48fon", asm.get("color-step-skin/inverted/inverted-rog48.fnt"), BitmapFont::class.java)
+        add("font64fon", asm.get("color-step-skin/inverted/inverted-rog64.fnt"), BitmapFont::class.java)
+        
+        addRegions(asm.get("color-step-skin/inverted/inverted-color-step-skin.atlas"))
+        
         font32 = get("font32" ,  BitmapFont::class.java)
         font48 = get("font48" ,  BitmapFont::class.java)
         font64 = get("font64" ,  BitmapFont::class.java)
         defaultFont = font32
+        
+        font32fon = get("font32fon" ,  BitmapFont::class.java)
+        font48fon = get("font48fon" ,  BitmapFont::class.java)
+        font64fon = get("font64fon" ,  BitmapFont::class.java)
+        defaultFontFon = font32fon
         
         /*dark*/
         for (hue in 0..100){
@@ -586,8 +625,122 @@ class ColorStepSkin : Skin() {
         
         }
         
+        /*fonSun*/
+        for (hue in 0..100){
+            val pairColor = cbox.sun.colorPair(hue)
+            val color = pairColor[1]
+            val bcolor = pairColor[0]
+            
+            scrollFonSun[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), color)
+            scrollFonSun[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), color)
+            scrollFonSun[hue].hScrollKnob = newDrawable(getDrawable("inverted-hscrollknob"), color)
+            scrollFonSun[hue].hScroll = newDrawable(getDrawable("inverted-hscroll"), color)
+        
+            splitFonSun[hue].handle = newDrawable(getDrawable("inverted-splitpane"), bcolor)
+        
+            treeFonSun[hue].minus = newDrawable(getDrawable("inverted-tree-minus"), color)
+            treeFonSun[hue].plus = newDrawable(getDrawable("inverted-tree-plus"), color)
+            treeFonSun[hue].background = newDrawable(getDrawable("inverted-tree-background"), bcolor)
+            treeFonSun[hue].selection = newDrawable(getDrawable("inverted-tree-selection"), bcolor)
+        
+            labelFonSun[hue].background = newDrawable(getDrawable("inverted-label-background"), bcolor)
+            labelFonSun[hue].font = defaultFontFon
+            labelFonSun[hue].fontColor = color
+        
+            buttonFonSun[hue].up = newDrawable(getDrawable("inverted-button-up"), bcolor)
+            buttonFonSun[hue].down = newDrawable(getDrawable("inverted-button-down"), color)
+            buttonFonSun[hue].checked = newDrawable(getDrawable("inverted-button-checked"), color)
+            buttonFonSun[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), color)
+        
+            tbuttonFonSun[hue].up = newDrawable(getDrawable("inverted-button-up"), bcolor)
+            tbuttonFonSun[hue].down = newDrawable(getDrawable("inverted-button-down"), color)
+            tbuttonFonSun[hue].checked = newDrawable(getDrawable("inverted-button-checked"), color)
+            tbuttonFonSun[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), color)
+            tbuttonFonSun[hue].font = defaultFontFon
+            tbuttonFonSun[hue].fontColor = color
+        
+            checkFonSun[hue].checkboxOn = newDrawable(getDrawable("inverted-check-on"), color)
+            checkFonSun[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), bcolor)
+            checkFonSun[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), bcolor)
+            checkFonSun[hue].font = defaultFontFon
+            checkFonSun[hue].fontColor = color
+        
+            tfieldFonSun[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), color)
+            tfieldFonSun[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), color)
+            tfieldFonSun[hue].background = newDrawable(getDrawable("inverted-textfield-background"), bcolor)
+            tfieldFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), bcolor)
+            tfieldFonSun[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), bcolor)
+            tfieldFonSun[hue].font = defaultFontFon
+            tfieldFonSun[hue].fontColor = color
+        
+            tareaFonSun[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), color)
+            tareaFonSun[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), color)
+            tareaFonSun[hue].background = newDrawable(getDrawable("inverted-textfield-background"), bcolor)
+            tareaFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), bcolor)
+            tareaFonSun[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), bcolor)
+            tareaFonSun[hue].font = defaultFontFon
+            tareaFonSun[hue].fontColor = color
+        
+            listFonSun[hue].background = newDrawable(getDrawable("inverted-list-background"), bcolor)
+            listFonSun[hue].selection = newDrawable(getDrawable("inverted-list-selection"), color)
+            listFonSun[hue].down = newDrawable(getDrawable("inverted-list-down"), color)
+            listFonSun[hue].font = defaultFontFon
+            listFonSun[hue].fontColorSelected = color
+            listFonSun[hue].fontColorUnselected = color
+        
+            selectFonSun[hue].listStyle = listFonSun[hue]
+            selectFonSun[hue].scrollStyle = scrollFonSun[hue]
+            selectFonSun[hue].background = newDrawable(getDrawable("inverted-select-background"), bcolor)
+            selectFonSun[hue].backgroundDisabled = newDrawable(getDrawable("inverted-select-disabled"), bcolor)
+            selectFonSun[hue].font = defaultFontFon
+            selectFonSun[hue].fontColor = color
+        
+            progressFonSun[hue].background = newDrawable(getDrawable("inverted-progress-background"), bcolor)
+            progressFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), bcolor)
+            progressFonSun[hue].knobBefore = newDrawable(getDrawable("inverted-progress-knobbefore"), color)
+            progressFonSun[hue].disabledKnobBefore = newDrawable(getDrawable("inverted-progress-disabledknobbefore"), color)
+        
+            sliderFonSun[hue].knob = newDrawable(getDrawable("inverted-slider-knob"), color)
+            sliderFonSun[hue].disabledKnob = newDrawable(getDrawable("inverted-slider-disabledknob"), color)
+            sliderFonSun[hue].background = newDrawable(getDrawable("inverted-progress-background"), bcolor)
+            sliderFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), bcolor)
+        
+            windowFonSun[hue].background = newDrawable(getDrawable("inverted-window-background"), bcolor)
+            windowFonSun[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), bcolor)
+            windowFonSun[hue].titleFont = defaultFontFon
+            windowFonSun[hue].titleFontColor = color
+        
+            tpadFonSun[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), color)
+            tpadFonSun[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), bcolor)
+        
+            dialogFonSun[hue].background = newDrawable(getDrawable("inverted-window-background"), bcolor)
+            dialogFonSun[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), bcolor)
+            dialogFonSun[hue].titleFont = defaultFontFon
+            dialogFonSun[hue].titleFontColor = color
+        
+            add("fon${hue}sun", scrollFonSun[hue])
+            add("fon${hue}sun", splitFonSun[hue])
+            add("fon${hue}sun", treeFonSun[hue])
+            add("fon${hue}sun", labelFonSun[hue])
+            add("fon${hue}sun", buttonFonSun[hue])
+            add("fon${hue}sun", tbuttonFonSun[hue])
+            add("fon${hue}sun", checkFonSun[hue])
+            add("fon${hue}sun", tfieldFonSun[hue])
+            add("fon${hue}sun", tareaFonSun[hue])
+            add("fon${hue}sun", listFonSun[hue])
+            add("fon${hue}sun", selectFonSun[hue])
+            add("fon${hue}sun", progressFonSun[hue])
+            add("fon${hue}sun", sliderFonSun[hue])
+            add("fon${hue}sun", windowFonSun[hue])
+            add("fon${hue}sun", tpadFonSun[hue])
+            add("fon${hue}sun", dialogFonSun[hue])
+        
+        }
+        
+        
+        
         /*default*/
-        defaultTextSun() /*short name binded to text sun scheme*/
+        defaultFonSun() /*short name binded to text sun scheme*/
         for (hue in 0..100){
             
             add("$hue", scroll[hue])
@@ -692,6 +845,27 @@ class ColorStepSkin : Skin() {
             window[hue] = windowTextSun[hue]
             tpad[hue] = tpadTextSun[hue]
             dialog[hue] = dialogTextSun[hue]
+        }
+    }
+    
+    fun defaultFonSun(){
+        for (hue in 0..100){
+            scroll[hue] = scrollFonSun[hue]
+            split[hue] = splitFonSun[hue]
+            tree[hue] = treeFonSun[hue]
+            label[hue] = labelFonSun[hue]
+            button[hue] = buttonFonSun[hue]
+            tbutton[hue] = tbuttonFonSun[hue]
+            check[hue] = checkFonSun[hue]
+            tfield[hue] = tfieldFonSun[hue]
+            tarea[hue] = tareaFonSun[hue]
+            list[hue] = listFonSun[hue]
+            select[hue] = selectFonSun[hue]
+            progress[hue] = progressFonSun[hue]
+            slider[hue] = sliderFonSun[hue]
+            window[hue] = windowFonSun[hue]
+            tpad[hue] = tpadFonSun[hue]
+            dialog[hue] = dialogFonSun[hue]
         }
     }
     
