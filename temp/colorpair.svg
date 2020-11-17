@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (1.0.1+r73)"
+   sodipodi:docname="colorpair.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="222.70168"
+     inkscape:cy="677.53349"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1504"
+     inkscape:window-height="751"
+     inkscape:window-x="200"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#003466;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round"
+       id="rect833"
+       width="168.72858"
+       height="94.796425"
+       x="54.655361"
+       y="42.848816"
+       rx="26.458332" />
+    <rect
+       style="fill:#e50000;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round"
+       id="rect835"
+       width="68.942871"
+       height="32.657127"
+       x="112.71249"
+       y="73.238113"
+       rx="14.431195" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.8167px;line-height:1;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#003466;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="145.8232"
+       y="94.102371"
+       id="text839"><tspan
+         sodipodi:role="line"
+         id="tspan837"
+         x="145.8232"
+         y="94.102371"
+         style="fill:#003466;fill-opacity:1;stroke-width:1.5875;-inkscape-font-specification:'Russo One';font-family:'Russo One';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">test text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.8167px;line-height:1;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#e50000;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"
+       x="173.78702"
+       y="127.58823"
+       id="text839-3"><tspan
+         sodipodi:role="line"
+         id="tspan837-6"
+         x="173.78702"
+         y="127.58823"
+         style="fill:#e50000;fill-opacity:1;stroke-width:1.5875;-inkscape-font-specification:'Russo One';font-family:'Russo One';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;">test text</tspan></text>
+    <rect
+       style="fill:#000366;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round"
+       id="rect833-3"
+       width="168.72858"
+       height="94.796425"
+       x="60.324993"
+       y="143.61726"
+       rx="26.458334" />
+    <rect
+       style="fill:#e500e5;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round"
+       id="rect835-6"
+       width="68.942871"
+       height="32.657127"
+       x="118.38212"
+       y="174.00656"
+       rx="14.431196" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.8167px;line-height:1;font-family:Overlock;-inkscape-font-specification:Overlock;text-align:center;text-anchor:middle;fill:#000366;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;"
+       x="151.49283"
+       y="194.87082"
+       id="text839-7"><tspan
+         sodipodi:role="line"
+         id="tspan837-5"
+         x="151.49283"
+         y="194.87082"
+         style="fill:#000366;fill-opacity:1;stroke-width:1.5875;">test text</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.8167px;line-height:1;font-family:Overlock;-inkscape-font-specification:Overlock;text-align:center;text-anchor:middle;fill:#e500e5;fill-opacity:1;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round"
+       x="179.45665"
+       y="228.35666"
+       id="text839-3-3"><tspan
+         sodipodi:role="line"
+         id="tspan837-6-5"
+         x="179.45665"
+         y="228.35666"
+         style="fill:#e500e5;fill-opacity:1;stroke-width:1.5875">test text</tspan></text>
+  </g>
+</svg>

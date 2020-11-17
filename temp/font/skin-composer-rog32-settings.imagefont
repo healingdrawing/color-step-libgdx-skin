@@ -1,0 +1,19 @@
+{
+"characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890\"!`?'.,;:()[]{}<>|/@\\^$-%+=#_&~*",
+"gap": 0,
+"kerning": 2,
+"baseline": 32,
+"leading": 32,
+"previewColor": {
+	"r": 0.82,
+	"g": 0.26786685,
+	"b": 0.26786685,
+	"a": 1
+},
+"previewBackgroundColor": {
+	"r": 0.059999846,
+	"g": 0.059999846,
+	"b": 0.059999846,
+	"a": 1
+}
+}
