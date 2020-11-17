@@ -105,11 +105,11 @@ css.defaultFonSun() //switch short form to fon sun color scheme
 ```kotlin
 css.defaultFonSun() //inside ColorStepSkin.kt file
 ```
-- after this short name `51` will return style with full name `fun51sun`
+- after this short name `51` will return style with full name `fon51sun`
 ```kotlin
 val bstyle = css.get("51", TextButtonStyle::class.java)
 ```
-- default used font size is `32` , but there is `48` and `64` sizes on the board. Included font letters language is english. Font names is:
+- default used font size is `32` , but there is `48` and `64` sizes on the board. Included font letters language is english. Font names inside skin(`css` instance above) is:
   - `font32` used as for `defaultFont`
   - `font48`
   - `font64`
