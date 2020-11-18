@@ -1,23 +1,4 @@
-# color-step-libgdx-skin
-skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` internally generated styles,based on "rainbow color sequence".  
-`Mobile oriented` (80px min high of touchable/clickable elements area)
-
-## how much styles prebuilded
-Supported internally generated styles is:  
-from `hue0dark` to `hue100dark` included  
-same for:  
-`hue0acid .. hue100acid`  
-`hue0sun .. hue100sun`  
-`text0dark .. text100dark`  
-`text0acid .. text100acid`  
-`text0sun .. text100sun`  
-`fon0dark .. fon100dark`  
-`fon0acid .. fon100acid`  
-`fon0sun .. fon100sun`  
-Every 10 style is gray based `0 10 20 .. 100` .  
-Other styles is hue offset based, with manually balanced schemes, to smooth color brightness perception.  
-
-## demonstration
+## DEMO - CLICK THE SPOILERS BOTTOM
 <details><summary>new styles</summary>
 
 <img title="textSun51" src="img/new/textSun51.png" width="200">
@@ -51,6 +32,27 @@ Other styles is hue offset based, with manually balanced schemes, to smooth colo
 <img title="hue50dark" src="img/new/dark50.png" width="200">
 <img title="hue20dark" src="img/hue20dark.png" width="200">
 </details>
+
+---
+
+# color-step-libgdx-skin
+skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` internally generated styles,based on "rainbow color sequence".  
+`Mobile oriented` (80px min high of touchable/clickable elements area)
+
+## how much styles prebuilded
+Supported internally generated styles is:  
+from `hue0dark` to `hue100dark` included  
+same for:  
+`hue0acid .. hue100acid`  
+`hue0sun .. hue100sun`  
+`text0dark .. text100dark`  
+`text0acid .. text100acid`  
+`text0sun .. text100sun`  
+`fon0dark .. fon100dark`  
+`fon0acid .. fon100acid`  
+`fon0sun .. fon100sun`  
+Every 10 style is gray based `0 10 20 .. 100` .  
+Other styles is hue offset based, with manually balanced schemes, to smooth color brightness perception.  
 
 ## supported libgdx scene2d.ui `Actors`
 
