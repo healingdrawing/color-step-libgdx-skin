@@ -26,6 +26,41 @@ class ColorStepSkin : Skin() {
     
     private val asm:AssetManager = AssetManager()
     var defaultFont:BitmapFont? = null
+    
+    var font8:BitmapFont? = null
+    var font12:BitmapFont? = null
+    var font16:BitmapFont? = null
+    var font20:BitmapFont? = null
+    var font24:BitmapFont? = null
+    var font28:BitmapFont? = null
+    var font36:BitmapFont? = null
+    var font40:BitmapFont? = null
+    var font44:BitmapFont? = null
+    var font52:BitmapFont? = null
+    var font56:BitmapFont? = null
+    var font60:BitmapFont? = null
+    var font68:BitmapFont? = null
+    var font72:BitmapFont? = null
+    var font76:BitmapFont? = null
+    var font80:BitmapFont? = null
+    
+    var font8fon:BitmapFont? = null
+    var font12fon:BitmapFont? = null
+    var font16fon:BitmapFont? = null
+    var font20fon:BitmapFont? = null
+    var font24fon:BitmapFont? = null
+    var font28fon:BitmapFont? = null
+    var font36fon:BitmapFont? = null
+    var font40fon:BitmapFont? = null
+    var font44fon:BitmapFont? = null
+    var font52fon:BitmapFont? = null
+    var font56fon:BitmapFont? = null
+    var font60fon:BitmapFont? = null
+    var font68fon:BitmapFont? = null
+    var font72fon:BitmapFont? = null
+    var font76fon:BitmapFont? = null
+    var font80fon:BitmapFont? = null
+    
     var font32:BitmapFont? = null
     var font48:BitmapFont? = null
     var font64:BitmapFont? = null
@@ -220,48 +255,76 @@ class ColorStepSkin : Skin() {
     
     fun prepare(){
         dispose()
-        asm.load("color-step-skin/rog32.fnt", BitmapFont::class.java)
-        asm.load("color-step-skin/rog48.fnt", BitmapFont::class.java)
-        asm.load("color-step-skin/rog64.fnt", BitmapFont::class.java)
-    
-        asm.load("color-step-skin/color-step-skin.atlas", TextureAtlas::class.java)
         
-        asm.load("color-step-skin/inverted/inverted-rog32.fnt", BitmapFont::class.java)
-        asm.load("color-step-skin/inverted/inverted-rog48.fnt", BitmapFont::class.java)
-        asm.load("color-step-skin/inverted/inverted-rog64.fnt", BitmapFont::class.java)
-    
+        for (i in 8..80 step 4){
+            asm.load("color-step-skin/rog$i.fnt", BitmapFont::class.java)
+            asm.load("color-step-skin/inverted/inverted-rog$i.fnt", BitmapFont::class.java)
+        }
+        
+        asm.load("color-step-skin/color-step-skin.atlas", TextureAtlas::class.java)
         asm.load("color-step-skin/inverted/inverted-color-step-skin.atlas", TextureAtlas::class.java)
         
         asm.finishLoading()
         
-        add("font32", asm.get("color-step-skin/rog32.fnt"), BitmapFont::class.java)
-        add("font48", asm.get("color-step-skin/rog48.fnt"), BitmapFont::class.java)
-        add("font64", asm.get("color-step-skin/rog64.fnt"), BitmapFont::class.java)
+        for ( i in 8..80 step 4){
+            add("font$i", asm.get("color-step-skin/rog$i.fnt"), BitmapFont::class.java)
+            add("font${i}fon", asm.get("color-step-skin/inverted/inverted-rog$i.fnt"), BitmapFont::class.java)
+        }
         
         addRegions(asm.get("color-step-skin/color-step-skin.atlas"))
-        
-        add("font32fon", asm.get("color-step-skin/inverted/inverted-rog32.fnt"), BitmapFont::class.java)
-        add("font48fon", asm.get("color-step-skin/inverted/inverted-rog48.fnt"), BitmapFont::class.java)
-        add("font64fon", asm.get("color-step-skin/inverted/inverted-rog64.fnt"), BitmapFont::class.java)
-        
         addRegions(asm.get("color-step-skin/inverted/inverted-color-step-skin.atlas"))
+    
+        font8 = get("font8", BitmapFont::class.java)
+        font12 = get("font12", BitmapFont::class.java)
+        font16 = get("font16", BitmapFont::class.java)
+        font20 = get("font20", BitmapFont::class.java)
+        font24 = get("font24", BitmapFont::class.java)
+        font28 = get("font28", BitmapFont::class.java)
+        font36 = get("font36", BitmapFont::class.java)
+        font40 = get("font40", BitmapFont::class.java)
+        font44 = get("font44", BitmapFont::class.java)
+        font52 = get("font52", BitmapFont::class.java)
+        font56 = get("font56", BitmapFont::class.java)
+        font60 = get("font60", BitmapFont::class.java)
+        font68 = get("font68", BitmapFont::class.java)
+        font72 = get("font72", BitmapFont::class.java)
+        font76 = get("font76", BitmapFont::class.java)
+        font80 = get("font80", BitmapFont::class.java)
+        
+        font8fon = get("font8fon", BitmapFont::class.java)
+        font12fon = get("font12fon", BitmapFont::class.java)
+        font16fon = get("font16fon", BitmapFont::class.java)
+        font20fon = get("font20fon", BitmapFont::class.java)
+        font24fon = get("font24fon", BitmapFont::class.java)
+        font28fon = get("font28fon", BitmapFont::class.java)
+        font36fon = get("font36fon", BitmapFont::class.java)
+        font40fon = get("font40fon", BitmapFont::class.java)
+        font44fon = get("font44fon", BitmapFont::class.java)
+        font52fon = get("font52fon", BitmapFont::class.java)
+        font56fon = get("font56fon", BitmapFont::class.java)
+        font60fon = get("font60fon", BitmapFont::class.java)
+        font68fon = get("font68fon", BitmapFont::class.java)
+        font72fon = get("font72fon", BitmapFont::class.java)
+        font76fon = get("font76fon", BitmapFont::class.java)
+        font80fon = get("font80fon", BitmapFont::class.java)
+        
         
         font32 = get("font32" ,  BitmapFont::class.java)
         font48 = get("font48" ,  BitmapFont::class.java)
         font64 = get("font64" ,  BitmapFont::class.java)
-        defaultFont = font32
+        defaultFont = font32 /*switch to any prebuilded above to use as default in styles*/
         
         font32fon = get("font32fon" ,  BitmapFont::class.java)
         font48fon = get("font48fon" ,  BitmapFont::class.java)
         font64fon = get("font64fon" ,  BitmapFont::class.java)
-        defaultFontFon = font32fon
+        defaultFontFon = font32fon /*switch to any prebuilded above to use as default in styles*/
         
         createDarkStyle(this)
         createAcidStyle(this)
         createSunStyle(this)
         
         /*default*/
-        defaultFonSun() /*short name binded to text sun scheme*/
+        defaultFonSun() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
         for (hue in 0..100){
             
             add("$hue", scroll[hue])
