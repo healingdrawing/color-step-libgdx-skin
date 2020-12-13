@@ -252,7 +252,6 @@ class ColorStepSkin : Skin() {
     val tpadFonSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
     val dialogFonSun:Array<WindowStyle> = Array(101){WindowStyle()}
     
-    
     fun prepare(){
         dispose()
         
@@ -307,7 +306,6 @@ class ColorStepSkin : Skin() {
         font72fon = get("font72fon", BitmapFont::class.java)
         font76fon = get("font76fon", BitmapFont::class.java)
         font80fon = get("font80fon", BitmapFont::class.java)
-        
         
         font32 = get("font32" ,  BitmapFont::class.java)
         font48 = get("font48" ,  BitmapFont::class.java)
