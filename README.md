@@ -1,5 +1,11 @@
 ## DEMO - CLICK THE SPOILERS BOTTOM
-<details><summary>new styles</summary>
+<details><summary>new font sizes v1.2.0</summary>
+
+Available sizes is 8 .. 80 step 4
+
+</details>
+
+<details><summary>new styles v1.1.0</summary>
 
 <img title="textSun51" src="img/new/textSun51.png" width="200">
 <img title="fonSun51" src="img/new/fonSun51.png" width="200">
@@ -111,10 +117,8 @@ css.defaultFonSun() //inside ColorStepSkin.kt file
 ```kotlin
 val bstyle = css.get("51", TextButtonStyle::class.java)
 ```
-- default used font size is `32` , but there is `48` and `64` sizes on the board. Included font letters language is english. Font names inside skin(`css` instance above) is:
+- default used font size is `32` , but there is other sizes on the board. Included font letters language is english. Font names inside skin(`css` instance above) is:
   - `font32` used as for `defaultFont`
-  - `font48`
-  - `font64`
+  - `font8` .. `font80` with step `4`
   - `font32fon` used as for `defaultFontFon`
-  - `font48fon`
-  - `font64fon`
+  - `font8fon` .. `font80fon` with step `4`
