@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3108143"
-     inkscape:cx="968.34987"
-     inkscape:cy="794.09037"
+     inkscape:zoom="0.10988945"
+     inkscape:cx="3832.5363"
+     inkscape:cy="117.87486"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -132,7 +132,7 @@
        y="87.680534"
        ry="20.864302" />
     <rect
-       style="fill:#fff3eb;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#fff5eb;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-7-0-9"
        width="272.75391"
        height="64.515358"
@@ -140,7 +140,7 @@
        y="24.692356"
        ry="20.864302" />
     <rect
-       style="fill:#fff9f5;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#fffaf5;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-7-0"
        width="272.75391"
        height="64.515358"
@@ -164,7 +164,7 @@
        y="-55.079365"
        ry="20.864302" />
     <rect
-       style="fill:#4d0023;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#4d0027;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-5-0-1"
        width="272.75391"
        height="64.515358"
@@ -180,7 +180,7 @@
        y="369.47824"
        ry="20.864302" />
     <rect
-       style="fill:#2a004d;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#27004d;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-4-2"
        width="272.75391"
        height="64.515358"
@@ -212,7 +212,7 @@
        y="115.4635"
        ry="20.864302" />
     <rect
-       style="fill:#292900;fill-opacity:0.999418;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#292900;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-5"
        width="272.75391"
        height="64.515358"
@@ -220,7 +220,7 @@
        y="61.289738"
        ry="20.864302" />
     <rect
-       style="fill:#331400;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#331a00;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-7"
        width="272.75391"
        height="64.515358"
@@ -236,7 +236,7 @@
        y="-64.634178"
        ry="20.864302" />
     <rect
-       style="fill:#662700;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#663300;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2"
        width="272.75388"
        height="64.515358"
@@ -342,7 +342,7 @@
          id="tspan1413-7"
          sodipodi:role="line">test TEXT</tspan></text>
     <rect
-       style="fill:#f3e5ff;fill-opacity:0.999418;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#f2e5ff;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-4-2-9"
        width="272.75391"
        height="64.515358"
@@ -438,7 +438,7 @@
          y="425.74316"
          style="fill:#cc38cc;fill-opacity:0.999418;stroke-width:0.427829">test TEXT</tspan></text>
     <rect
-       style="fill:#fff5f9;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#fff5fa;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-5-0-1-2"
        width="272.75391"
        height="64.515358"
@@ -457,7 +457,7 @@
          id="tspan1413-9-6-7"
          sodipodi:role="line">test TEXT</tspan></text>
     <rect
-       style="fill:#fbf5ff;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#faf5ff;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-4-2-7"
        width="272.75391"
        height="64.515358"
@@ -466,7 +466,7 @@
        ry="20.864302" />
     <text
        xml:space="preserve"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#ad42ff;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#a042ff;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        x="584.50671"
        y="369.04688"
        id="text1415-06-3"><tspan
@@ -474,7 +474,7 @@
          id="tspan1413-2-6"
          x="584.50671"
          y="369.04688"
-         style="fill:#ad42ff;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
+         style="fill:#a042ff;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#c6c6fb;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
@@ -512,9 +512,9 @@
        id="text1415-35-2-4"
        y="43.896484"
        x="906.65704"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#f8be9b;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#f8c99b;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        xml:space="preserve"><tspan
-         style="fill:#f8be9b;fill-opacity:0.99941802;stroke-width:0.427829;"
+         style="fill:#f8c99b;fill-opacity:0.99941802;stroke-width:0.427829;"
          y="43.896484"
          x="906.65704"
          id="tspan1413-62-3-7"
@@ -554,7 +554,7 @@
          sodipodi:role="line">test TEXT</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#fab2d5;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#fab2d6;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        x="916.93408"
        y="479.05756"
        id="text1415-0-3-9-1"><tspan
@@ -562,14 +562,14 @@
          id="tspan1413-9-6-7-0"
          x="916.93408"
          y="479.05756"
-         style="fill:#fab2d5;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
+         style="fill:#fab2d6;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
     <text
        id="text1415-06-3-6"
        y="350.93521"
        x="914.97253"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#e0c1f6;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#dbc1f6;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        xml:space="preserve"><tspan
-         style="fill:#e0c1f6;fill-opacity:0.99941802;stroke-width:0.427829;"
+         style="fill:#dbc1f6;fill-opacity:0.99941802;stroke-width:0.427829;"
          y="350.93521"
          x="914.97253"
          id="tspan1413-2-6-3"
@@ -589,9 +589,9 @@
        id="text1415-35-2-4-6"
        y="75.646477"
        x="1295.1532"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#ffefe5;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#fff2e5;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        xml:space="preserve"><tspan
-         style="fill:#ffefe5;fill-opacity:0.99941802;stroke-width:0.427829;"
+         style="fill:#fff2e5;fill-opacity:0.99941802;stroke-width:0.427829;"
          y="75.646477"
          x="1295.1532"
          id="tspan1413-62-3-7-2"
@@ -714,7 +714,7 @@
          y="257.93723"
          style="fill:#e7e7fd;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
     <rect
-       style="fill:#58009e;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#4f009e;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-4"
        width="272.75391"
        height="64.515358"
@@ -725,9 +725,9 @@
        id="text1415-06-3-6-0"
        y="304.70007"
        x="1303.4688"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#f4e5ff;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#f2e5ff;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        xml:space="preserve"><tspan
-         style="fill:#f4e5ff;fill-opacity:0.99941802;stroke-width:0.427829;"
+         style="fill:#f2e5ff;fill-opacity:0.99941802;stroke-width:0.427829;"
          y="304.70007"
          x="1303.4688"
          id="tspan1413-2-6-3-6"
@@ -752,7 +752,7 @@
          id="tspan1413-9-8-6-9"
          sodipodi:role="line">test TEXT</tspan></text>
     <rect
-       style="fill:#9e0047;fill-opacity:0.999418;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#9e004f;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-5-0"
        width="272.75391"
        height="64.515358"
@@ -761,7 +761,7 @@
        ry="20.864302" />
     <text
        xml:space="preserve"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#fde7f1;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#fde7f2;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        x="1309.5162"
        y="405.24164"
        id="text1415-0-3-9-1-3"><tspan
@@ -769,9 +769,9 @@
          id="tspan1413-9-6-7-0-6"
          x="1309.5162"
          y="405.24164"
-         style="fill:#fde7f1;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
+         style="fill:#fde7f2;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
     <rect
-       style="fill:#ffe0cc;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#ffe5cc;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1019-3"
        width="259.31177"
        height="58.507671"
@@ -782,9 +782,9 @@
        id="text1415-35-2-4-6-2"
        y="60.232182"
        x="1672.7133"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#331400;fill-opacity:1;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#331a00;fill-opacity:1;stroke-width:0.427829;stroke-linejoin:round;"
        xml:space="preserve"><tspan
-         style="fill:#331400;fill-opacity:1;stroke-width:0.427829;"
+         style="fill:#331a00;fill-opacity:1;stroke-width:0.427829;"
          y="60.232182"
          x="1672.7133"
          id="tspan1413-62-3-7-2-0"
@@ -877,9 +877,9 @@
        id="text1415-06-3-6-0-9"
        y="343.34106"
        x="1679.7595"
-       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#250042;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
+       style="font-size:44.4942px;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#210042;fill-opacity:0.99941802;stroke-width:0.427829;stroke-linejoin:round;"
        xml:space="preserve"><tspan
-         style="fill:#250042;fill-opacity:0.99941802;stroke-width:0.427829;"
+         style="fill:#210042;fill-opacity:0.99941802;stroke-width:0.427829;"
          y="343.34106"
          x="1679.7595"
          id="tspan1413-2-6-3-6-7"
@@ -945,7 +945,22 @@
          id="tspan949"
          x="2115.3979"
          y="495.07736"
-         style="stroke-width:5.70032">snow</tspan></text>
+         style="stroke-width:5.70032">snow</tspan><tspan
+         sodipodi:role="line"
+         x="2115.3979"
+         y="571.08185"
+         style="stroke-width:5.70032"
+         id="tspan1015">added to calc</tspan><tspan
+         sodipodi:role="line"
+         x="2115.3979"
+         y="647.08636"
+         style="stroke-width:5.70032"
+         id="tspan1017">reverted that face was</tspan><tspan
+         sodipodi:role="line"
+         x="2115.3979"
+         y="723.09088"
+         style="stroke-width:5.70032"
+         id="tspan1019">more light</tspan></text>
     <rect
        style="fill:#ffe5ff;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-5-9-0"
@@ -966,7 +981,7 @@
          id="tspan1413-9"
          sodipodi:role="line">test TEXT</tspan></text>
     <rect
-       style="fill:#ffe5f1;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#ffe5f2;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-5-0-1-3"
        width="272.75391"
        height="64.515358"
@@ -984,5 +999,41 @@
          x="286.28345"
          y="483.19553"
          style="fill:#ab547f;fill-opacity:0.99941802;stroke-width:0.427829;">test TEXT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:100.277px;line-height:1;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#33001a;fill-opacity:0.999418;stroke-width:7.52075;stroke-linecap:round;stroke-linejoin:round"
+       x="1014.3911"
+       y="537.84009"
+       id="text947-3"
+       transform="scale(0.85210964,1.1735579)"><tspan
+         sodipodi:role="line"
+         id="tspan945-6"
+         x="1014.3911"
+         y="537.84009"
+         style="stroke-width:7.52075">sun</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:100.277px;line-height:1;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#33001a;fill-opacity:0.999418;stroke-width:7.52075;stroke-linecap:round;stroke-linejoin:round"
+       x="652.71405"
+       y="550.14996"
+       id="text947-7"
+       transform="scale(0.85210964,1.1735579)"><tspan
+         sodipodi:role="line"
+         id="tspan945-5"
+         x="652.71405"
+         y="550.14996"
+         style="stroke-width:7.52075">acid</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:100.277px;line-height:1;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#33001a;fill-opacity:0.999418;stroke-width:7.52075;stroke-linecap:round;stroke-linejoin:round"
+       x="245.82735"
+       y="548.09833"
+       id="text947-35"
+       transform="scale(0.85210964,1.1735579)"><tspan
+         sodipodi:role="line"
+         id="tspan945-62"
+         x="245.82735"
+         y="548.09833"
+         style="stroke-width:7.52075">dark</tspan></text>
   </g>
 </svg>
