@@ -96,7 +96,7 @@
      id="layer1"
      transform="translate(-64,-1042.5197)">
     <rect
-       style="fill:#e5e5e5;fill-opacity:0.999418;stroke-linejoin:round"
+       style="fill:#ffffff;fill-opacity:0.99941802;stroke-linejoin:round"
        id="rect30"
        width="16"
        height="15.999953"
@@ -110,9 +110,9 @@
        height="5.9999533"
        width="12.000001"
        id="rect30-3"
-       style="fill:#f2f2f2;fill-opacity:0.999418;stroke-linejoin:round" />
+       style="fill:#cccccc;fill-opacity:0.99941802;stroke-linejoin:round" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.999418;stroke-width:1.12546;stroke-linejoin:round"
+       style="fill:#e5e5e5;fill-opacity:0.99941802;stroke-width:1.12546;stroke-linejoin:round"
        id="rect30-3-3"
        width="12"
        height="6.0000467"

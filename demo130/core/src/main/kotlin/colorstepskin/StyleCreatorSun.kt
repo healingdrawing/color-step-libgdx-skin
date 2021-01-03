@@ -273,20 +273,16 @@ fun createSunStyle(css:ColorStepSkin){
             checkFonSun[hue].disabledFontColor = hueL
             
             tfieldFonSun[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), opoD)
-            tfieldFonSun[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), hueL)
+            tfieldFonSun[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), opoL)
             tfieldFonSun[hue].background = newDrawable(getDrawable("inverted-textfield-background"), hueL)
             tfieldFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), hueL)
             tfieldFonSun[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), hueL)
             tfieldFonSun[hue].font = defaultFontFon
             tfieldFonSun[hue].fontColor = opoD
-        
-            tareaFonSun[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), opoD)
-            tareaFonSun[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), hueL)
-            tareaFonSun[hue].background = newDrawable(getDrawable("inverted-textfield-background"), hueL)
-            tareaFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), hueL)
-            tareaFonSun[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), hueL)
-            tareaFonSun[hue].font = defaultFontFon
-            tareaFonSun[hue].fontColor = opoD
+            /*because style class is same and inside Skin.add() next just override previous. And there is some shit inside,
+            * because if no bottom syntax for textarea style , in time of creation textfield app crushed, looks like textfield use
+            * textarea style but this style class named as TextFieldStyle etc , not sure. muddy place , but work finally*/
+            tareaFonSun[hue] = tfieldFonSun[hue]
         
             listFonSun[hue].background = newDrawable(getDrawable("inverted-list-background"), hueL)
             listFonSun[hue].selection = newDrawable(getDrawable("inverted-list-selection"), hueL)
@@ -305,10 +301,10 @@ fun createSunStyle(css:ColorStepSkin){
             progressFonSun[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
             progressFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
             progressFonSun[hue].knobBefore = newDrawable(getDrawable("inverted-progress-knobbefore"), opoD)
-            progressFonSun[hue].disabledKnobBefore = newDrawable(getDrawable("inverted-progress-disabledknobbefore"), opoD)
+            progressFonSun[hue].disabledKnobBefore = newDrawable(getDrawable("inverted-progress-disabledknobbefore"), hueL)
         
             sliderFonSun[hue].knob = newDrawable(getDrawable("inverted-slider-knob"), opoD)
-            sliderFonSun[hue].disabledKnob = newDrawable(getDrawable("inverted-slider-disabledknob"), opoD)
+            sliderFonSun[hue].disabledKnob = newDrawable(getDrawable("inverted-slider-disabledknob"), hueL)
             sliderFonSun[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
             sliderFonSun[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
         

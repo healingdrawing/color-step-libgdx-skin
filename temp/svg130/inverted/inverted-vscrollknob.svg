@@ -9,10 +9,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="96"
    inkscape:export-xdpi="96"
-   inkscape:export-filename="/mnt/sda3/development/codehost/color-step-libgdx-skin/_temp/png/vscrollknob.png"
-   width="80"
-   height="80"
-   viewBox="0 0 80 80.000003"
+   inkscape:export-filename="/mnt/sda3/development/codehost/color-step-libgdx-skin/temp/png130/inverted-vscrollknob.png"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (1.0.1+r74)"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="69.198381"
-     inkscape:cy="52.852834"
+     inkscape:zoom="16"
+     inkscape:cx="1.7821718"
+     inkscape:cy="-0.22344157"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -40,27 +40,33 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
        id="grid10"
        spacingx="1"
        spacingy="1"
-       empspacing="8" />
+       empspacing="8"
+       originx="-64"
+       originy="-64.000002" />
     <sodipodi:guide
-       position="2,84.000002"
+       position="-62,20"
        orientation="1,0"
        id="guide870" />
     <sodipodi:guide
-       position="78.000001,81.000002"
+       position="14,17"
        orientation="1,0"
        id="guide872" />
     <sodipodi:guide
-       position="82.000002,78.000001"
+       position="18.000001,13.999999"
        orientation="0,1"
        id="guide874" />
     <sodipodi:guide
-       position="-3.0000001,2"
+       position="-67.000001,-62.000001"
        orientation="0,1"
        id="guide876" />
   </sodipodi:namedview>
@@ -72,7 +78,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,23 +86,23 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1042.5197)"
+     transform="translate(-64,-1042.5197)"
      style="opacity:0.5">
     <rect
-       style="fill:#404040;fill-opacity:0.99941802;stroke-linejoin:round"
+       style="fill:#e5e5e5;fill-opacity:0.99941802;stroke-linejoin:round"
        id="rect30"
-       width="80"
-       height="80"
-       x="0"
+       width="16"
+       height="16.000046"
+       x="64"
        y="1042.5197"
        ry="6.0000467" />
     <rect
        ry="4.6679688e-05"
        y="1044.5197"
-       x="2"
-       height="76.000046"
-       width="76"
+       x="66"
+       height="12.000047"
+       width="12"
        id="rect30-3"
-       style="fill:#4d4d4d;fill-opacity:0.99941802;stroke-linejoin:round" />
+       style="fill:#ffffff;fill-opacity:0.999418;stroke-linejoin:round" />
   </g>
 </svg>

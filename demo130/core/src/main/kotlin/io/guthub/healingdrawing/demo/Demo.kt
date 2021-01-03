@@ -110,6 +110,7 @@ class Demo : ApplicationAdapter() {
                 "TesttExt")
     
         eng_textfield = TextField("test", css, styleName)
+//        eng_textfield!!.isDisabled = true
 
         eng_textarea = TextArea("test\ntestt\ntesttt",css, styleName)
 
@@ -134,15 +135,18 @@ class Demo : ApplicationAdapter() {
         selectbox = SelectBox(css, styleName)
         selectbox!!.setItems(selectboxArray)
         selectbox!!.maxListCount = 3
+//        selectbox!!.isDisabled = true
 
         progress = ProgressBar(0f,5f,1f,false,css, styleName)
         progress!!.value = 1f
+        progress!!.isDisabled = true
 
         progressv = ProgressBar(0f,5f,1f,true,css, styleName)
         progressv!!.value = 4f
 
         slider = Slider(0f,10f,1f,false,css, styleName)
-
+        slider!!.isDisabled = true
+        
         sliderv = Slider(0f,10f,1f,true,css, styleName)
 
         touchpad = Touchpad(40f, css, styleName)
@@ -153,7 +157,7 @@ class Demo : ApplicationAdapter() {
 
 //        table!!.add(eng_label).expandX().expandY()//.fillX().fillY() //used in scroll
         
-        table!!.add(eng_button).expandX().expandY()//.fillX().fillY()
+        table!!.add(eng_button).expand().fill()
         table!!.add(selectbox).expandX()
         table!!.add(eng_textfield).expandX().expandY().fillX()
         table!!.row()
@@ -169,13 +173,14 @@ class Demo : ApplicationAdapter() {
 //        table!!.add(eng_textarea).expandX().expandY()//.fillX().fillY() //BUGGED as official bug
 
         table!!.row()
-        table!!.add(splitpane).expand().fill().colspan(3)
+        table!!.add(splitpane).expand().fill().colspan(3).align(Align.left)
     
         window!!.setFillParent(true)
         window!!.add(table).expand().fill()
         window!!.titleLabel.setAlignment(-1)
-        window!!.pad(10f)
-        window!!.padTop(84f) //work
+        window!!.pad(8f)
+        window!!.padBottom(12f)
+        window!!.padTop(96f) //work
         stage!!.addActor(window)
     }
 
