@@ -261,7 +261,7 @@ class ColorStepSkin : Skin() {
         }
         
         asm.load("color-step-skin/color-step-skin.atlas", TextureAtlas::class.java)
-        asm.load("color-step-skin/inverted/inverted-color-step-skin.atlas", TextureAtlas::class.java)
+//        asm.load("color-step-skin/inverted/inverted-color-step-skin.atlas", TextureAtlas::class.java)
         
         asm.finishLoading()
         
@@ -271,7 +271,7 @@ class ColorStepSkin : Skin() {
         }
         
         addRegions(asm.get("color-step-skin/color-step-skin.atlas"))
-        addRegions(asm.get("color-step-skin/inverted/inverted-color-step-skin.atlas"))
+//        addRegions(asm.get("color-step-skin/inverted/inverted-color-step-skin.atlas"))
     
         font8 = get("font8", BitmapFont::class.java)
         font12 = get("font12", BitmapFont::class.java)
@@ -322,7 +322,7 @@ class ColorStepSkin : Skin() {
         createSunStyle(this)
         
         /*default*/
-        defaultTextSun() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
+        defaultFonSun() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
         for (hue in 0..100){
             
             add("$hue", scroll[hue])

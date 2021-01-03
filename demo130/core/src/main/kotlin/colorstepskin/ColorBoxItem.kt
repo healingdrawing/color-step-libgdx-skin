@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.Color
  * @param fcb face color box
  * @param bcb back color box
  * */
-class ColorBoxSun(
+class ColorBoxItem(
         private val fcb:ColorBoxHSV,
         private val bcb:ColorBoxHSV
 ) {
@@ -14,7 +14,6 @@ class ColorBoxSun(
      * @param hue hsv h value from 0..100
      * @param back get back color of scheme*/
     fun color(hue:Int, back:Boolean = false): Color {return if (back) bcb.color(hue) else fcb.color(hue)}
-    
     
     /**return scheme face Color pair depend of incoming integer hsv h - hue component from 0..100. Every next 10 is gray 0 10 20 100
      * @param hue hsv h value from 0..100

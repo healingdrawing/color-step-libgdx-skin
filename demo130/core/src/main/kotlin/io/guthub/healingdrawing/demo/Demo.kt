@@ -10,9 +10,11 @@ import com.badlogic.gdx.utils.viewport.FitViewport
 
 import colorstepskin.ColorStepSkin
 import com.badlogic.gdx.graphics.Color
+import com.badlogic.gdx.scenes.scene2d.InputEvent
 import com.badlogic.gdx.scenes.scene2d.ui.*
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener
 import com.badlogic.gdx.utils.Align
 import com.badlogic.gdx.scenes.scene2d.ui.List as UIList
 import com.badlogic.gdx.utils.Array as UIArray
@@ -73,6 +75,12 @@ class Demo : ApplicationAdapter() {
         
         eng_button = TextButton("", css, styleName)
         eng_button!!.setText("TesttExt")
+//        eng_button!!.isDisabled = true
+        eng_button!!.addListener(object : ClickListener() {
+            override fun clicked(event: InputEvent, x: Float, y: Float) {
+                eng_cbox!!.isDisabled = if (eng_button!!.isChecked) true else false
+            }
+        })
         
 //        val ls = LabelStyle()
 //        ls.fontColor = Color.RED
@@ -84,9 +92,13 @@ class Demo : ApplicationAdapter() {
         
         eng_cbox = CheckBox("",css, styleName)
         eng_cbox!!.setText("TesttExt")
+//        eng_cbox!!.isDisabled = true
         
         eng_label = Label("", css, styleName)
         eng_label!!.setText("TesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
+                "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
