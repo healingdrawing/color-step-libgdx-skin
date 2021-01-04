@@ -108,7 +108,7 @@
      id="layer1"
      transform="translate(-88,-1010.5198)">
     <rect
-       style="fill:#d9d9d9;fill-opacity:0.999418;stroke-linejoin:round"
+       style="fill:#e5e5e5;fill-opacity:0.99941802;stroke-linejoin:round"
        id="rect30"
        width="15.999999"
        height="16.000059"
@@ -122,6 +122,6 @@
        height="12.000245"
        width="12.000001"
        id="rect30-3"
-       style="fill:#e5e5e5;fill-opacity:0.999418;stroke-linejoin:round" />
+       style="fill:#f2f2f2;fill-opacity:0.99941802;stroke-linejoin:round" />
   </g>
 </svg>

@@ -174,13 +174,13 @@ class Demo : ApplicationAdapter() {
 
         table!!.row()
         table!!.add(splitpane).expand().fill().colspan(3).align(Align.left)
-    
+        
         window!!.setFillParent(true)
         window!!.add(table).expand().fill()
-        window!!.titleLabel.setAlignment(-1)
+        window!!.titleLabel.setAlignment(Align.top)/*not working along y only left right center looks correct*/
         window!!.pad(8f)
         window!!.padBottom(12f)
-        window!!.padTop(96f) //work
+        window!!.padTop(106f) //work
         stage!!.addActor(window)
     }
 

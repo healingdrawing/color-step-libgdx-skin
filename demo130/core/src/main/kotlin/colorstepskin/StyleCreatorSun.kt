@@ -126,10 +126,10 @@ fun createSunStyle(css:ColorStepSkin){
             val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
             val opoD = cbox.sun.colorPair(hue, true)[1]//dark oposite
         
-            scrollTextSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), color)
-            scrollTextSun[hue].vScroll = newDrawable(getDrawable("vscroll"), color)
-            scrollTextSun[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), color)
-            scrollTextSun[hue].hScroll = newDrawable(getDrawable("hscroll"), color)
+            scrollTextSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
+            scrollTextSun[hue].vScroll = newDrawable(getDrawable("vscroll"), opoL)
+            scrollTextSun[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), opoL)
+            scrollTextSun[hue].hScroll = newDrawable(getDrawable("hscroll"), opoL)
         
             splitTextSun[hue].handle = newDrawable(getDrawable("splitpane"), opoL)
         
@@ -163,13 +163,13 @@ fun createSunStyle(css:ColorStepSkin){
             checkTextSun[hue].fontColor = hueL
             checkTextSun[hue].disabledFontColor = opoL
         
-            tfieldTextSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tfieldTextSun[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tfieldTextSun[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
-            tfieldTextSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
-            tfieldTextSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
+            tfieldTextSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), opoL)
+            tfieldTextSun[hue].selection = newDrawable(getDrawable("textfield-selection"), opoL)
+            tfieldTextSun[hue].background = newDrawable(getDrawable("textfield-background"), opoL)
+            tfieldTextSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), opoL)
+            tfieldTextSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
             tfieldTextSun[hue].font = defaultFont
-            tfieldTextSun[hue].fontColor = color
+            tfieldTextSun[hue].fontColor = hueL
         
             tareaTextSun[hue] = tfieldTextSun[hue]
         
@@ -191,7 +191,7 @@ fun createSunStyle(css:ColorStepSkin){
             progressTextSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
             progressTextSun[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueL)
             progressTextSun[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), opoL)
-        
+            
             sliderTextSun[hue].knob = newDrawable(getDrawable("slider-knob"), hueL)
             sliderTextSun[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), opoL)
             sliderTextSun[hue].background = newDrawable(getDrawable("progress-background"), opoL)
