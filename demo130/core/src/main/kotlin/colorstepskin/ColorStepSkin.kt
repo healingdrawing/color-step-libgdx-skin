@@ -322,7 +322,7 @@ class ColorStepSkin : Skin() {
         createSunStyle(this)
         
         /*default*/
-        defaultSun() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
+        defaultTextSun() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
         for (hue in 0..100){
             
             add("$hue", scroll[hue])

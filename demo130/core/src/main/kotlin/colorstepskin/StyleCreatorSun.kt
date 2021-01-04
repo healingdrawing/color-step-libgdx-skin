@@ -7,95 +7,103 @@ fun createSunStyle(css:ColorStepSkin){
     
         /*sun*/
         for (hue in 0..100){
-            val color = cbox.sun.color(hue)
-            val bcolor = cbox.sun.color(hue, true)
-            
-            scrollSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), color)
-            scrollSun[hue].vScroll = newDrawable(getDrawable("vscroll"), color)
-            scrollSun[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), color)
-            scrollSun[hue].hScroll = newDrawable(getDrawable("hscroll"), color)
+            val hueL = cbox.sun.colorPair(hue)[0]//light hue based
+            val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
+//            val opoL = cbox.sun.colorPair(hue)[1]//light oposite
+//            val opoD = cbox.sun.colorPair(hue, true)[1]//dark oposite
+    
+            scrollSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), hueL)
+            scrollSun[hue].vScroll = newDrawable(getDrawable("vscroll"), hueL)
+            scrollSun[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), hueL)
+            scrollSun[hue].hScroll = newDrawable(getDrawable("hscroll"), hueL)
         
-            splitSun[hue].handle = newDrawable(getDrawable("splitpane"), bcolor)
+            splitSun[hue].handle = newDrawable(getDrawable("splitpane"), hueL)
         
-            treeSun[hue].minus = newDrawable(getDrawable("tree-minus"), color)
-            treeSun[hue].plus = newDrawable(getDrawable("tree-plus"), color)
-            treeSun[hue].background = newDrawable(getDrawable("tree-background"), bcolor)
-            treeSun[hue].selection = newDrawable(getDrawable("tree-selection"), color)
+            treeSun[hue].minus = newDrawable(getDrawable("tree-minus"), hueL)
+            treeSun[hue].plus = newDrawable(getDrawable("tree-plus"), hueL)
+            treeSun[hue].background = newDrawable(getDrawable("tree-background"), hueL)
+            treeSun[hue].selection = newDrawable(getDrawable("tree-selection"), hueL)
         
-            labelSun[hue].background = newDrawable(getDrawable("label-background"), bcolor)
+            labelSun[hue].background = newDrawable(getDrawable("label-background"), hueL)
             labelSun[hue].font = defaultFont
-            labelSun[hue].fontColor = color
+            labelSun[hue].fontColor = hueL
         
-            buttonSun[hue].up = newDrawable(getDrawable("button-up"), bcolor)
-            buttonSun[hue].down = newDrawable(getDrawable("button-down"), bcolor)
-            buttonSun[hue].checked = newDrawable(getDrawable("button-checked"), bcolor)
-            buttonSun[hue].disabled = newDrawable(getDrawable("button-disabled"), bcolor)
+            buttonSun[hue].up = newDrawable(getDrawable("button-up"), hueL)
+            buttonSun[hue].down = newDrawable(getDrawable("button-down"), hueL)
+            buttonSun[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
+            buttonSun[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
         
-            tbuttonSun[hue].up = newDrawable(getDrawable("button-up"), bcolor)
-            tbuttonSun[hue].down = newDrawable(getDrawable("button-down"), bcolor)
-            tbuttonSun[hue].checked = newDrawable(getDrawable("button-checked"), bcolor)
-            tbuttonSun[hue].disabled = newDrawable(getDrawable("button-disabled"), bcolor)
+            tbuttonSun[hue].up = newDrawable(getDrawable("button-up"), hueL)
+            tbuttonSun[hue].down = newDrawable(getDrawable("button-down"), hueL)
+            tbuttonSun[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
+            tbuttonSun[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
             tbuttonSun[hue].font = defaultFont
-            tbuttonSun[hue].fontColor = color
+            tbuttonSun[hue].fontColor = hueL
         
-            checkSun[hue].checkboxOn = newDrawable(getDrawable("check-on"), bcolor)
-            checkSun[hue].checkboxOff = newDrawable(getDrawable("check-off"), bcolor)
-            checkSun[hue].disabled = newDrawable(getDrawable("check-disabled"), bcolor)
+            checkSun[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
+            checkSun[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
+            checkSun[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
+            checkSun[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
+//            checkSun[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkSun[hue].font = defaultFont
-            checkSun[hue].fontColor = color
+            checkSun[hue].fontColor = hueL
+            checkSun[hue].disabledFontColor = hueD
         
-            tfieldSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tfieldSun[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tfieldSun[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
-            tfieldSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
-            tfieldSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
+            tfieldSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), hueL)
+            tfieldSun[hue].selection = newDrawable(getDrawable("textfield-selection"), hueL)
+            tfieldSun[hue].background = newDrawable(getDrawable("textfield-background"), hueL)
+            tfieldSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueL)
+            tfieldSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), hueL)
             tfieldSun[hue].font = defaultFont
-            tfieldSun[hue].fontColor = color
+            tfieldSun[hue].fontColor = hueL
         
-            tareaSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tareaSun[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tareaSun[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
-            tareaSun[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
-            tareaSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
-            tareaSun[hue].font = defaultFont
-            tareaSun[hue].fontColor = color
+            tareaSun[hue] = tfieldSun[hue]
         
-            listSun[hue].background = newDrawable(getDrawable("list-background"), bcolor)
-            listSun[hue].selection = newDrawable(getDrawable("list-selection"), color)
-            listSun[hue].down = newDrawable(getDrawable("list-down"), color)
+            listSun[hue].background = newDrawable(getDrawable("list-background"), hueL)
+            listSun[hue].selection = newDrawable(getDrawable("list-selection"), hueL)
+            listSun[hue].down = newDrawable(getDrawable("list-down"), hueL)
             listSun[hue].font = defaultFont
-            listSun[hue].fontColorSelected = color
-            listSun[hue].fontColorUnselected = color
-        
-            selectSun[hue].listStyle = listSun[hue]
+            listSun[hue].fontColorSelected = hueL
+            listSun[hue].fontColorUnselected = hueL
+    
+            /*separated style for list inside select with scroll, to polish*/
+            val sls = ListStyle()
+            sls.background = newDrawable(getDrawable("select-list-background"), hueL)
+            sls.selection = newDrawable(getDrawable("list-selection"), hueL)
+            sls.down = newDrawable(getDrawable("list-down"), hueL)
+            sls.font = defaultFont
+            sls.fontColorSelected = hueL
+            sls.fontColorUnselected = hueL
+            
+            selectSun[hue].listStyle = sls
             selectSun[hue].scrollStyle = scrollSun[hue]
-            selectSun[hue].background = newDrawable(getDrawable("select-background"), bcolor)
-            selectSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), bcolor)
+            selectSun[hue].background = newDrawable(getDrawable("select-background"), hueL)
+            selectSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueL)
             selectSun[hue].font = defaultFont
-            selectSun[hue].fontColor = color
+            selectSun[hue].fontColor = hueL
         
-            progressSun[hue].background = newDrawable(getDrawable("progress-background"), bcolor)
-            progressSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), bcolor)
-            progressSun[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), color)
-            progressSun[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), color)
+            progressSun[hue].background = newDrawable(getDrawable("progress-background"), hueL)
+            progressSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
+            progressSun[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueL)
+            progressSun[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), hueL)
         
-            sliderSun[hue].knob = newDrawable(getDrawable("slider-knob"), color)
-            sliderSun[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), color)
-            sliderSun[hue].background = newDrawable(getDrawable("progress-background"), bcolor)
-            sliderSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), bcolor)
+            sliderSun[hue].knob = newDrawable(getDrawable("slider-knob"), hueL)
+            sliderSun[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), hueL)
+            sliderSun[hue].background = newDrawable(getDrawable("progress-background"), hueL)
+            sliderSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
         
-            windowSun[hue].background = newDrawable(getDrawable("window-background"), bcolor)
-            windowSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), bcolor)
+            windowSun[hue].background = newDrawable(getDrawable("window-background"), hueL)
+            windowSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
             windowSun[hue].titleFont = defaultFont
-            windowSun[hue].titleFontColor = color
+            windowSun[hue].titleFontColor = hueL
         
-            tpadSun[hue].background = newDrawable(getDrawable("touchpad-background"), bcolor)
-            tpadSun[hue].knob = newDrawable(getDrawable("touchpad-knob"), color)
+            tpadSun[hue].background = newDrawable(getDrawable("touchpad-background"), hueL)
+            tpadSun[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueL)
         
-            dialogSun[hue].background = newDrawable(getDrawable("window-background"), bcolor)
-            dialogSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), bcolor)
+            dialogSun[hue].background = newDrawable(getDrawable("window-background"), hueL)
+            dialogSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
             dialogSun[hue].titleFont = defaultFont
-            dialogSun[hue].titleFontColor = color
+            dialogSun[hue].titleFontColor = hueL
         
             add("hue${hue}sun", scrollSun[hue])
             add("hue${hue}sun", splitSun[hue])
@@ -121,8 +129,8 @@ fun createSunStyle(css:ColorStepSkin){
         for (hue in 0..100){
             val hueL = cbox.sun.colorPair(hue)[0]//light hue based
             val opoL = cbox.sun.colorPair(hue)[1]//light oposite
-            val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
-            val opoD = cbox.sun.colorPair(hue, true)[1]//dark oposite
+//            val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
+//            val opoD = cbox.sun.colorPair(hue, true)[1]//dark oposite
             
             scrollTextSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
             scrollTextSun[hue].vScroll = newDrawable(getDrawable("vscroll"), opoL)
@@ -156,7 +164,7 @@ fun createSunStyle(css:ColorStepSkin){
             checkTextSun[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkTextSun[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoL)
             checkTextSun[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoL)
-//            checkTextSun[hue].disabled = newDrawable(getDrawable("check-disabled"), bcolor)
+//            checkTextSun[hue].disabled = newDrawable(getDrawable("check-disabled"), opoL)
             checkTextSun[hue].font = defaultFont
             checkTextSun[hue].fontColor = hueL
             checkTextSun[hue].disabledFontColor = opoL
@@ -239,7 +247,7 @@ fun createSunStyle(css:ColorStepSkin){
             val hueL = cbox.sun.colorPair(hue)[0]//light hue based
             val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
             val opoL = cbox.sun.colorPair(hue)[1]//light oposite
-        
+            
             scrollFonSun[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), opoD)
             scrollFonSun[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), opoD)
             scrollFonSun[hue].hScrollKnob = newDrawable(getDrawable("inverted-hscrollknob"), opoD)
@@ -272,7 +280,7 @@ fun createSunStyle(css:ColorStepSkin){
             checkFonSun[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), opoD)
             checkFonSun[hue].checkboxOffDisabled = newDrawable(getDrawable("inverted-check-off"), hueL)
             checkFonSun[hue].checkboxOnDisabled = newDrawable(getDrawable("inverted-check-on"), hueL)
-//            checkFonSun[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), bcolor)
+//            checkFonSun[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), hueL)
             checkFonSun[hue].font = defaultFontFon
             checkFonSun[hue].fontColor = opoL
             checkFonSun[hue].disabledFontColor = hueL

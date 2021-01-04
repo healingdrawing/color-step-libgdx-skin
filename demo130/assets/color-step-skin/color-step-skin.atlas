@@ -499,7 +499,7 @@ select-disabled
   rotate: false
   xy: 604, 146
   size: 16, 16
-  split: 7, 7, 6, 8
+  split: 7, 7, 7, 7
   pad: 2, 2, 2, 2
   orig: 16, 16
   offset: 0, 0
