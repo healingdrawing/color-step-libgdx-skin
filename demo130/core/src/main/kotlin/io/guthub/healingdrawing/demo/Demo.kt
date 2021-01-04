@@ -60,7 +60,7 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "51"
+    private val styleName = "1"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
@@ -74,7 +74,7 @@ class Demo : ApplicationAdapter() {
         println(bs.fontColor)
         
         eng_button = TextButton("", css, styleName)
-        eng_button!!.setText("TesttExt")
+        eng_button!!.setText("Test button")
 //        eng_button!!.isDisabled = true
         eng_button!!.addListener(object : ClickListener() {
             override fun clicked(event: InputEvent, x: Float, y: Float) {
@@ -91,11 +91,11 @@ class Demo : ApplicationAdapter() {
 //        table!!.row()
         
         eng_cbox = CheckBox("",css, styleName)
-        eng_cbox!!.setText("TesttExt")
+        eng_cbox!!.setText("Test checkbox")
 //        eng_cbox!!.isDisabled = true
         
         eng_label = Label("", css, styleName)
-        eng_label!!.setText("TesttExt\n" +
+        eng_label!!.setText("Test Label inside scrollpane\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExtTesttExtTesttExtTesttExt\n" +
@@ -109,16 +109,16 @@ class Demo : ApplicationAdapter() {
                 "TesttExtTesttExtTesttExtTesttExt\n" +
                 "TesttExt")
     
-        eng_textfield = TextField("test", css, styleName)
+        eng_textfield = TextField("text field", css, styleName)
 //        eng_textfield!!.isDisabled = true
 
-        eng_textarea = TextArea("test\ntestt\ntesttt",css, styleName)
+        eng_textarea = TextArea("test\ntext\narea",css, styleName)
 
         scroll = ScrollPane(eng_label, css, styleName)
 
         list = UIList(css, styleName)
         listArray.add(
-                "testttt",
+                "test list",
                 "testtttt",
                 "testttttt",
                 "testtttttt"
@@ -126,10 +126,10 @@ class Demo : ApplicationAdapter() {
         list!!.setItems(listArray)
 
         selectboxArray.add(
-                "testttt",
+                "select box",
                 "testtttt",
                 "testttttt",
-                "testtttttt"
+                "testtttttt654654654"
         )
 
         selectbox = SelectBox(css, styleName)

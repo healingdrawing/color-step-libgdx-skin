@@ -1,5 +1,7 @@
 package colorstepskin
 
+import com.badlogic.gdx.scenes.scene2d.ui.List.ListStyle
+
 fun createSunStyle(css:ColorStepSkin){
     css.apply {
     
@@ -117,15 +119,11 @@ fun createSunStyle(css:ColorStepSkin){
         /*2020-11-16 new stuff*/
         /*textSun*/
         for (hue in 0..100){
-//            val pairColor = cbox.sun.colorPair(hue)
-            val color = cbox.sun.colorPair(hue)[0]
-            val bcolor = cbox.sun.colorPair(hue, true)[1]
-    
             val hueL = cbox.sun.colorPair(hue)[0]//light hue based
             val opoL = cbox.sun.colorPair(hue)[1]//light oposite
             val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
             val opoD = cbox.sun.colorPair(hue, true)[1]//dark oposite
-        
+            
             scrollTextSun[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
             scrollTextSun[hue].vScroll = newDrawable(getDrawable("vscroll"), opoL)
             scrollTextSun[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), opoL)
@@ -142,10 +140,10 @@ fun createSunStyle(css:ColorStepSkin){
             labelTextSun[hue].font = defaultFont
             labelTextSun[hue].fontColor = hueL
         
-            buttonTextSun[hue].up = newDrawable(getDrawable("button-up"), bcolor)
-            buttonTextSun[hue].down = newDrawable(getDrawable("button-down"), bcolor)
-            buttonTextSun[hue].checked = newDrawable(getDrawable("button-checked"), bcolor)
-            buttonTextSun[hue].disabled = newDrawable(getDrawable("button-disabled"), bcolor)
+            buttonTextSun[hue].up = newDrawable(getDrawable("button-up"), opoL)
+            buttonTextSun[hue].down = newDrawable(getDrawable("button-down"), opoL)
+            buttonTextSun[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
+            buttonTextSun[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
         
             tbuttonTextSun[hue].up = newDrawable(getDrawable("button-up"), opoL)
             tbuttonTextSun[hue].down = newDrawable(getDrawable("button-down"), opoL)
@@ -173,19 +171,28 @@ fun createSunStyle(css:ColorStepSkin){
         
             tareaTextSun[hue] = tfieldTextSun[hue]
         
-            listTextSun[hue].background = newDrawable(getDrawable("list-background"), bcolor)
-            listTextSun[hue].selection = newDrawable(getDrawable("list-selection"), bcolor)
-            listTextSun[hue].down = newDrawable(getDrawable("list-down"), bcolor)
+            listTextSun[hue].background = newDrawable(getDrawable("list-background"), opoL)
+            listTextSun[hue].selection = newDrawable(getDrawable("list-selection"), opoL)
+            listTextSun[hue].down = newDrawable(getDrawable("list-down"), opoL)
             listTextSun[hue].font = defaultFont
-            listTextSun[hue].fontColorSelected = color
-            listTextSun[hue].fontColorUnselected = color
-        
-            selectTextSun[hue].listStyle = listTextSun[hue]
+            listTextSun[hue].fontColorSelected = hueL
+            listTextSun[hue].fontColorUnselected = hueL
+            
+            /*separated style for list inside select with scroll, to polish*/
+            val sls = ListStyle()
+            sls.background = newDrawable(getDrawable("select-list-background"), opoL)
+            sls.selection = newDrawable(getDrawable("list-selection"), opoL)
+            sls.down = newDrawable(getDrawable("list-down"), opoL)
+            sls.font = defaultFont
+            sls.fontColorSelected = hueL
+            sls.fontColorUnselected = hueL
+            
+            selectTextSun[hue].listStyle = sls
             selectTextSun[hue].scrollStyle = scrollTextSun[hue]
-            selectTextSun[hue].background = newDrawable(getDrawable("select-background"), bcolor)
-            selectTextSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), bcolor)
+            selectTextSun[hue].background = newDrawable(getDrawable("select-background"), opoL)
+            selectTextSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
             selectTextSun[hue].font = defaultFont
-            selectTextSun[hue].fontColor = color
+            selectTextSun[hue].fontColor = hueL
         
             progressTextSun[hue].background = newDrawable(getDrawable("progress-background"), opoL)
             progressTextSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
@@ -228,7 +235,6 @@ fun createSunStyle(css:ColorStepSkin){
     
         /*fonSun*/
         for (hue in 0..100){
-//            val pairColor = cbox.sun.colorPair(hue)
             val opoD = cbox.sun.colorPair(hue, true)[1]//dark oposite
             val hueL = cbox.sun.colorPair(hue)[0]//light hue based
             val hueD = cbox.sun.colorPair(hue, true)[0]//dark hue based
