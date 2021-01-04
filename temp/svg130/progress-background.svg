@@ -88,7 +88,7 @@
      id="layer1"
      transform="translate(-24,-1074.5195)">
     <rect
-       style="fill:#ffffff;fill-opacity:0.99941802;stroke-linejoin:round"
+       style="fill:#b2b2b2;fill-opacity:0.99941802;stroke-linejoin:round"
        id="rect30"
        width="15.999992"
        height="15.999831"
@@ -102,7 +102,7 @@
        height="11.999942"
        width="11.999999"
        id="rect30-36"
-       style="fill:#e5e5e5;fill-opacity:0.99941802;stroke-linejoin:round" />
+       style="fill:#4d4d4d;fill-opacity:0.99941802;stroke-linejoin:round" />
     <rect
        ry="4.6679688e-05"
        y="1080.5197"
@@ -110,7 +110,7 @@
        height="3.9999533"
        width="4"
        id="rect30-3"
-       style="fill:#cccccc;fill-opacity:0.99941802;stroke-linejoin:round" />
+       style="fill:#333333;fill-opacity:0.99941802;stroke-linejoin:round" />
     <ellipse
        style="fill:#03d300;fill-opacity:0.999418;stroke-linejoin:round"
        id="path878"
