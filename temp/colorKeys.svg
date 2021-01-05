@@ -25,7 +25,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.10988945"
      inkscape:cx="3832.5363"
-     inkscape:cy="117.87486"
+     inkscape:cy="-610.12951"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -942,25 +942,10 @@
        id="text951"
        transform="scale(0.77802338,1.2853084)"><tspan
          sodipodi:role="line"
-         id="tspan949"
          x="2115.3979"
          y="495.07736"
-         style="stroke-width:5.70032">snow</tspan><tspan
-         sodipodi:role="line"
-         x="2115.3979"
-         y="571.08185"
          style="stroke-width:5.70032"
-         id="tspan1015">added to calc</tspan><tspan
-         sodipodi:role="line"
-         x="2115.3979"
-         y="647.08636"
-         style="stroke-width:5.70032"
-         id="tspan1017">reverted that face was</tspan><tspan
-         sodipodi:role="line"
-         x="2115.3979"
-         y="723.09088"
-         style="stroke-width:5.70032"
-         id="tspan1019">more light</tspan></text>
+         id="tspan1019">snow</tspan></text>
     <rect
        style="fill:#ffe5ff;fill-opacity:0.99941802;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round"
        id="rect1017-2-9-3-5-9-0"
@@ -1035,5 +1020,27 @@
          x="245.82735"
          y="548.09833"
          style="stroke-width:7.52075">dark</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:76.0045px;line-height:1;font-family:'Russo One';-inkscape-font-specification:'Russo One';text-align:center;text-anchor:middle;fill:#33001a;fill-opacity:0.999418;stroke-width:5.70032;stroke-linecap:round;stroke-linejoin:round"
+       x="1137.6971"
+       y="683.93829"
+       id="text951-3"
+       transform="scale(0.77802339,1.2853084)"><tspan
+         sodipodi:role="line"
+         x="1137.6971"
+         y="683.93829"
+         style="stroke-width:5.70032"
+         id="tspan1019-6">added to calc as is and work enough good,</tspan><tspan
+         sodipodi:role="line"
+         x="1137.6971"
+         y="759.94281"
+         style="stroke-width:5.70032"
+         id="tspan1011">before was tried adding snow reverted to make</tspan><tspan
+         sodipodi:role="line"
+         x="1137.6971"
+         y="835.94727"
+         style="stroke-width:5.70032"
+         id="tspan1013">text more white but testing was bad and used as is finally</tspan></text>
   </g>
 </svg>

@@ -2,9 +2,6 @@ package colorstepskin
 
 
 class ColorBox {
-//    val dark = ColorBoxDark()
-//    val acid = ColorBoxAcid()
-    
     val darkFace = ColorBoxHSV(
             arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
             arrayOf(50 / 100f, 51 / 100f, 50 / 100f, 50 / 100f, 51 / 100f, 51 / 100f, 51 / 100f, 50 / 100f, 50 / 100f, 49 / 100f, 51 / 100f, 50 / 100f),
@@ -39,5 +36,30 @@ class ColorBox {
             arrayOf(100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f),
             arrayOf(20 / 100f, 20 / 100f, 16 / 100f, 18 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 36 / 100f, 30 / 100f, 28 / 100f, 30 / 100f, 20 / 100f)
     )
-    val sun = ColorBoxItem(sunFace,sunBack)
+    val sun = ColorBoxItem(sunFace, sunBack)
+    
+    val gumFace = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(10 / 100f, 10 / 100f, 8 / 100f, 8 / 100f, 8 / 100f, 8 / 100f, 8 / 100f, 9 / 100f, 10 / 100f, 9 / 100f, 9 / 100f, 10 / 100f),
+            arrayOf(100 / 100f, 100 / 100f, 99 / 100f, 99 / 100f, 99 / 100f, 99 / 100f, 99 / 100f, 99 / 100f, 100 / 100f, 99 / 100f, 99 / 100f, 100 / 100f)
+    )
+    val gumBack = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f),
+            arrayOf(40 / 100f, 40 / 100f, 32 / 100f, 36 / 100f, 32 / 100f, 32 / 100f, 32 / 100f, 72 / 100f, 62 / 100f, 56 / 100f, 62 / 100f, 40 / 100f)
+    )
+    val gum = ColorBoxItem(gumFace, gumBack)
+    
+    val snowFace = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(20 / 100f, 20 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 16 / 100f, 20 / 100f),
+            arrayOf(100 / 100f, 100 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 98 / 100f, 100 / 100f)
+    )
+    val snowBack = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f),
+            arrayOf(20 / 100f, 20 / 100f, 20 / 100f, 20 / 100f, 20 / 100f, 20 / 100f, 20 / 100f, 26 / 100f, 26 / 100f, 20 / 100f, 20 / 100f, 20 / 100f)
+    )
+    val snow = ColorBoxItem(snowFace, snowBack)
+    
 }

@@ -252,6 +252,117 @@ class ColorStepSkin : Skin() {
     val tpadFonSun:Array<TouchpadStyle> = Array(101){TouchpadStyle()}
     val dialogFonSun:Array<WindowStyle> = Array(101){WindowStyle()}
     
+    
+    /*gum*/
+    val scrollGum:Array<ScrollPaneStyle> = Array(101){ ScrollPaneStyle() }
+    val splitGum:Array<SplitPaneStyle> = Array(101){ SplitPaneStyle() }
+    val treeGum:Array<TreeStyle> = Array(101){ TreeStyle() }
+    val labelGum:Array<LabelStyle> = Array(101){ LabelStyle() }
+    val buttonGum:Array<ButtonStyle> = Array(101){ ButtonStyle() }
+    val tbuttonGum:Array<TextButtonStyle> = Array(101){ TextButtonStyle() }
+    val checkGum:Array<CheckBoxStyle> = Array(101){ CheckBoxStyle() }
+    val tfieldGum:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val tareaGum:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val listGum:Array<ListStyle> = Array(101){ ListStyle() }
+    val selectGum:Array<SelectBoxStyle> = Array(101){ SelectBoxStyle() }
+    val progressGum:Array<ProgressBarStyle> = Array(101){ ProgressBarStyle() }
+    val sliderGum:Array<SliderStyle> = Array(101){ SliderStyle() }
+    val windowGum:Array<WindowStyle> = Array(101){ WindowStyle() }
+    val tpadGum:Array<TouchpadStyle> = Array(101){ TouchpadStyle() }
+    val dialogGum:Array<WindowStyle> = Array(101){ WindowStyle() }
+    
+    /*gum text*/
+    val scrollTextGum:Array<ScrollPaneStyle> = Array(101){ ScrollPaneStyle() }
+    val splitTextGum:Array<SplitPaneStyle> = Array(101){ SplitPaneStyle() }
+    val treeTextGum:Array<TreeStyle> = Array(101){ TreeStyle() }
+    val labelTextGum:Array<LabelStyle> = Array(101){ LabelStyle() }
+    val buttonTextGum:Array<ButtonStyle> = Array(101){ ButtonStyle() }
+    val tbuttonTextGum:Array<TextButtonStyle> = Array(101){ TextButtonStyle() }
+    val checkTextGum:Array<CheckBoxStyle> = Array(101){ CheckBoxStyle() }
+    val tfieldTextGum:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val tareaTextGum:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val listTextGum:Array<ListStyle> = Array(101){ ListStyle() }
+    val selectTextGum:Array<SelectBoxStyle> = Array(101){ SelectBoxStyle() }
+    val progressTextGum:Array<ProgressBarStyle> = Array(101){ ProgressBarStyle() }
+    val sliderTextGum:Array<SliderStyle> = Array(101){ SliderStyle() }
+    val windowTextGum:Array<WindowStyle> = Array(101){ WindowStyle() }
+    val tpadTextGum:Array<TouchpadStyle> = Array(101){ TouchpadStyle() }
+    val dialogTextGum:Array<WindowStyle> = Array(101){ WindowStyle() }
+    
+    /*gum fon*/
+    val scrollFonGum:Array<ScrollPaneStyle> = Array(101){ ScrollPaneStyle() }
+    val splitFonGum:Array<SplitPaneStyle> = Array(101){ SplitPaneStyle() }
+    val treeFonGum:Array<TreeStyle> = Array(101){ TreeStyle() }
+    val labelFonGum:Array<LabelStyle> = Array(101){ LabelStyle() }
+    val buttonFonGum:Array<ButtonStyle> = Array(101){ ButtonStyle() }
+    val tbuttonFonGum:Array<TextButtonStyle> = Array(101){ TextButtonStyle() }
+    val checkFonGum:Array<CheckBoxStyle> = Array(101){ CheckBoxStyle() }
+    val tfieldFonGum:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val tareaFonGum:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val listFonGum:Array<ListStyle> = Array(101){ ListStyle() }
+    val selectFonGum:Array<SelectBoxStyle> = Array(101){ SelectBoxStyle() }
+    val progressFonGum:Array<ProgressBarStyle> = Array(101){ ProgressBarStyle() }
+    val sliderFonGum:Array<SliderStyle> = Array(101){ SliderStyle() }
+    val windowFonGum:Array<WindowStyle> = Array(101){ WindowStyle() }
+    val tpadFonGum:Array<TouchpadStyle> = Array(101){ TouchpadStyle() }
+    val dialogFonGum:Array<WindowStyle> = Array(101){ WindowStyle() }
+    
+    
+    /*snow*/
+    val scrollSnow:Array<ScrollPaneStyle> = Array(101){ ScrollPaneStyle() }
+    val splitSnow:Array<SplitPaneStyle> = Array(101){ SplitPaneStyle() }
+    val treeSnow:Array<TreeStyle> = Array(101){ TreeStyle() }
+    val labelSnow:Array<LabelStyle> = Array(101){ LabelStyle() }
+    val buttonSnow:Array<ButtonStyle> = Array(101){ ButtonStyle() }
+    val tbuttonSnow:Array<TextButtonStyle> = Array(101){ TextButtonStyle() }
+    val checkSnow:Array<CheckBoxStyle> = Array(101){ CheckBoxStyle() }
+    val tfieldSnow:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val tareaSnow:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val listSnow:Array<ListStyle> = Array(101){ ListStyle() }
+    val selectSnow:Array<SelectBoxStyle> = Array(101){ SelectBoxStyle() }
+    val progressSnow:Array<ProgressBarStyle> = Array(101){ ProgressBarStyle() }
+    val sliderSnow:Array<SliderStyle> = Array(101){ SliderStyle() }
+    val windowSnow:Array<WindowStyle> = Array(101){ WindowStyle() }
+    val tpadSnow:Array<TouchpadStyle> = Array(101){ TouchpadStyle() }
+    val dialogSnow:Array<WindowStyle> = Array(101){ WindowStyle() }
+    
+    /*snow text*/
+    val scrollTextSnow:Array<ScrollPaneStyle> = Array(101){ ScrollPaneStyle() }
+    val splitTextSnow:Array<SplitPaneStyle> = Array(101){ SplitPaneStyle() }
+    val treeTextSnow:Array<TreeStyle> = Array(101){ TreeStyle() }
+    val labelTextSnow:Array<LabelStyle> = Array(101){ LabelStyle() }
+    val buttonTextSnow:Array<ButtonStyle> = Array(101){ ButtonStyle() }
+    val tbuttonTextSnow:Array<TextButtonStyle> = Array(101){ TextButtonStyle() }
+    val checkTextSnow:Array<CheckBoxStyle> = Array(101){ CheckBoxStyle() }
+    val tfieldTextSnow:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val tareaTextSnow:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val listTextSnow:Array<ListStyle> = Array(101){ ListStyle() }
+    val selectTextSnow:Array<SelectBoxStyle> = Array(101){ SelectBoxStyle() }
+    val progressTextSnow:Array<ProgressBarStyle> = Array(101){ ProgressBarStyle() }
+    val sliderTextSnow:Array<SliderStyle> = Array(101){ SliderStyle() }
+    val windowTextSnow:Array<WindowStyle> = Array(101){ WindowStyle() }
+    val tpadTextSnow:Array<TouchpadStyle> = Array(101){ TouchpadStyle() }
+    val dialogTextSnow:Array<WindowStyle> = Array(101){ WindowStyle() }
+    
+    /*snow fon*/
+    val scrollFonSnow:Array<ScrollPaneStyle> = Array(101){ ScrollPaneStyle() }
+    val splitFonSnow:Array<SplitPaneStyle> = Array(101){ SplitPaneStyle() }
+    val treeFonSnow:Array<TreeStyle> = Array(101){ TreeStyle() }
+    val labelFonSnow:Array<LabelStyle> = Array(101){ LabelStyle() }
+    val buttonFonSnow:Array<ButtonStyle> = Array(101){ ButtonStyle() }
+    val tbuttonFonSnow:Array<TextButtonStyle> = Array(101){ TextButtonStyle() }
+    val checkFonSnow:Array<CheckBoxStyle> = Array(101){ CheckBoxStyle() }
+    val tfieldFonSnow:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val tareaFonSnow:Array<TextFieldStyle> = Array(101){ TextFieldStyle() }
+    val listFonSnow:Array<ListStyle> = Array(101){ ListStyle() }
+    val selectFonSnow:Array<SelectBoxStyle> = Array(101){ SelectBoxStyle() }
+    val progressFonSnow:Array<ProgressBarStyle> = Array(101){ ProgressBarStyle() }
+    val sliderFonSnow:Array<SliderStyle> = Array(101){ SliderStyle() }
+    val windowFonSnow:Array<WindowStyle> = Array(101){ WindowStyle() }
+    val tpadFonSnow:Array<TouchpadStyle> = Array(101){ TouchpadStyle() }
+    val dialogFonSnow:Array<WindowStyle> = Array(101){ WindowStyle() }
+    
+    
     fun prepare(){
         dispose()
         
@@ -261,7 +372,6 @@ class ColorStepSkin : Skin() {
         }
         
         asm.load("color-step-skin/color-step-skin.atlas", TextureAtlas::class.java)
-//        asm.load("color-step-skin/inverted/inverted-color-step-skin.atlas", TextureAtlas::class.java)
         
         asm.finishLoading()
         
@@ -271,7 +381,6 @@ class ColorStepSkin : Skin() {
         }
         
         addRegions(asm.get("color-step-skin/color-step-skin.atlas"))
-//        addRegions(asm.get("color-step-skin/inverted/inverted-color-step-skin.atlas"))
     
         font8 = get("font8", BitmapFont::class.java)
         font12 = get("font12", BitmapFont::class.java)
@@ -320,9 +429,11 @@ class ColorStepSkin : Skin() {
         createDarkStyle(this)
         createAcidStyle(this)
         createSunStyle(this)
+        createGumStyle(this)
+        createSnowStyle(this)
         
         /*default*/
-        defaultDark() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
+        defaultGum() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
         for (hue in 0..100){
             
             add("$hue", scroll[hue])
@@ -343,7 +454,7 @@ class ColorStepSkin : Skin() {
             add("$hue", dialog[hue])
         
         }
-    
+        
     }
     
     fun defaultDark(){
@@ -536,5 +647,134 @@ class ColorStepSkin : Skin() {
             dialog[hue] = dialogFonSun[hue]
         }
     }
+    
+    
+    fun defaultGum(){
+        for (hue in 0..100){
+            scroll[hue] = scrollGum[hue]
+            split[hue] = splitGum[hue]
+            tree[hue] = treeGum[hue]
+            label[hue] = labelGum[hue]
+            button[hue] = buttonGum[hue]
+            tbutton[hue] = tbuttonGum[hue]
+            check[hue] = checkGum[hue]
+            tfield[hue] = tfieldGum[hue]
+            tarea[hue] = tareaGum[hue]
+            list[hue] = listGum[hue]
+            select[hue] = selectGum[hue]
+            progress[hue] = progressGum[hue]
+            slider[hue] = sliderGum[hue]
+            window[hue] = windowGum[hue]
+            tpad[hue] = tpadGum[hue]
+            dialog[hue] = dialogGum[hue]
+        }
+    }
+    
+    fun defaultTextGum(){
+        for (hue in 0..100){
+            scroll[hue] = scrollTextGum[hue]
+            split[hue] = splitTextGum[hue]
+            tree[hue] = treeTextGum[hue]
+            label[hue] = labelTextGum[hue]
+            button[hue] = buttonTextGum[hue]
+            tbutton[hue] = tbuttonTextGum[hue]
+            check[hue] = checkTextGum[hue]
+            tfield[hue] = tfieldTextGum[hue]
+            tarea[hue] = tareaTextGum[hue]
+            list[hue] = listTextGum[hue]
+            select[hue] = selectTextGum[hue]
+            progress[hue] = progressTextGum[hue]
+            slider[hue] = sliderTextGum[hue]
+            window[hue] = windowTextGum[hue]
+            tpad[hue] = tpadTextGum[hue]
+            dialog[hue] = dialogTextGum[hue]
+        }
+    }
+    
+    fun defaultFonGum(){
+        for (hue in 0..100){
+            scroll[hue] = scrollFonGum[hue]
+            split[hue] = splitFonGum[hue]
+            tree[hue] = treeFonGum[hue]
+            label[hue] = labelFonGum[hue]
+            button[hue] = buttonFonGum[hue]
+            tbutton[hue] = tbuttonFonGum[hue]
+            check[hue] = checkFonGum[hue]
+            tfield[hue] = tfieldFonGum[hue]
+            tarea[hue] = tareaFonGum[hue]
+            list[hue] = listFonGum[hue]
+            select[hue] = selectFonGum[hue]
+            progress[hue] = progressFonGum[hue]
+            slider[hue] = sliderFonGum[hue]
+            window[hue] = windowFonGum[hue]
+            tpad[hue] = tpadFonGum[hue]
+            dialog[hue] = dialogFonGum[hue]
+        }
+    }
+    
+    
+    fun defaultSnow(){
+        for (hue in 0..100){
+            scroll[hue] = scrollSnow[hue]
+            split[hue] = splitSnow[hue]
+            tree[hue] = treeSnow[hue]
+            label[hue] = labelSnow[hue]
+            button[hue] = buttonSnow[hue]
+            tbutton[hue] = tbuttonSnow[hue]
+            check[hue] = checkSnow[hue]
+            tfield[hue] = tfieldSnow[hue]
+            tarea[hue] = tareaSnow[hue]
+            list[hue] = listSnow[hue]
+            select[hue] = selectSnow[hue]
+            progress[hue] = progressSnow[hue]
+            slider[hue] = sliderSnow[hue]
+            window[hue] = windowSnow[hue]
+            tpad[hue] = tpadSnow[hue]
+            dialog[hue] = dialogSnow[hue]
+        }
+    }
+    
+    fun defaultTextSnow(){
+        for (hue in 0..100){
+            scroll[hue] = scrollTextSnow[hue]
+            split[hue] = splitTextSnow[hue]
+            tree[hue] = treeTextSnow[hue]
+            label[hue] = labelTextSnow[hue]
+            button[hue] = buttonTextSnow[hue]
+            tbutton[hue] = tbuttonTextSnow[hue]
+            check[hue] = checkTextSnow[hue]
+            tfield[hue] = tfieldTextSnow[hue]
+            tarea[hue] = tareaTextSnow[hue]
+            list[hue] = listTextSnow[hue]
+            select[hue] = selectTextSnow[hue]
+            progress[hue] = progressTextSnow[hue]
+            slider[hue] = sliderTextSnow[hue]
+            window[hue] = windowTextSnow[hue]
+            tpad[hue] = tpadTextSnow[hue]
+            dialog[hue] = dialogTextSnow[hue]
+        }
+    }
+    
+    fun defaultFonSnow(){
+        for (hue in 0..100){
+            scroll[hue] = scrollFonSnow[hue]
+            split[hue] = splitFonSnow[hue]
+            tree[hue] = treeFonSnow[hue]
+            label[hue] = labelFonSnow[hue]
+            button[hue] = buttonFonSnow[hue]
+            tbutton[hue] = tbuttonFonSnow[hue]
+            check[hue] = checkFonSnow[hue]
+            tfield[hue] = tfieldFonSnow[hue]
+            tarea[hue] = tareaFonSnow[hue]
+            list[hue] = listFonSnow[hue]
+            select[hue] = selectFonSnow[hue]
+            progress[hue] = progressFonSnow[hue]
+            slider[hue] = sliderFonSnow[hue]
+            window[hue] = windowFonSnow[hue]
+            tpad[hue] = tpadFonSnow[hue]
+            dialog[hue] = dialogFonSnow[hue]
+        }
+    }
+    
     
 }
