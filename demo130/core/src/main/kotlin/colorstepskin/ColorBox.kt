@@ -2,8 +2,32 @@ package colorstepskin
 
 
 class ColorBox {
-    val dark = ColorBoxDark()
-    val acid = ColorBoxAcid()
+//    val dark = ColorBoxDark()
+//    val acid = ColorBoxAcid()
+    
+    val darkFace = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(50 / 100f, 51 / 100f, 50 / 100f, 50 / 100f, 51 / 100f, 51 / 100f, 51 / 100f, 50 / 100f, 50 / 100f, 49 / 100f, 51 / 100f, 50 / 100f),
+            arrayOf(70 / 100f, 68 / 100f, 60 / 100f, 56 / 100f, 55 / 100f, 55 / 100f, 55 / 100f, 75 / 100f, 69 / 100f, 62 / 100f, 67 / 100f, 70 / 100f)
+    )
+    val darkBack = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(8 / 100f, 8 / 100f, 12 / 100f, 10 / 100f, 10 / 100f, 10 / 100f, 10 / 100f, 8 / 100f, 10 / 100f, 10 / 100f, 10 / 100f, 8 / 100f),
+            arrayOf(100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f)
+    )
+    val dark = ColorBoxItem(darkFace, darkBack)
+    
+    val acidFace = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(72 / 100f, 100 / 100f, 100 / 100f, 70 / 100f, 81 / 100f, 81 / 100f, 81 / 100f, 60 / 100f, 74 / 100f, 73 / 100f, 71 / 100f, 72 / 100f),
+            arrayOf(90 / 100f, 87 / 100f, 62 / 100f, 72 / 100f, 67 / 100f, 67 / 100f, 67 / 100f, 100 / 100f, 100 / 100f, 80 / 100f, 84 / 100f, 90 / 100f)
+    )
+    val acidBack = ColorBoxHSV(
+            arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),
+            arrayOf(4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f, 4 / 100f),
+            arrayOf(100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f, 100 / 100f)
+    )
+    val acid = ColorBoxItem(acidFace, acidBack)
     
     val sunFace = ColorBoxHSV(
             arrayOf(0f, 30f, 60f, 120f, 180f, 180f, 180f, 240f, 270f, 300f, 330f, 360f),

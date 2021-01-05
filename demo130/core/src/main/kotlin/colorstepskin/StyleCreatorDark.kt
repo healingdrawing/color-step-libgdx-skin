@@ -1,99 +1,110 @@
 package colorstepskin
 
+import com.badlogic.gdx.scenes.scene2d.ui.List.ListStyle
+
 fun createDarkStyle(css:ColorStepSkin){
     css.apply {
-    
+        
         /*dark*/
         for (hue in 0..100){
-            val color = cbox.dark.color(hue)
-        
-            scrollDark[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), color)
-            scrollDark[hue].vScroll = newDrawable(getDrawable("vscroll"), color)
-            scrollDark[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), color)
-            scrollDark[hue].hScroll = newDrawable(getDrawable("hscroll"), color)
-        
-            splitDark[hue].handle = newDrawable(getDrawable("splitpane"), color)
-        
-            treeDark[hue].minus = newDrawable(getDrawable("tree-minus"), color)
-            treeDark[hue].plus = newDrawable(getDrawable("tree-plus"), color)
-            treeDark[hue].background = newDrawable(getDrawable("tree-background"), color)
-            treeDark[hue].selection = newDrawable(getDrawable("tree-selection"), color)
-        
-            labelDark[hue].background = newDrawable(getDrawable("label-background"), color)
+            val hueL = cbox.dark.colorPair(hue)[0]//light hue based
+            val hueD = cbox.dark.colorPair(hue, true)[0]//dark hue based
+//            val opoL = cbox.dark.colorPair(hue)[1]//light oposite
+//            val opoD = cbox.dark.colorPair(hue, true)[1]//dark oposite
+            
+            scrollDark[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), hueL)
+            scrollDark[hue].vScroll = newDrawable(getDrawable("vscroll"), hueL)
+            scrollDark[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), hueL)
+            scrollDark[hue].hScroll = newDrawable(getDrawable("hscroll"), hueL)
+            
+            splitDark[hue].handle = newDrawable(getDrawable("splitpane"), hueL)
+            
+            treeDark[hue].minus = newDrawable(getDrawable("tree-minus"), hueL)
+            treeDark[hue].plus = newDrawable(getDrawable("tree-plus"), hueL)
+            treeDark[hue].background = newDrawable(getDrawable("tree-background"), hueL)
+            treeDark[hue].selection = newDrawable(getDrawable("tree-selection"), hueL)
+            
+            labelDark[hue].background = newDrawable(getDrawable("label-background"), hueL)
             labelDark[hue].font = defaultFont
-            labelDark[hue].fontColor = color
-        
-            buttonDark[hue].up = newDrawable(getDrawable("button-up"), color)
-            buttonDark[hue].down = newDrawable(getDrawable("button-down"), color)
-            buttonDark[hue].checked = newDrawable(getDrawable("button-checked"), color)
-            buttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), color)
-        
-            tbuttonDark[hue].up = newDrawable(getDrawable("button-up"), color)
-            tbuttonDark[hue].down = newDrawable(getDrawable("button-down"), color)
-            tbuttonDark[hue].checked = newDrawable(getDrawable("button-checked"), color)
-            tbuttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), color)
+            labelDark[hue].fontColor = hueL
+            
+            buttonDark[hue].up = newDrawable(getDrawable("button-up"), hueL)
+            buttonDark[hue].down = newDrawable(getDrawable("button-down"), hueL)
+            buttonDark[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
+            buttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
+            
+            tbuttonDark[hue].up = newDrawable(getDrawable("button-up"), hueL)
+            tbuttonDark[hue].down = newDrawable(getDrawable("button-down"), hueL)
+            tbuttonDark[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
+            tbuttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
             tbuttonDark[hue].font = defaultFont
-            tbuttonDark[hue].fontColor = color
-        
-            checkDark[hue].checkboxOn = newDrawable(getDrawable("check-on"), color)
-            checkDark[hue].checkboxOff = newDrawable(getDrawable("check-off"), color)
-            checkDark[hue].disabled = newDrawable(getDrawable("check-disabled"), color)
+            tbuttonDark[hue].fontColor = hueL
+            
+            checkDark[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
+            checkDark[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
+            checkDark[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
+            checkDark[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
+//            checkDark[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkDark[hue].font = defaultFont
-            checkDark[hue].fontColor = color
-        
-            tfieldDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tfieldDark[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tfieldDark[hue].background = newDrawable(getDrawable("textfield-background"), color)
-            tfieldDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), color)
-            tfieldDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), color)
+            checkDark[hue].fontColor = hueL
+            checkDark[hue].disabledFontColor = hueD
+            
+            tfieldDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), hueL)
+            tfieldDark[hue].selection = newDrawable(getDrawable("textfield-selection"), hueL)
+            tfieldDark[hue].background = newDrawable(getDrawable("textfield-background"), hueL)
+            tfieldDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueL)
+            tfieldDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), hueL)
             tfieldDark[hue].font = defaultFont
-            tfieldDark[hue].fontColor = color
-        
-            tareaDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tareaDark[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tareaDark[hue].background = newDrawable(getDrawable("textfield-background"), color)
-            tareaDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), color)
-            tareaDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), color)
-            tareaDark[hue].font = defaultFont
-            tareaDark[hue].fontColor = color
-        
-            listDark[hue].background = newDrawable(getDrawable("list-background"), color)
-            listDark[hue].selection = newDrawable(getDrawable("list-selection"), color)
-            listDark[hue].down = newDrawable(getDrawable("list-down"), color)
+            tfieldDark[hue].fontColor = hueL
+            
+            tareaDark[hue] = tfieldDark[hue]
+            
+            listDark[hue].background = newDrawable(getDrawable("list-background"), hueL)
+            listDark[hue].selection = newDrawable(getDrawable("list-selection"), hueL)
+            listDark[hue].down = newDrawable(getDrawable("list-down"), hueL)
             listDark[hue].font = defaultFont
-            listDark[hue].fontColorSelected = color
-            listDark[hue].fontColorUnselected = color
-        
-            selectDark[hue].listStyle = listDark[hue]
+            listDark[hue].fontColorSelected = hueL
+            listDark[hue].fontColorUnselected = hueL
+            
+            /*separated style for list inside select with scroll, to polish*/
+            val sls = ListStyle()
+            sls.background = newDrawable(getDrawable("select-list-background"), hueL)
+            sls.selection = newDrawable(getDrawable("list-selection"), hueL)
+            sls.down = newDrawable(getDrawable("list-down"), hueL)
+            sls.font = defaultFont
+            sls.fontColorSelected = hueL
+            sls.fontColorUnselected = hueL
+            
+            selectDark[hue].listStyle = sls
             selectDark[hue].scrollStyle = scrollDark[hue]
-            selectDark[hue].background = newDrawable(getDrawable("select-background"), color)
-            selectDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), color)
+            selectDark[hue].background = newDrawable(getDrawable("select-background"), hueL)
+            selectDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueL)
             selectDark[hue].font = defaultFont
-            selectDark[hue].fontColor = color
-        
-            progressDark[hue].background = newDrawable(getDrawable("progress-background"), color)
-            progressDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), color)
-            progressDark[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), color)
-            progressDark[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), color)
-        
-            sliderDark[hue].knob = newDrawable(getDrawable("slider-knob"), color)
-            sliderDark[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), color)
-            sliderDark[hue].background = newDrawable(getDrawable("progress-background"), color)
-            sliderDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), color)
-        
-            windowDark[hue].background = newDrawable(getDrawable("window-background"), color)
-            windowDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), color)
+            selectDark[hue].fontColor = hueL
+            
+            progressDark[hue].background = newDrawable(getDrawable("progress-background"), hueL)
+            progressDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
+            progressDark[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueL)
+            progressDark[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), hueL)
+            
+            sliderDark[hue].knob = newDrawable(getDrawable("slider-knob"), hueL)
+            sliderDark[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), hueL)
+            sliderDark[hue].background = newDrawable(getDrawable("progress-background"), hueL)
+            sliderDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
+            
+            windowDark[hue].background = newDrawable(getDrawable("window-background"), hueL)
+            windowDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
             windowDark[hue].titleFont = defaultFont
-            windowDark[hue].titleFontColor = color
-        
-            tpadDark[hue].background = newDrawable(getDrawable("touchpad-background"), color)
-            tpadDark[hue].knob = newDrawable(getDrawable("touchpad-knob"), color)
-        
-            dialogDark[hue].background = newDrawable(getDrawable("window-background"), color)
-            dialogDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), color)
+            windowDark[hue].titleFontColor = hueL
+            
+            tpadDark[hue].background = newDrawable(getDrawable("touchpad-background"), hueL)
+            tpadDark[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueL)
+            
+            dialogDark[hue].background = newDrawable(getDrawable("window-background"), hueL)
+            dialogDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
             dialogDark[hue].titleFont = defaultFont
-            dialogDark[hue].titleFontColor = color
-        
+            dialogDark[hue].titleFontColor = hueL
+            
             add("hue${hue}dark", scrollDark[hue])
             add("hue${hue}dark", splitDark[hue])
             add("hue${hue}dark", treeDark[hue])
@@ -110,103 +121,107 @@ fun createDarkStyle(css:ColorStepSkin){
             add("hue${hue}dark", windowDark[hue])
             add("hue${hue}dark", tpadDark[hue])
             add("hue${hue}dark", dialogDark[hue])
-        
+            
         }
-    
+        
         /*2020-11-16 new stuff*/
         /*textDark*/
         for (hue in 0..100){
-            val pairColor = cbox.dark.colorPair(hue)
-            val color = pairColor[0]
-            val bcolor = pairColor[1]
-        
-            scrollTextDark[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), color)
-            scrollTextDark[hue].vScroll = newDrawable(getDrawable("vscroll"), color)
-            scrollTextDark[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), color)
-            scrollTextDark[hue].hScroll = newDrawable(getDrawable("hscroll"), color)
-        
-            splitTextDark[hue].handle = newDrawable(getDrawable("splitpane"), color)
-        
-            treeTextDark[hue].minus = newDrawable(getDrawable("tree-minus"), color)
-            treeTextDark[hue].plus = newDrawable(getDrawable("tree-plus"), color)
-            treeTextDark[hue].background = newDrawable(getDrawable("tree-background"), bcolor)
-            treeTextDark[hue].selection = newDrawable(getDrawable("tree-selection"), bcolor)
-        
-            labelTextDark[hue].background = newDrawable(getDrawable("label-background"), bcolor)
+            val hueL = cbox.dark.colorPair(hue)[0]//light hue based
+            val opoL = cbox.dark.colorPair(hue)[1]//light oposite
+//            val hueD = cbox.dark.colorPair(hue, true)[0]//dark hue based
+//            val opoD = cbox.dark.colorPair(hue, true)[1]//dark oposite
+            
+            scrollTextDark[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
+            scrollTextDark[hue].vScroll = newDrawable(getDrawable("vscroll"), opoL)
+            scrollTextDark[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), opoL)
+            scrollTextDark[hue].hScroll = newDrawable(getDrawable("hscroll"), opoL)
+            
+            splitTextDark[hue].handle = newDrawable(getDrawable("splitpane"), opoL)
+            
+            treeTextDark[hue].minus = newDrawable(getDrawable("tree-minus"), hueL)
+            treeTextDark[hue].plus = newDrawable(getDrawable("tree-plus"), hueL)
+            treeTextDark[hue].background = newDrawable(getDrawable("tree-background"), opoL)
+            treeTextDark[hue].selection = newDrawable(getDrawable("tree-selection"), opoL)
+            
+            labelTextDark[hue].background = newDrawable(getDrawable("label-background"), opoL)
             labelTextDark[hue].font = defaultFont
-            labelTextDark[hue].fontColor = color
-        
-            buttonTextDark[hue].up = newDrawable(getDrawable("button-up"), bcolor)
-            buttonTextDark[hue].down = newDrawable(getDrawable("button-down"), color)
-            buttonTextDark[hue].checked = newDrawable(getDrawable("button-checked"), color)
-            buttonTextDark[hue].disabled = newDrawable(getDrawable("button-disabled"), color)
-        
-            tbuttonTextDark[hue].up = newDrawable(getDrawable("button-up"), bcolor)
-            tbuttonTextDark[hue].down = newDrawable(getDrawable("button-down"), color)
-            tbuttonTextDark[hue].checked = newDrawable(getDrawable("button-checked"), color)
-            tbuttonTextDark[hue].disabled = newDrawable(getDrawable("button-disabled"), color)
+            labelTextDark[hue].fontColor = hueL
+            
+            buttonTextDark[hue].up = newDrawable(getDrawable("button-up"), opoL)
+            buttonTextDark[hue].down = newDrawable(getDrawable("button-down"), opoL)
+            buttonTextDark[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
+            buttonTextDark[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
+            
+            tbuttonTextDark[hue].up = newDrawable(getDrawable("button-up"), opoL)
+            tbuttonTextDark[hue].down = newDrawable(getDrawable("button-down"), opoL)
+            tbuttonTextDark[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
+            tbuttonTextDark[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
             tbuttonTextDark[hue].font = defaultFont
-            tbuttonTextDark[hue].fontColor = color
-        
-            checkTextDark[hue].checkboxOn = newDrawable(getDrawable("check-on"), color)
-            checkTextDark[hue].checkboxOff = newDrawable(getDrawable("check-off"), bcolor)
-            checkTextDark[hue].disabled = newDrawable(getDrawable("check-disabled"), bcolor)
+            tbuttonTextDark[hue].fontColor = hueL
+            
+            checkTextDark[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
+            checkTextDark[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
+            checkTextDark[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoL)
+            checkTextDark[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoL)
+//            checkTextDark[hue].disabled = newDrawable(getDrawable("check-disabled"), opoL)
             checkTextDark[hue].font = defaultFont
-            checkTextDark[hue].fontColor = color
-        
-            tfieldTextDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tfieldTextDark[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tfieldTextDark[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
-            tfieldTextDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
-            tfieldTextDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
+            checkTextDark[hue].fontColor = hueL
+            checkTextDark[hue].disabledFontColor = opoL
+            
+            tfieldTextDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), opoL)
+            tfieldTextDark[hue].selection = newDrawable(getDrawable("textfield-selection"), opoL)
+            tfieldTextDark[hue].background = newDrawable(getDrawable("textfield-background"), opoL)
+            tfieldTextDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), opoL)
+            tfieldTextDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
             tfieldTextDark[hue].font = defaultFont
-            tfieldTextDark[hue].fontColor = color
-        
-            tareaTextDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), color)
-            tareaTextDark[hue].selection = newDrawable(getDrawable("textfield-selection"), color)
-            tareaTextDark[hue].background = newDrawable(getDrawable("textfield-background"), bcolor)
-            tareaTextDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), bcolor)
-            tareaTextDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), bcolor)
-            tareaTextDark[hue].font = defaultFont
-            tareaTextDark[hue].fontColor = color
-        
-            listTextDark[hue].background = newDrawable(getDrawable("list-background"), bcolor)
-            listTextDark[hue].selection = newDrawable(getDrawable("list-selection"), color)
-            listTextDark[hue].down = newDrawable(getDrawable("list-down"), color)
+            tfieldTextDark[hue].fontColor = hueL
+            
+            tareaTextDark[hue] = tfieldTextDark[hue]
+            
+            listTextDark[hue].background = newDrawable(getDrawable("list-background"), opoL)
+            listTextDark[hue].selection = newDrawable(getDrawable("list-selection"), opoL)
+            listTextDark[hue].down = newDrawable(getDrawable("list-down"), opoL)
             listTextDark[hue].font = defaultFont
-            listTextDark[hue].fontColorSelected = color
-            listTextDark[hue].fontColorUnselected = color
-        
-            selectTextDark[hue].listStyle = listTextDark[hue]
+            listTextDark[hue].fontColorSelected = hueL
+            listTextDark[hue].fontColorUnselected = hueL
+            
+            /*separated style for list inside select with scroll, to polish*/
+            val sls = ListStyle()
+            sls.background = newDrawable(getDrawable("select-list-background"), opoL)
+            sls.selection = newDrawable(getDrawable("list-selection"), opoL)
+            sls.down = newDrawable(getDrawable("list-down"), opoL)
+            sls.font = defaultFont
+            sls.fontColorSelected = hueL
+            sls.fontColorUnselected = hueL
+            
+            selectTextDark[hue].listStyle = sls
             selectTextDark[hue].scrollStyle = scrollTextDark[hue]
-            selectTextDark[hue].background = newDrawable(getDrawable("select-background"), bcolor)
-            selectTextDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), bcolor)
+            selectTextDark[hue].background = newDrawable(getDrawable("select-background"), opoL)
+            selectTextDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
             selectTextDark[hue].font = defaultFont
-            selectTextDark[hue].fontColor = color
-        
-            progressTextDark[hue].background = newDrawable(getDrawable("progress-background"), bcolor)
-            progressTextDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), bcolor)
-            progressTextDark[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), color)
-            progressTextDark[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), color)
-        
-            sliderTextDark[hue].knob = newDrawable(getDrawable("slider-knob"), color)
-            sliderTextDark[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), color)
-            sliderTextDark[hue].background = newDrawable(getDrawable("progress-background"), bcolor)
-            sliderTextDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), bcolor)
-        
-            windowTextDark[hue].background = newDrawable(getDrawable("window-background"), bcolor)
-            windowTextDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), bcolor)
+            selectTextDark[hue].fontColor = hueL
+            
+            progressTextDark[hue].background = newDrawable(getDrawable("progress-background"), opoL)
+            progressTextDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
+            progressTextDark[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueL)
+            progressTextDark[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), opoL)
+            
+            sliderTextDark[hue].knob = newDrawable(getDrawable("slider-knob"), hueL)
+            sliderTextDark[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), opoL)
+            sliderTextDark[hue].background = newDrawable(getDrawable("progress-background"), opoL)
+            sliderTextDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
+            
+            windowTextDark[hue].background = newDrawable(getDrawable("window-background"), opoL)
+            windowTextDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), opoL)
             windowTextDark[hue].titleFont = defaultFont
-            windowTextDark[hue].titleFontColor = color
-        
-            tpadTextDark[hue].background = newDrawable(getDrawable("touchpad-background"), bcolor)
-            tpadTextDark[hue].knob = newDrawable(getDrawable("touchpad-knob"), color)
-        
-            dialogTextDark[hue].background = newDrawable(getDrawable("window-background"), bcolor)
-            dialogTextDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), bcolor)
-            dialogTextDark[hue].titleFont = defaultFont
-            dialogTextDark[hue].titleFontColor = color
-        
+            windowTextDark[hue].titleFontColor = hueL
+            
+            dialogTextDark[hue] = windowTextDark[hue]
+            
+            tpadTextDark[hue].background = newDrawable(getDrawable("touchpad-background"), opoL)
+            tpadTextDark[hue].knob = newDrawable(getDrawable("touchpad-knob"), opoL)
+            
             add("text${hue}dark", scrollTextDark[hue])
             add("text${hue}dark", splitTextDark[hue])
             add("text${hue}dark", treeTextDark[hue])
@@ -223,102 +238,99 @@ fun createDarkStyle(css:ColorStepSkin){
             add("text${hue}dark", windowTextDark[hue])
             add("text${hue}dark", tpadTextDark[hue])
             add("text${hue}dark", dialogTextDark[hue])
-        
+            
         }
-    
+        
         /*fonDark*/
         for (hue in 0..100){
-            val pairColor = cbox.dark.colorPair(hue)
-            val color = pairColor[1]
-            val bcolor = pairColor[0]
-        
-            scrollFonDark[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), color)
-            scrollFonDark[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), color)
-            scrollFonDark[hue].hScrollKnob = newDrawable(getDrawable("inverted-hscrollknob"), color)
-            scrollFonDark[hue].hScroll = newDrawable(getDrawable("inverted-hscroll"), color)
-        
-            splitFonDark[hue].handle = newDrawable(getDrawable("inverted-splitpane"), bcolor)
-        
-            treeFonDark[hue].minus = newDrawable(getDrawable("inverted-tree-minus"), color)
-            treeFonDark[hue].plus = newDrawable(getDrawable("inverted-tree-plus"), color)
-            treeFonDark[hue].background = newDrawable(getDrawable("inverted-tree-background"), bcolor)
-            treeFonDark[hue].selection = newDrawable(getDrawable("inverted-tree-selection"), bcolor)
-        
-            labelFonDark[hue].background = newDrawable(getDrawable("inverted-label-background"), bcolor)
+            val opoD = cbox.dark.colorPair(hue, true)[1]//dark oposite
+            val hueL = cbox.dark.colorPair(hue)[0]//light hue based
+            val hueD = cbox.dark.colorPair(hue, true)[0]//dark hue based
+            val opoL = cbox.dark.colorPair(hue)[1]//light oposite
+            
+            scrollFonDark[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), opoD)
+            scrollFonDark[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), opoD)
+            scrollFonDark[hue].hScrollKnob = newDrawable(getDrawable("inverted-hscrollknob"), opoD)
+            scrollFonDark[hue].hScroll = newDrawable(getDrawable("inverted-hscroll"), opoD)
+            
+            splitFonDark[hue].handle = newDrawable(getDrawable("inverted-splitpane"), hueL)
+            
+            treeFonDark[hue].minus = newDrawable(getDrawable("inverted-tree-minus"), opoD)
+            treeFonDark[hue].plus = newDrawable(getDrawable("inverted-tree-plus"), opoD)
+            treeFonDark[hue].background = newDrawable(getDrawable("inverted-tree-background"), hueL)
+            treeFonDark[hue].selection = newDrawable(getDrawable("inverted-tree-selection"), hueL)
+            
+            labelFonDark[hue].background = newDrawable(getDrawable("inverted-label-background"), hueL)
             labelFonDark[hue].font = defaultFontFon
-            labelFonDark[hue].fontColor = color
-        
-            buttonFonDark[hue].up = newDrawable(getDrawable("inverted-button-up"), bcolor)
-            buttonFonDark[hue].down = newDrawable(getDrawable("inverted-button-down"), color)
-            buttonFonDark[hue].checked = newDrawable(getDrawable("inverted-button-checked"), color)
-            buttonFonDark[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), color)
-        
-            tbuttonFonDark[hue].up = newDrawable(getDrawable("inverted-button-up"), bcolor)
-            tbuttonFonDark[hue].down = newDrawable(getDrawable("inverted-button-down"), color)
-            tbuttonFonDark[hue].checked = newDrawable(getDrawable("inverted-button-checked"), color)
-            tbuttonFonDark[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), color)
+            labelFonDark[hue].fontColor = opoD
+            
+            buttonFonDark[hue].up = newDrawable(getDrawable("inverted-button-up"), hueL)
+            buttonFonDark[hue].down = newDrawable(getDrawable("inverted-button-down"), hueL)
+            buttonFonDark[hue].checked = newDrawable(getDrawable("inverted-button-checked"), hueL)
+            buttonFonDark[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), hueL)
+            
+            tbuttonFonDark[hue].up = newDrawable(getDrawable("inverted-button-up"), hueL)
+            tbuttonFonDark[hue].down = newDrawable(getDrawable("inverted-button-down"), hueL)
+            tbuttonFonDark[hue].checked = newDrawable(getDrawable("inverted-button-checked"), hueL)
+            tbuttonFonDark[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), hueL)
             tbuttonFonDark[hue].font = defaultFontFon
-            tbuttonFonDark[hue].fontColor = color
-        
-            checkFonDark[hue].checkboxOn = newDrawable(getDrawable("inverted-check-on"), color)
-            checkFonDark[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), bcolor)
-            checkFonDark[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), bcolor)
+            tbuttonFonDark[hue].fontColor = opoD
+            
+            checkFonDark[hue].checkboxOn = newDrawable(getDrawable("inverted-check-on"), opoD)
+            checkFonDark[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), opoD)
+            checkFonDark[hue].checkboxOffDisabled = newDrawable(getDrawable("inverted-check-off"), hueL)
+            checkFonDark[hue].checkboxOnDisabled = newDrawable(getDrawable("inverted-check-on"), hueL)
+//            checkFonDark[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), hueL)
             checkFonDark[hue].font = defaultFontFon
-            checkFonDark[hue].fontColor = color
-        
-            tfieldFonDark[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), color)
-            tfieldFonDark[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), color)
-            tfieldFonDark[hue].background = newDrawable(getDrawable("inverted-textfield-background"), bcolor)
-            tfieldFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), bcolor)
-            tfieldFonDark[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), bcolor)
+            checkFonDark[hue].fontColor = opoL
+            checkFonDark[hue].disabledFontColor = hueL
+            
+            tfieldFonDark[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), opoD)
+            tfieldFonDark[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), opoL)
+            tfieldFonDark[hue].background = newDrawable(getDrawable("inverted-textfield-background"), hueL)
+            tfieldFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), hueL)
+            tfieldFonDark[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), hueL)
             tfieldFonDark[hue].font = defaultFontFon
-            tfieldFonDark[hue].fontColor = color
-        
-            tareaFonDark[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), color)
-            tareaFonDark[hue].selection = newDrawable(getDrawable("inverted-textfield-selection"), color)
-            tareaFonDark[hue].background = newDrawable(getDrawable("inverted-textfield-background"), bcolor)
-            tareaFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), bcolor)
-            tareaFonDark[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), bcolor)
-            tareaFonDark[hue].font = defaultFontFon
-            tareaFonDark[hue].fontColor = color
-        
-            listFonDark[hue].background = newDrawable(getDrawable("inverted-list-background"), bcolor)
-            listFonDark[hue].selection = newDrawable(getDrawable("inverted-list-selection"), color)
-            listFonDark[hue].down = newDrawable(getDrawable("inverted-list-down"), color)
+            tfieldFonDark[hue].fontColor = opoD
+            /*because style class is same and inside Skin.add() next just override previous. And there is some shit inside,
+            * because if no bottom syntax for textarea style , in time of creation textfield app crushed, looks like textfield use
+            * textarea style but this style class named as TextFieldStyle etc , not sure. muddy place , but work finally*/
+            tareaFonDark[hue] = tfieldFonDark[hue]
+            
+            listFonDark[hue].background = newDrawable(getDrawable("inverted-list-background"), hueL)
+            listFonDark[hue].selection = newDrawable(getDrawable("inverted-list-selection"), hueL)
+            listFonDark[hue].down = newDrawable(getDrawable("inverted-list-down"), hueL)
             listFonDark[hue].font = defaultFontFon
-            listFonDark[hue].fontColorSelected = color
-            listFonDark[hue].fontColorUnselected = color
-        
+            listFonDark[hue].fontColorSelected = opoD
+            listFonDark[hue].fontColorUnselected = opoD
+            
             selectFonDark[hue].listStyle = listFonDark[hue]
             selectFonDark[hue].scrollStyle = scrollFonDark[hue]
-            selectFonDark[hue].background = newDrawable(getDrawable("inverted-select-background"), bcolor)
-            selectFonDark[hue].backgroundDisabled = newDrawable(getDrawable("inverted-select-disabled"), bcolor)
+            selectFonDark[hue].background = newDrawable(getDrawable("inverted-select-background"), hueL)
+            selectFonDark[hue].backgroundDisabled = newDrawable(getDrawable("inverted-select-disabled"), hueL)
             selectFonDark[hue].font = defaultFontFon
-            selectFonDark[hue].fontColor = color
-        
-            progressFonDark[hue].background = newDrawable(getDrawable("inverted-progress-background"), bcolor)
-            progressFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), bcolor)
-            progressFonDark[hue].knobBefore = newDrawable(getDrawable("inverted-progress-knobbefore"), color)
-            progressFonDark[hue].disabledKnobBefore = newDrawable(getDrawable("inverted-progress-disabledknobbefore"), color)
-        
-            sliderFonDark[hue].knob = newDrawable(getDrawable("inverted-slider-knob"), color)
-            sliderFonDark[hue].disabledKnob = newDrawable(getDrawable("inverted-slider-disabledknob"), color)
-            sliderFonDark[hue].background = newDrawable(getDrawable("inverted-progress-background"), bcolor)
-            sliderFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), bcolor)
-        
-            windowFonDark[hue].background = newDrawable(getDrawable("inverted-window-background"), bcolor)
-            windowFonDark[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), bcolor)
+            selectFonDark[hue].fontColor = opoD
+            
+            progressFonDark[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
+            progressFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
+            progressFonDark[hue].knobBefore = newDrawable(getDrawable("inverted-progress-knobbefore"), opoD)
+            progressFonDark[hue].disabledKnobBefore = newDrawable(getDrawable("inverted-progress-disabledknobbefore"), hueL)
+            
+            sliderFonDark[hue].knob = newDrawable(getDrawable("inverted-slider-knob"), opoD)
+            sliderFonDark[hue].disabledKnob = newDrawable(getDrawable("inverted-slider-disabledknob"), hueL)
+            sliderFonDark[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
+            sliderFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
+            
+            windowFonDark[hue].background = newDrawable(getDrawable("inverted-window-background"), hueL)
+            windowFonDark[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), hueL)
             windowFonDark[hue].titleFont = defaultFontFon
-            windowFonDark[hue].titleFontColor = color
-        
-            tpadFonDark[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), color)
-            tpadFonDark[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), bcolor)
-        
-            dialogFonDark[hue].background = newDrawable(getDrawable("inverted-window-background"), bcolor)
-            dialogFonDark[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), bcolor)
-            dialogFonDark[hue].titleFont = defaultFontFon
-            dialogFonDark[hue].titleFontColor = color
-        
+            windowFonDark[hue].titleFontColor = opoD
+            /*same shit as for textfield, window widget use dialog widget style which class name is WindowStyle*/
+            dialogFonDark[hue] = windowFonDark[hue]
+            
+            tpadFonDark[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), hueL)
+            tpadFonDark[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), hueD)
+            
             add("fon${hue}dark", scrollFonDark[hue])
             add("fon${hue}dark", splitFonDark[hue])
             add("fon${hue}dark", treeFonDark[hue])
@@ -335,8 +347,8 @@ fun createDarkStyle(css:ColorStepSkin){
             add("fon${hue}dark", windowFonDark[hue])
             add("fon${hue}dark", tpadFonDark[hue])
             add("fon${hue}dark", dialogFonDark[hue])
-        
+            
         }
-    
+        
     }
 }

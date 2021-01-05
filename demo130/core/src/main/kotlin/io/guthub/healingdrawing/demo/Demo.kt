@@ -60,7 +60,7 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "51"
+    private val styleName = "1"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
