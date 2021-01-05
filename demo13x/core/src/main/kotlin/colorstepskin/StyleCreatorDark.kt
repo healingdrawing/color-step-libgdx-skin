@@ -100,10 +100,7 @@ fun createDarkStyle(css:ColorStepSkin){
             tpadDark[hue].background = newDrawable(getDrawable("touchpad-background"), hueL)
             tpadDark[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueL)
             
-            dialogDark[hue].background = newDrawable(getDrawable("window-background"), hueL)
-            dialogDark[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
-            dialogDark[hue].titleFont = defaultFont
-            dialogDark[hue].titleFontColor = hueL
+            dialogDark[hue] = windowDark[hue]
             
             add("hue${hue}dark", scrollDark[hue])
             add("hue${hue}dark", splitDark[hue])
@@ -328,8 +325,8 @@ fun createDarkStyle(css:ColorStepSkin){
             /*same shit as for textfield, window widget use dialog widget style which class name is WindowStyle*/
             dialogFonDark[hue] = windowFonDark[hue]
             
-            tpadFonDark[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), hueL)
-            tpadFonDark[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), hueD)
+            tpadFonDark[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), opoD)
+            tpadFonDark[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), hueL)
             
             add("fon${hue}dark", scrollFonDark[hue])
             add("fon${hue}dark", splitFonDark[hue])

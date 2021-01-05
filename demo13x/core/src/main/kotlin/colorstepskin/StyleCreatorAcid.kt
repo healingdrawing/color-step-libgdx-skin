@@ -12,21 +12,21 @@ fun createAcidStyle(css:ColorStepSkin){
 //            val opoL = cbox.acid.colorPair(hue)[1]//light oposite
 //            val opoD = cbox.acid.colorPair(hue, true)[1]//dark oposite
             
-            scrollAcid[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), hueL)
-            scrollAcid[hue].vScroll = newDrawable(getDrawable("vscroll"), hueL)
-            scrollAcid[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), hueL)
-            scrollAcid[hue].hScroll = newDrawable(getDrawable("hscroll"), hueL)
+            scrollAcid[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), hueD)
+            scrollAcid[hue].vScroll = newDrawable(getDrawable("vscroll"), hueD)
+            scrollAcid[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), hueD)
+            scrollAcid[hue].hScroll = newDrawable(getDrawable("hscroll"), hueD)
             
-            splitAcid[hue].handle = newDrawable(getDrawable("splitpane"), hueL)
+            splitAcid[hue].handle = newDrawable(getDrawable("splitpane"), hueD)
             
             treeAcid[hue].minus = newDrawable(getDrawable("tree-minus"), hueL)
             treeAcid[hue].plus = newDrawable(getDrawable("tree-plus"), hueL)
             treeAcid[hue].background = newDrawable(getDrawable("tree-background"), hueL)
             treeAcid[hue].selection = newDrawable(getDrawable("tree-selection"), hueL)
             
-            labelAcid[hue].background = newDrawable(getDrawable("label-background"), hueL)
+            labelAcid[hue].background = newDrawable(getDrawable("label-background"), hueD)
             labelAcid[hue].font = defaultFont
-            labelAcid[hue].fontColor = hueL
+            labelAcid[hue].fontColor = hueD
             
             buttonAcid[hue].up = newDrawable(getDrawable("button-up"), hueL)
             buttonAcid[hue].down = newDrawable(getDrawable("button-down"), hueL)
@@ -38,15 +38,15 @@ fun createAcidStyle(css:ColorStepSkin){
             tbuttonAcid[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
             tbuttonAcid[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
             tbuttonAcid[hue].font = defaultFont
-            tbuttonAcid[hue].fontColor = hueL
+            tbuttonAcid[hue].fontColor = hueD
+            tbuttonAcid[hue].disabledFontColor = hueD
             
             checkAcid[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkAcid[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkAcid[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
             checkAcid[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
-//            checkAcid[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkAcid[hue].font = defaultFont
-            checkAcid[hue].fontColor = hueL
+            checkAcid[hue].fontColor = hueD
             checkAcid[hue].disabledFontColor = hueD
             
             tfieldAcid[hue].cursor = newDrawable(getDrawable("textfield-cursor"), hueL)
@@ -55,7 +55,7 @@ fun createAcidStyle(css:ColorStepSkin){
             tfieldAcid[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueL)
             tfieldAcid[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), hueL)
             tfieldAcid[hue].font = defaultFont
-            tfieldAcid[hue].fontColor = hueL
+            tfieldAcid[hue].fontColor = hueD
             
             tareaAcid[hue] = tfieldAcid[hue]
             
@@ -63,8 +63,8 @@ fun createAcidStyle(css:ColorStepSkin){
             listAcid[hue].selection = newDrawable(getDrawable("list-selection"), hueL)
             listAcid[hue].down = newDrawable(getDrawable("list-down"), hueL)
             listAcid[hue].font = defaultFont
-            listAcid[hue].fontColorSelected = hueL
-            listAcid[hue].fontColorUnselected = hueL
+            listAcid[hue].fontColorSelected = hueD
+            listAcid[hue].fontColorUnselected = hueD
             
             /*separated style for list inside select with scroll, to polish*/
             val sls = ListStyle()
@@ -72,38 +72,35 @@ fun createAcidStyle(css:ColorStepSkin){
             sls.selection = newDrawable(getDrawable("list-selection"), hueL)
             sls.down = newDrawable(getDrawable("list-down"), hueL)
             sls.font = defaultFont
-            sls.fontColorSelected = hueL
-            sls.fontColorUnselected = hueL
+            sls.fontColorSelected = hueD
+            sls.fontColorUnselected = hueD
             
             selectAcid[hue].listStyle = sls
             selectAcid[hue].scrollStyle = scrollAcid[hue]
             selectAcid[hue].background = newDrawable(getDrawable("select-background"), hueL)
             selectAcid[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueL)
             selectAcid[hue].font = defaultFont
-            selectAcid[hue].fontColor = hueL
+            selectAcid[hue].fontColor = hueD
             
             progressAcid[hue].background = newDrawable(getDrawable("progress-background"), hueL)
-            progressAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
-            progressAcid[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueL)
-            progressAcid[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), hueL)
+            progressAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueD)
+            progressAcid[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueD)
+            progressAcid[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), hueD)
             
-            sliderAcid[hue].knob = newDrawable(getDrawable("slider-knob"), hueL)
-            sliderAcid[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), hueL)
+            sliderAcid[hue].knob = newDrawable(getDrawable("slider-knob"), hueD)
+            sliderAcid[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), hueD)
             sliderAcid[hue].background = newDrawable(getDrawable("progress-background"), hueL)
-            sliderAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
+            sliderAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueD)
             
-            windowAcid[hue].background = newDrawable(getDrawable("window-background"), hueL)
-            windowAcid[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
+            windowAcid[hue].background = newDrawable(getDrawable("window-background"), hueD)
+            windowAcid[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueD)
             windowAcid[hue].titleFont = defaultFont
-            windowAcid[hue].titleFontColor = hueL
+            windowAcid[hue].titleFontColor = hueD
             
             tpadAcid[hue].background = newDrawable(getDrawable("touchpad-background"), hueL)
             tpadAcid[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueL)
             
-            dialogAcid[hue].background = newDrawable(getDrawable("window-background"), hueL)
-            dialogAcid[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), hueL)
-            dialogAcid[hue].titleFont = defaultFont
-            dialogAcid[hue].titleFontColor = hueL
+            dialogAcid[hue] = windowAcid[hue]
             
             add("hue${hue}acid", scrollAcid[hue])
             add("hue${hue}acid", splitAcid[hue])
@@ -219,8 +216,8 @@ fun createAcidStyle(css:ColorStepSkin){
             
             dialogTextAcid[hue] = windowTextAcid[hue]
             
-            tpadTextAcid[hue].background = newDrawable(getDrawable("touchpad-background"), opoL)
-            tpadTextAcid[hue].knob = newDrawable(getDrawable("touchpad-knob"), opoL)
+            tpadTextAcid[hue].background = newDrawable(getDrawable("touchpad-background"), hueL)
+            tpadTextAcid[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueL)
             
             add("text${hue}acid", scrollTextAcid[hue])
             add("text${hue}acid", splitTextAcid[hue])
@@ -243,10 +240,10 @@ fun createAcidStyle(css:ColorStepSkin){
         
         /*fonAcid*/
         for (hue in 0..100){
-            val opoD = cbox.acid.colorPair(hue, true)[1]//dark oposite
             val hueL = cbox.acid.colorPair(hue)[0]//light hue based
             val hueD = cbox.acid.colorPair(hue, true)[0]//dark hue based
             val opoL = cbox.acid.colorPair(hue)[1]//light oposite
+            val opoD = cbox.acid.colorPair(hue, true)[1]//dark oposite
             
             scrollFonAcid[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), opoD)
             scrollFonAcid[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), opoD)
@@ -321,15 +318,15 @@ fun createAcidStyle(css:ColorStepSkin){
             sliderFonAcid[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
             sliderFonAcid[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
             
-            windowFonAcid[hue].background = newDrawable(getDrawable("inverted-window-background"), hueL)
-            windowFonAcid[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), hueL)
+            windowFonAcid[hue].background = newDrawable(getDrawable("inverted-window-background"), hueD)
+            windowFonAcid[hue].stageBackground = newDrawable(getDrawable("inverted-window-stagebackground"), hueD)
             windowFonAcid[hue].titleFont = defaultFontFon
             windowFonAcid[hue].titleFontColor = opoD
             /*same shit as for textfield, window widget use dialog widget style which class name is WindowStyle*/
             dialogFonAcid[hue] = windowFonAcid[hue]
             
-            tpadFonAcid[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), hueL)
-            tpadFonAcid[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), hueD)
+            tpadFonAcid[hue].background = newDrawable(getDrawable("inverted-touchpad-background"), hueD)
+            tpadFonAcid[hue].knob = newDrawable(getDrawable("inverted-touchpad-knob"), hueL)
             
             add("fon${hue}acid", scrollFonAcid[hue])
             add("fon${hue}acid", splitFonAcid[hue])
