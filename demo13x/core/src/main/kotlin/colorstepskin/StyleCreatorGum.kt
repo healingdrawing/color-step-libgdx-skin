@@ -244,7 +244,7 @@ fun createGumStyle(css:ColorStepSkin){
         for (hue in 0..100){
             val opoD = cbox.gum.colorPair(hue, true)[1]//dark oposite
             val hueL = cbox.gum.colorPair(hue)[0]//light hue based
-            val hueD = cbox.gum.colorPair(hue, true)[0]//dark hue based
+//            val hueD = cbox.gum.colorPair(hue, true)[0]//dark hue based
             val opoL = cbox.gum.colorPair(hue)[1]//light oposite
             
             scrollFonGum[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), opoD)
