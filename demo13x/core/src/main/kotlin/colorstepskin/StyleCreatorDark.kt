@@ -31,7 +31,7 @@ fun createDarkStyle(css:ColorStepSkin){
             buttonDark[hue].up = newDrawable(getDrawable("button-up"), hueL)
             buttonDark[hue].down = newDrawable(getDrawable("button-down"), hueL)
             buttonDark[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
-            buttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
+            buttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), hueD)
             
             tbuttonDark[hue].up = newDrawable(getDrawable("button-up"), hueL)
             tbuttonDark[hue].down = newDrawable(getDrawable("button-down"), hueL)
