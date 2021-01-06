@@ -31,12 +31,14 @@ class Demo : ApplicationAdapter() {
     private  var eng_cbox: CheckBox? = null
     private  var eng_label: Label? = null
     private  var eng_textfield: TextField? = null
+    private  var eng_textfield_disabled: TextField? = null
     private  var eng_textarea:TextArea? = null
     private  var scroll:ScrollPane? = null
     private  var listArray:UIArray<String> = UIArray()
     private var list:UIList<String>? = null
     private  var selectboxArray:UIArray<String> = UIArray()
     private var selectbox:SelectBox<String>? = null
+    private var selectbox_disabled:SelectBox<String>? = null
     private var progress:ProgressBar? = null
     private var progressv:ProgressBar? = null
     private  var slider:Slider? = null
@@ -61,11 +63,12 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "1"
+    private val styleName = "51"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
         Gdx.input.inputProcessor = stage
+//        stage!!.isDebugAll = true
         
         css.prepare()
         table = Table()
@@ -75,8 +78,7 @@ class Demo : ApplicationAdapter() {
         println(bs.fontColor)
         
         eng_button = TextButton("", css, styleName)
-        eng_button!!.setText("Test button")
-//        eng_button!!.isDisabled = true
+        eng_button!!.setText("Text button")
         eng_button!!.addListener(object : ClickListener() {
             override fun clicked(event: InputEvent, x: Float, y: Float) {
                 eng_cbox!!.isDisabled = if (eng_button!!.isChecked) true else false
@@ -92,7 +94,7 @@ class Demo : ApplicationAdapter() {
 //        table!!.row()
         
         eng_cbox = CheckBox("",css, styleName)
-        eng_cbox!!.setText("Test checkbox")
+        eng_cbox!!.setText("checkbox")
 //        eng_cbox!!.isDisabled = true
         
         eng_label = Label("", css, styleName)
@@ -111,7 +113,8 @@ class Demo : ApplicationAdapter() {
                 "TesttExt")
     
         eng_textfield = TextField("text field", css, styleName)
-//        eng_textfield!!.isDisabled = true
+        eng_textfield_disabled = TextField("tfield disabled", css, styleName)
+        eng_textfield_disabled!!.isDisabled = true
 
         eng_textarea = TextArea("test\ntext\narea",css, styleName)
 
@@ -136,7 +139,10 @@ class Demo : ApplicationAdapter() {
         selectbox = SelectBox(css, styleName)
         selectbox!!.setItems(selectboxArray)
         selectbox!!.maxListCount = 3
-//        selectbox!!.isDisabled = true
+        
+        selectbox_disabled = SelectBox(css, styleName)
+        selectbox_disabled!!.setItems("selectbox disabled")
+        selectbox_disabled!!.isDisabled = true
 
         progress = ProgressBar(0f,5f,1f,false,css, styleName)
         progress!!.value = 1f
@@ -150,7 +156,7 @@ class Demo : ApplicationAdapter() {
         
         sliderv = Slider(0f,10f,1f,true,css, styleName)
         
-        eng_button_disabled = TextButton("disabled button", css, styleName)
+        eng_button_disabled = TextButton("button disabled", css, styleName)
         eng_button_disabled!!.isDisabled = true
         
         touchpad = Touchpad(40f, css, styleName)
@@ -162,11 +168,16 @@ class Demo : ApplicationAdapter() {
 //        table!!.add(eng_label).expandX().expandY()//.fillX().fillY() //used in scroll
         
         table!!.add(eng_button).expand().fill()
-        table!!.add(selectbox).expandX()
-        table!!.add(eng_textfield).expandX().expandY().fillX()
+        table!!.add(selectbox_disabled).expandX()
+        table!!.add(eng_textfield_disabled).expand().fillX().colspan(3)
         table!!.row()
         table!!.add(eng_cbox).expandX().expandY()//.fillX().fillY()
+        table!!.row()
+        table!!.add()
+        table!!.add(selectbox)
+        table!!.add(eng_textfield).expand().fillX().colspan(3)
         
+        table!!.row()
         val bandt = Table()
         bandt.add(eng_button_disabled)
         bandt.row()
