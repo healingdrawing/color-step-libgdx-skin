@@ -31,31 +31,32 @@ fun createGumStyle(css:ColorStepSkin){
             buttonGum[hue].up = newDrawable(getDrawable("button-up"), hueL)
             buttonGum[hue].down = newDrawable(getDrawable("button-down"), hueL)
             buttonGum[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
-            buttonGum[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
+            buttonGum[hue].disabled = newDrawable(getDrawable("button-disabled"), hueD)
             
             tbuttonGum[hue].up = newDrawable(getDrawable("button-up"), hueL)
             tbuttonGum[hue].down = newDrawable(getDrawable("button-down"), hueL)
             tbuttonGum[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
-            tbuttonGum[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
+            tbuttonGum[hue].disabled = newDrawable(getDrawable("button-disabled"), hueD)
             tbuttonGum[hue].font = defaultFont
             tbuttonGum[hue].fontColor = hueL
+            tbuttonGum[hue].disabledFontColor = hueD
             
             checkGum[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkGum[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkGum[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
             checkGum[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
-//            checkGum[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkGum[hue].font = defaultFont
             checkGum[hue].fontColor = hueL
             checkGum[hue].disabledFontColor = hueD
             
             tfieldGum[hue].cursor = newDrawable(getDrawable("textfield-cursor"), hueL)
             tfieldGum[hue].selection = newDrawable(getDrawable("textfield-selection"), hueL)
-            tfieldGum[hue].background = newDrawable(getDrawable("textfield-background"), hueL)
-            tfieldGum[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueL)
             tfieldGum[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), hueL)
+            tfieldGum[hue].background = newDrawable(getDrawable("textfield-background"), hueL)
+            tfieldGum[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueD)
             tfieldGum[hue].font = defaultFont
             tfieldGum[hue].fontColor = hueL
+            tfieldGum[hue].disabledFontColor = hueD
             
             tareaGum[hue] = tfieldGum[hue]
             
@@ -78,9 +79,10 @@ fun createGumStyle(css:ColorStepSkin){
             selectGum[hue].listStyle = sls
             selectGum[hue].scrollStyle = scrollGum[hue]
             selectGum[hue].background = newDrawable(getDrawable("select-background"), hueL)
-            selectGum[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueL)
+            selectGum[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueD)
             selectGum[hue].font = defaultFont
             selectGum[hue].fontColor = hueL
+            selectGum[hue].disabledFontColor = hueD
             
             progressGum[hue].background = newDrawable(getDrawable("progress-background"), hueL)
             progressGum[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
@@ -128,7 +130,7 @@ fun createGumStyle(css:ColorStepSkin){
         for (hue in 0..100){
             val hueL = cbox.gum.colorPair(hue)[0]//light hue based
             val opoL = cbox.gum.colorPair(hue)[1]//light oposite
-//            val hueD = cbox.gum.colorPair(hue, true)[0]//dark hue based
+            val hueD = cbox.gum.colorPair(hue, true)[0]//dark hue based
 //            val opoD = cbox.gum.colorPair(hue, true)[1]//dark oposite
             
             scrollTextGum[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
@@ -150,31 +152,32 @@ fun createGumStyle(css:ColorStepSkin){
             buttonTextGum[hue].up = newDrawable(getDrawable("button-up"), opoL)
             buttonTextGum[hue].down = newDrawable(getDrawable("button-down"), opoL)
             buttonTextGum[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
-            buttonTextGum[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
+            buttonTextGum[hue].disabled = newDrawable(getDrawable("button-disabled"), hueD)
             
             tbuttonTextGum[hue].up = newDrawable(getDrawable("button-up"), opoL)
             tbuttonTextGum[hue].down = newDrawable(getDrawable("button-down"), opoL)
             tbuttonTextGum[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
-            tbuttonTextGum[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
+            tbuttonTextGum[hue].disabled = newDrawable(getDrawable("button-disabled"), hueD)
             tbuttonTextGum[hue].font = defaultFont
             tbuttonTextGum[hue].fontColor = hueL
+            tbuttonTextGum[hue].disabledFontColor = hueD
             
             checkTextGum[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkTextGum[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
-            checkTextGum[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoL)
-            checkTextGum[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoL)
-//            checkTextGum[hue].disabled = newDrawable(getDrawable("check-disabled"), opoL)
+            checkTextGum[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
+            checkTextGum[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
             checkTextGum[hue].font = defaultFont
             checkTextGum[hue].fontColor = hueL
-            checkTextGum[hue].disabledFontColor = opoL
+            checkTextGum[hue].disabledFontColor = hueD
             
             tfieldTextGum[hue].cursor = newDrawable(getDrawable("textfield-cursor"), opoL)
             tfieldTextGum[hue].selection = newDrawable(getDrawable("textfield-selection"), opoL)
+            tfieldTextGum[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueD)
             tfieldTextGum[hue].background = newDrawable(getDrawable("textfield-background"), opoL)
-            tfieldTextGum[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), opoL)
             tfieldTextGum[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
             tfieldTextGum[hue].font = defaultFont
             tfieldTextGum[hue].fontColor = hueL
+            tfieldTextGum[hue].disabledFontColor = hueD
             
             tareaTextGum[hue] = tfieldTextGum[hue]
             
@@ -197,9 +200,10 @@ fun createGumStyle(css:ColorStepSkin){
             selectTextGum[hue].listStyle = sls
             selectTextGum[hue].scrollStyle = scrollTextGum[hue]
             selectTextGum[hue].background = newDrawable(getDrawable("select-background"), opoL)
-            selectTextGum[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
+            selectTextGum[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueD)
             selectTextGum[hue].font = defaultFont
             selectTextGum[hue].fontColor = hueL
+            selectTextGum[hue].disabledFontColor = hueD
             
             progressTextGum[hue].background = newDrawable(getDrawable("progress-background"), opoL)
             progressTextGum[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
