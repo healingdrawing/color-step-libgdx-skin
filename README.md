@@ -112,7 +112,7 @@ skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` interna
 
 ## v1.3 [demo13x]
 - added two new color schemes `gum` and `snow`
-- fully restyled old color schemes names `dark` , `acid` , `sun`, include texture atlas (removed restriction to `80px` min size of clickable elements)
+- fully restyled old color schemes `dark` , `acid` , `sun`, include texture atlas (removed restriction to `80px` min size of clickable elements)
 
 ## v1.2 [demo12x]
 `Mobile oriented` (80px min high of touchable/clickable elements area)
