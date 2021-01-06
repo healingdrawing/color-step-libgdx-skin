@@ -172,6 +172,7 @@ fun createAcidStyle(css:ColorStepSkin){
             tfieldTextAcid[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoD)
             tfieldTextAcid[hue].font = defaultFont
             tfieldTextAcid[hue].fontColor = hueD
+            tfieldTextAcid[hue].disabledFontColor = opoD
             
             tareaTextAcid[hue] = tfieldTextAcid[hue]
             
@@ -197,6 +198,7 @@ fun createAcidStyle(css:ColorStepSkin){
             selectTextAcid[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoD)
             selectTextAcid[hue].font = defaultFont
             selectTextAcid[hue].fontColor = hueD
+            selectTextAcid[hue].disabledFontColor = opoD
             
             progressTextAcid[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueD)
             progressTextAcid[hue].background = newDrawable(getDrawable("progress-background"), opoD)

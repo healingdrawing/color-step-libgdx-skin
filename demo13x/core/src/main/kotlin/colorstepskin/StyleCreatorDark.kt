@@ -36,15 +36,15 @@ fun createDarkStyle(css:ColorStepSkin){
             tbuttonDark[hue].up = newDrawable(getDrawable("button-up"), hueL)
             tbuttonDark[hue].down = newDrawable(getDrawable("button-down"), hueL)
             tbuttonDark[hue].checked = newDrawable(getDrawable("button-checked"), hueL)
-            tbuttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
+            tbuttonDark[hue].disabled = newDrawable(getDrawable("button-disabled"), hueD)
             tbuttonDark[hue].font = defaultFont
             tbuttonDark[hue].fontColor = hueL
+            tbuttonDark[hue].disabledFontColor = hueD
             
             checkDark[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkDark[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkDark[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
             checkDark[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
-//            checkDark[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkDark[hue].font = defaultFont
             checkDark[hue].fontColor = hueL
             checkDark[hue].disabledFontColor = hueD
@@ -52,10 +52,11 @@ fun createDarkStyle(css:ColorStepSkin){
             tfieldDark[hue].cursor = newDrawable(getDrawable("textfield-cursor"), hueL)
             tfieldDark[hue].selection = newDrawable(getDrawable("textfield-selection"), hueL)
             tfieldDark[hue].background = newDrawable(getDrawable("textfield-background"), hueL)
-            tfieldDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueL)
+            tfieldDark[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), hueD)
             tfieldDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), hueL)
             tfieldDark[hue].font = defaultFont
             tfieldDark[hue].fontColor = hueL
+            tfieldDark[hue].disabledFontColor = hueD
             
             tareaDark[hue] = tfieldDark[hue]
             
@@ -78,9 +79,10 @@ fun createDarkStyle(css:ColorStepSkin){
             selectDark[hue].listStyle = sls
             selectDark[hue].scrollStyle = scrollDark[hue]
             selectDark[hue].background = newDrawable(getDrawable("select-background"), hueL)
-            selectDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueL)
+            selectDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueD)
             selectDark[hue].font = defaultFont
             selectDark[hue].fontColor = hueL
+            selectDark[hue].disabledFontColor = hueD
             
             progressDark[hue].background = newDrawable(getDrawable("progress-background"), hueL)
             progressDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
@@ -156,6 +158,7 @@ fun createDarkStyle(css:ColorStepSkin){
             tbuttonTextDark[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
             tbuttonTextDark[hue].font = defaultFont
             tbuttonTextDark[hue].fontColor = hueL
+            tbuttonTextDark[hue].disabledFontColor = opoL
             
             checkTextDark[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkTextDark[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
@@ -173,6 +176,7 @@ fun createDarkStyle(css:ColorStepSkin){
             tfieldTextDark[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
             tfieldTextDark[hue].font = defaultFont
             tfieldTextDark[hue].fontColor = hueL
+            tfieldTextDark[hue].disabledFontColor = opoL
             
             tareaTextDark[hue] = tfieldTextDark[hue]
             
@@ -198,6 +202,7 @@ fun createDarkStyle(css:ColorStepSkin){
             selectTextDark[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
             selectTextDark[hue].font = defaultFont
             selectTextDark[hue].fontColor = hueL
+            selectTextDark[hue].disabledFontColor = opoL
             
             progressTextDark[hue].background = newDrawable(getDrawable("progress-background"), opoL)
             progressTextDark[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
@@ -242,7 +247,7 @@ fun createDarkStyle(css:ColorStepSkin){
         for (hue in 0..100){
             val opoD = cbox.dark.colorPair(hue, true)[1]//dark oposite
             val hueL = cbox.dark.colorPair(hue)[0]//light hue based
-            val hueD = cbox.dark.colorPair(hue, true)[0]//dark hue based
+//            val hueD = cbox.dark.colorPair(hue, true)[0]//dark hue based
             val opoL = cbox.dark.colorPair(hue)[1]//light oposite
             
             scrollFonDark[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), opoD)
@@ -272,14 +277,14 @@ fun createDarkStyle(css:ColorStepSkin){
             tbuttonFonDark[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), hueL)
             tbuttonFonDark[hue].font = defaultFontFon
             tbuttonFonDark[hue].fontColor = opoD
+            tbuttonFonDark[hue].disabledFontColor = hueL
             
             checkFonDark[hue].checkboxOn = newDrawable(getDrawable("inverted-check-on"), opoD)
             checkFonDark[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), opoD)
             checkFonDark[hue].checkboxOffDisabled = newDrawable(getDrawable("inverted-check-off"), hueL)
             checkFonDark[hue].checkboxOnDisabled = newDrawable(getDrawable("inverted-check-on"), hueL)
-//            checkFonDark[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), hueL)
             checkFonDark[hue].font = defaultFontFon
-            checkFonDark[hue].fontColor = opoL
+            checkFonDark[hue].fontColor = opoD
             checkFonDark[hue].disabledFontColor = hueL
             
             tfieldFonDark[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), opoD)
@@ -289,6 +294,7 @@ fun createDarkStyle(css:ColorStepSkin){
             tfieldFonDark[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), hueL)
             tfieldFonDark[hue].font = defaultFontFon
             tfieldFonDark[hue].fontColor = opoD
+            tfieldFonDark[hue].disabledFontColor = hueL
             /*because style class is same and inside Skin.add() next just override previous. And there is some shit inside,
             * because if no bottom syntax for textarea style , in time of creation textfield app crushed, looks like textfield use
             * textarea style but this style class named as TextFieldStyle etc , not sure. muddy place , but work finally*/
@@ -307,6 +313,7 @@ fun createDarkStyle(css:ColorStepSkin){
             selectFonDark[hue].backgroundDisabled = newDrawable(getDrawable("inverted-select-disabled"), hueL)
             selectFonDark[hue].font = defaultFontFon
             selectFonDark[hue].fontColor = opoD
+            selectFonDark[hue].disabledFontColor = hueL
             
             progressFonDark[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
             progressFonDark[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
