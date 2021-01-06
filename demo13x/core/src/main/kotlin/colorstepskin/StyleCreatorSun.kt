@@ -44,10 +44,8 @@ fun createSunStyle(css:ColorStepSkin){
             checkSun[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkSun[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
             checkSun[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
-//            checkSun[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkSun[hue].font = defaultFont
             checkSun[hue].fontColor = hueL
-            checkSun[hue].disabledFontColor = hueD
         
             tfieldSun[hue].cursor = newDrawable(getDrawable("textfield-cursor"), hueL)
             tfieldSun[hue].selection = newDrawable(getDrawable("textfield-selection"), hueL)
@@ -159,12 +157,12 @@ fun createSunStyle(css:ColorStepSkin){
             tbuttonTextSun[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
             tbuttonTextSun[hue].font = defaultFont
             tbuttonTextSun[hue].fontColor = hueL
+            tbuttonTextSun[hue].disabledFontColor = opoL
     
             checkTextSun[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkTextSun[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkTextSun[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoL)
             checkTextSun[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoL)
-//            checkTextSun[hue].disabled = newDrawable(getDrawable("check-disabled"), opoL)
             checkTextSun[hue].font = defaultFont
             checkTextSun[hue].fontColor = hueL
             checkTextSun[hue].disabledFontColor = opoL
@@ -176,6 +174,7 @@ fun createSunStyle(css:ColorStepSkin){
             tfieldTextSun[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
             tfieldTextSun[hue].font = defaultFont
             tfieldTextSun[hue].fontColor = hueL
+            tfieldTextSun[hue].disabledFontColor = opoL
         
             tareaTextSun[hue] = tfieldTextSun[hue]
         
@@ -201,6 +200,7 @@ fun createSunStyle(css:ColorStepSkin){
             selectTextSun[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
             selectTextSun[hue].font = defaultFont
             selectTextSun[hue].fontColor = hueL
+            selectTextSun[hue].disabledFontColor = opoL
         
             progressTextSun[hue].background = newDrawable(getDrawable("progress-background"), opoL)
             progressTextSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
@@ -211,7 +211,7 @@ fun createSunStyle(css:ColorStepSkin){
             sliderTextSun[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), opoL)
             sliderTextSun[hue].background = newDrawable(getDrawable("progress-background"), opoL)
             sliderTextSun[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
-        
+            
             windowTextSun[hue].background = newDrawable(getDrawable("window-background"), opoL)
             windowTextSun[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), opoL)
             windowTextSun[hue].titleFont = defaultFont
@@ -280,9 +280,8 @@ fun createSunStyle(css:ColorStepSkin){
             checkFonSun[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), opoD)
             checkFonSun[hue].checkboxOffDisabled = newDrawable(getDrawable("inverted-check-off"), hueL)
             checkFonSun[hue].checkboxOnDisabled = newDrawable(getDrawable("inverted-check-on"), hueL)
-//            checkFonSun[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), hueL)
             checkFonSun[hue].font = defaultFontFon
-            checkFonSun[hue].fontColor = opoL
+            checkFonSun[hue].fontColor = opoD
             checkFonSun[hue].disabledFontColor = hueL
             
             tfieldFonSun[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), opoD)

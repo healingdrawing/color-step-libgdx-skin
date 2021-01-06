@@ -433,7 +433,7 @@ class ColorStepSkin : Skin() {
         createSnowStyle(this)
         
         /*default*/
-        defaultAcid() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
+        defaultGum() /*short name binded to text sun scheme. Call other (declaired bottom) from this place , to make they default*/
         for (hue in 0..100){
             
             add("$hue", scroll[hue])
