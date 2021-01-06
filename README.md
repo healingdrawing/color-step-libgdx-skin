@@ -110,7 +110,7 @@ Available sizes is 8 .. 80 step 4
 # color-step-libgdx-skin
 skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` internally generated styles,based on "rainbow color sequence"
 
-# v1.3 [demo13x]
+## v1.3 [demo13x]
 - added two new color schemes `gum` and `snow`
 - fully restyled old color schemes names `dark` , `acid` , `sun`, include texture atlas (removed restriction to `80px` min size of clickable elements)
 
