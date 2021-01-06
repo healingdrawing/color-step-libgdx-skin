@@ -111,7 +111,7 @@ css.defaultFonSun() //switch short form to fon sun color scheme
 ```
 - default color scheme preconfigured to `fon sun` variant in time of creation of `ColorStepSkin` instance
 ```kotlin
-css.defaultFonSun() //inside ColorStepSkin.kt file
+css.defaultFonSun() //method called inside ColorStepSkin.kt file
 ```
 - after this short name `51` will return style with full name `fon51sun`
 ```kotlin

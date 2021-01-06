@@ -39,12 +39,12 @@ fun createSnowStyle(css:ColorStepSkin){
             tbuttonSnow[hue].disabled = newDrawable(getDrawable("button-disabled"), hueL)
             tbuttonSnow[hue].font = defaultFont
             tbuttonSnow[hue].fontColor = hueL
+            tbuttonSnow[hue].disabledFontColor = hueD
             
             checkSnow[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkSnow[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
             checkSnow[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
             checkSnow[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
-//            checkSnow[hue].disabled = newDrawable(getDrawable("check-disabled"), hueD)
             checkSnow[hue].font = defaultFont
             checkSnow[hue].fontColor = hueL
             checkSnow[hue].disabledFontColor = hueD
@@ -56,6 +56,7 @@ fun createSnowStyle(css:ColorStepSkin){
             tfieldSnow[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), hueL)
             tfieldSnow[hue].font = defaultFont
             tfieldSnow[hue].fontColor = hueL
+            tfieldSnow[hue].disabledFontColor = hueD
             
             tareaSnow[hue] = tfieldSnow[hue]
             
@@ -81,6 +82,7 @@ fun createSnowStyle(css:ColorStepSkin){
             selectSnow[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), hueL)
             selectSnow[hue].font = defaultFont
             selectSnow[hue].fontColor = hueL
+            selectSnow[hue].disabledFontColor = hueD
             
             progressSnow[hue].background = newDrawable(getDrawable("progress-background"), hueL)
             progressSnow[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), hueL)
@@ -129,7 +131,7 @@ fun createSnowStyle(css:ColorStepSkin){
         for (hue in 0..100){
             val hueL = cbox.snow.colorPair(hue)[0]//light hue based
             val opoL = cbox.snow.colorPair(hue)[1]//light oposite
-//            val hueD = cbox.snow.colorPair(hue, true)[0]//dark hue based
+            val hueD = cbox.snow.colorPair(hue, true)[0]//dark hue based
 //            val opoD = cbox.snow.colorPair(hue, true)[1]//dark oposite
             
             scrollTextSnow[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
@@ -159,15 +161,15 @@ fun createSnowStyle(css:ColorStepSkin){
             tbuttonTextSnow[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
             tbuttonTextSnow[hue].font = defaultFont
             tbuttonTextSnow[hue].fontColor = hueL
+            tbuttonTextSnow[hue].disabledFontColor = hueD
             
             checkTextSnow[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
             checkTextSnow[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
-            checkTextSnow[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoL)
-            checkTextSnow[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoL)
-//            checkTextSnow[hue].disabled = newDrawable(getDrawable("check-disabled"), opoL)
+            checkTextSnow[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), hueD)
+            checkTextSnow[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), hueD)
             checkTextSnow[hue].font = defaultFont
             checkTextSnow[hue].fontColor = hueL
-            checkTextSnow[hue].disabledFontColor = opoL
+            checkTextSnow[hue].disabledFontColor = hueD
             
             tfieldTextSnow[hue].cursor = newDrawable(getDrawable("textfield-cursor"), opoL)
             tfieldTextSnow[hue].selection = newDrawable(getDrawable("textfield-selection"), opoL)
@@ -176,6 +178,7 @@ fun createSnowStyle(css:ColorStepSkin){
             tfieldTextSnow[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
             tfieldTextSnow[hue].font = defaultFont
             tfieldTextSnow[hue].fontColor = hueL
+            tfieldTextSnow[hue].disabledFontColor = hueD
             
             tareaTextSnow[hue] = tfieldTextSnow[hue]
             
@@ -201,6 +204,7 @@ fun createSnowStyle(css:ColorStepSkin){
             selectTextSnow[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
             selectTextSnow[hue].font = defaultFont
             selectTextSnow[hue].fontColor = hueL
+            selectTextSnow[hue].disabledFontColor = hueD
             
             progressTextSnow[hue].background = newDrawable(getDrawable("progress-background"), opoL)
             progressTextSnow[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
@@ -248,10 +252,10 @@ fun createSnowStyle(css:ColorStepSkin){
             val hueD = cbox.snow.colorPair(hue, true)[0]//dark hue based
             val opoL = cbox.snow.colorPair(hue)[1]//light oposite
             
-            scrollFonSnow[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), opoD)
-            scrollFonSnow[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), opoD)
-            scrollFonSnow[hue].hScrollKnob = newDrawable(getDrawable("inverted-hscrollknob"), opoD)
-            scrollFonSnow[hue].hScroll = newDrawable(getDrawable("inverted-hscroll"), opoD)
+            scrollFonSnow[hue].vScrollKnob = newDrawable(getDrawable("inverted-vscrollknob"), hueL)
+            scrollFonSnow[hue].vScroll = newDrawable(getDrawable("inverted-vscroll"), hueL)
+            scrollFonSnow[hue].hScrollKnob = newDrawable(getDrawable("inverted-hscrollknob"), hueL)
+            scrollFonSnow[hue].hScroll = newDrawable(getDrawable("inverted-hscroll"), hueL)
             
             splitFonSnow[hue].handle = newDrawable(getDrawable("inverted-splitpane"), hueL)
             
@@ -264,25 +268,27 @@ fun createSnowStyle(css:ColorStepSkin){
             labelFonSnow[hue].font = defaultFontFon
             labelFonSnow[hue].fontColor = opoD
             
-            buttonFonSnow[hue].up = newDrawable(getDrawable("inverted-button-up"), hueL)
+            buttonFonSnow[hue].up = newDrawable(getDrawable("inverted-button-up"), hueD)
             buttonFonSnow[hue].down = newDrawable(getDrawable("inverted-button-down"), hueL)
             buttonFonSnow[hue].checked = newDrawable(getDrawable("inverted-button-checked"), hueL)
             buttonFonSnow[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), hueL)
             
-            tbuttonFonSnow[hue].up = newDrawable(getDrawable("inverted-button-up"), hueL)
+            tbuttonFonSnow[hue].up = newDrawable(getDrawable("inverted-button-up"), hueD)
             tbuttonFonSnow[hue].down = newDrawable(getDrawable("inverted-button-down"), hueL)
             tbuttonFonSnow[hue].checked = newDrawable(getDrawable("inverted-button-checked"), hueL)
             tbuttonFonSnow[hue].disabled = newDrawable(getDrawable("inverted-button-disabled"), hueL)
-            tbuttonFonSnow[hue].font = defaultFontFon
-            tbuttonFonSnow[hue].fontColor = opoD
+            tbuttonFonSnow[hue].font = defaultFont
+            tbuttonFonSnow[hue].fontColor = hueL
+            tbuttonFonSnow[hue].downFontColor = hueD
+            tbuttonFonSnow[hue].checkedFontColor = hueD
+            tbuttonFonSnow[hue].disabledFontColor = hueL
             
-            checkFonSnow[hue].checkboxOn = newDrawable(getDrawable("inverted-check-on"), opoD)
-            checkFonSnow[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), opoD)
+            checkFonSnow[hue].checkboxOn = newDrawable(getDrawable("inverted-check-on"), hueD)
+            checkFonSnow[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), hueD)
             checkFonSnow[hue].checkboxOffDisabled = newDrawable(getDrawable("inverted-check-off"), hueL)
             checkFonSnow[hue].checkboxOnDisabled = newDrawable(getDrawable("inverted-check-on"), hueL)
-//            checkFonSnow[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), hueL)
-            checkFonSnow[hue].font = defaultFontFon
-            checkFonSnow[hue].fontColor = opoL
+            checkFonSnow[hue].font = defaultFont
+            checkFonSnow[hue].fontColor = hueD
             checkFonSnow[hue].disabledFontColor = hueL
             
             tfieldFonSnow[hue].cursor = newDrawable(getDrawable("inverted-textfield-cursor"), opoD)
@@ -290,8 +296,9 @@ fun createSnowStyle(css:ColorStepSkin){
             tfieldFonSnow[hue].background = newDrawable(getDrawable("inverted-textfield-background"), hueL)
             tfieldFonSnow[hue].disabledBackground = newDrawable(getDrawable("inverted-textfield-disabled"), hueL)
             tfieldFonSnow[hue].focusedBackground = newDrawable(getDrawable("inverted-textfield-focused"), hueL)
-            tfieldFonSnow[hue].font = defaultFontFon
-            tfieldFonSnow[hue].fontColor = opoD
+            tfieldFonSnow[hue].font = defaultFont
+            tfieldFonSnow[hue].fontColor = hueD
+            tfieldFonSnow[hue].disabledFontColor = hueL
             /*because style class is same and inside Skin.add() next just override previous. And there is some shit inside,
             * because if no bottom syntax for textarea style , in time of creation textfield app crushed, looks like textfield use
             * textarea style but this style class named as TextFieldStyle etc , not sure. muddy place , but work finally*/
@@ -299,7 +306,7 @@ fun createSnowStyle(css:ColorStepSkin){
             
             listFonSnow[hue].background = newDrawable(getDrawable("inverted-list-background"), hueL)
             listFonSnow[hue].selection = newDrawable(getDrawable("inverted-list-selection"), hueL)
-            listFonSnow[hue].down = newDrawable(getDrawable("inverted-list-down"), hueL)
+            listFonSnow[hue].down = newDrawable(getDrawable("inverted-list-down"), opoL)
             listFonSnow[hue].font = defaultFontFon
             listFonSnow[hue].fontColorSelected = opoD
             listFonSnow[hue].fontColorUnselected = opoD
@@ -308,17 +315,18 @@ fun createSnowStyle(css:ColorStepSkin){
             selectFonSnow[hue].scrollStyle = scrollFonSnow[hue]
             selectFonSnow[hue].background = newDrawable(getDrawable("inverted-select-background"), hueL)
             selectFonSnow[hue].backgroundDisabled = newDrawable(getDrawable("inverted-select-disabled"), hueL)
-            selectFonSnow[hue].font = defaultFontFon
-            selectFonSnow[hue].fontColor = opoD
+            selectFonSnow[hue].font = defaultFont
+            selectFonSnow[hue].fontColor = hueD
+            selectFonSnow[hue].disabledFontColor = hueL
             
-            progressFonSnow[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
+            progressFonSnow[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueD)
             progressFonSnow[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
-            progressFonSnow[hue].knobBefore = newDrawable(getDrawable("inverted-progress-knobbefore"), opoD)
+            progressFonSnow[hue].knobBefore = newDrawable(getDrawable("inverted-progress-knobbefore"), opoL)
             progressFonSnow[hue].disabledKnobBefore = newDrawable(getDrawable("inverted-progress-disabledknobbefore"), hueL)
             
-            sliderFonSnow[hue].knob = newDrawable(getDrawable("inverted-slider-knob"), opoD)
+            sliderFonSnow[hue].knob = newDrawable(getDrawable("inverted-slider-knob"), opoL)
             sliderFonSnow[hue].disabledKnob = newDrawable(getDrawable("inverted-slider-disabledknob"), hueL)
-            sliderFonSnow[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueL)
+            sliderFonSnow[hue].background = newDrawable(getDrawable("inverted-progress-background"), hueD)
             sliderFonSnow[hue].disabledBackground = newDrawable(getDrawable("inverted-progress-disabledbackground"), hueL)
             
             windowFonSnow[hue].background = newDrawable(getDrawable("inverted-window-background"), hueL)

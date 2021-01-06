@@ -283,7 +283,6 @@ fun createGumStyle(css:ColorStepSkin){
             checkFonGum[hue].checkboxOff = newDrawable(getDrawable("inverted-check-off"), opoD)
             checkFonGum[hue].checkboxOffDisabled = newDrawable(getDrawable("inverted-check-off"), hueL)
             checkFonGum[hue].checkboxOnDisabled = newDrawable(getDrawable("inverted-check-on"), hueL)
-//            checkFonGum[hue].disabled = newDrawable(getDrawable("inverted-check-disabled"), hueL)
             checkFonGum[hue].font = defaultFontFon
             checkFonGum[hue].fontColor = opoL
             checkFonGum[hue].disabledFontColor = hueL
