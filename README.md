@@ -109,11 +109,11 @@ css.defaultFonDark() //switch short form to fon dark color scheme
 css.defaultFonAcid() //switch short form to fon acid color scheme
 css.defaultFonSun() //switch short form to fon sun color scheme
 ```
-- default color scheme preconfigured to `fon sun` variant in time of creation of `ColorStepSkin` instance
+- default color scheme preconfigured to `text sun` variant in time of creation of `ColorStepSkin` instance
 ```kotlin
-css.defaultFonSun() //method called inside ColorStepSkin.kt file
+css.defaultTextSun() //method called inside ColorStepSkin.kt file
 ```
-- after this short name `51` will return style with full name `fon51sun`
+- after this short name `51` will return style with full name `text51sun`
 ```kotlin
 val bstyle = css.get("51", TextButtonStyle::class.java)
 ```
