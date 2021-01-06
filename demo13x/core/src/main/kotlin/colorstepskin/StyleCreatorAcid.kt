@@ -121,103 +121,102 @@ fun createAcidStyle(css:ColorStepSkin){
             
         }
         
-        /*2020-11-16 new stuff*/
         /*textAcid*/
         for (hue in 0..100){
             val hueL = cbox.acid.colorPair(hue)[0]//light hue based
             val opoL = cbox.acid.colorPair(hue)[1]//light oposite
-//            val hueD = cbox.acid.colorPair(hue, true)[0]//dark hue based
-//            val opoD = cbox.acid.colorPair(hue, true)[1]//dark oposite
+            val hueD = cbox.acid.colorPair(hue, true)[0]//dark hue based
+            val opoD = cbox.acid.colorPair(hue, true)[1]//dark oposite
             
-            scrollTextAcid[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoL)
-            scrollTextAcid[hue].vScroll = newDrawable(getDrawable("vscroll"), opoL)
-            scrollTextAcid[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), opoL)
-            scrollTextAcid[hue].hScroll = newDrawable(getDrawable("hscroll"), opoL)
+            scrollTextAcid[hue].vScrollKnob = newDrawable(getDrawable("vscrollknob"), opoD)
+            scrollTextAcid[hue].vScroll = newDrawable(getDrawable("vscroll"), opoD)
+            scrollTextAcid[hue].hScrollKnob = newDrawable(getDrawable("hscrollknob"), opoD)
+            scrollTextAcid[hue].hScroll = newDrawable(getDrawable("hscroll"), opoD)
             
             splitTextAcid[hue].handle = newDrawable(getDrawable("splitpane"), opoL)
             
-            treeTextAcid[hue].minus = newDrawable(getDrawable("tree-minus"), hueL)
-            treeTextAcid[hue].plus = newDrawable(getDrawable("tree-plus"), hueL)
-            treeTextAcid[hue].background = newDrawable(getDrawable("tree-background"), opoL)
-            treeTextAcid[hue].selection = newDrawable(getDrawable("tree-selection"), opoL)
+            treeTextAcid[hue].minus = newDrawable(getDrawable("tree-minus"), hueD)
+            treeTextAcid[hue].plus = newDrawable(getDrawable("tree-plus"), hueD)
+            treeTextAcid[hue].background = newDrawable(getDrawable("tree-background"), opoD)
+            treeTextAcid[hue].selection = newDrawable(getDrawable("tree-selection"), opoD)
             
-            labelTextAcid[hue].background = newDrawable(getDrawable("label-background"), opoL)
+            labelTextAcid[hue].background = newDrawable(getDrawable("label-background"), opoD)
             labelTextAcid[hue].font = defaultFont
-            labelTextAcid[hue].fontColor = hueL
+            labelTextAcid[hue].fontColor = hueD
             
-            buttonTextAcid[hue].up = newDrawable(getDrawable("button-up"), opoL)
-            buttonTextAcid[hue].down = newDrawable(getDrawable("button-down"), opoL)
-            buttonTextAcid[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
-            buttonTextAcid[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
+            buttonTextAcid[hue].up = newDrawable(getDrawable("button-up"), opoD)
+            buttonTextAcid[hue].down = newDrawable(getDrawable("button-down"), opoD)
+            buttonTextAcid[hue].checked = newDrawable(getDrawable("button-checked"), opoD)
+            buttonTextAcid[hue].disabled = newDrawable(getDrawable("button-disabled"), opoD)
             
-            tbuttonTextAcid[hue].up = newDrawable(getDrawable("button-up"), opoL)
-            tbuttonTextAcid[hue].down = newDrawable(getDrawable("button-down"), opoL)
-            tbuttonTextAcid[hue].checked = newDrawable(getDrawable("button-checked"), opoL)
-            tbuttonTextAcid[hue].disabled = newDrawable(getDrawable("button-disabled"), opoL)
+            tbuttonTextAcid[hue].up = newDrawable(getDrawable("button-up"), opoD)
+            tbuttonTextAcid[hue].down = newDrawable(getDrawable("button-down"), opoD)
+            tbuttonTextAcid[hue].checked = newDrawable(getDrawable("button-checked"), opoD)
+            tbuttonTextAcid[hue].disabled = newDrawable(getDrawable("button-disabled"), opoD)
             tbuttonTextAcid[hue].font = defaultFont
-            tbuttonTextAcid[hue].fontColor = hueL
+            tbuttonTextAcid[hue].fontColor = hueD
+            tbuttonTextAcid[hue].disabledFontColor = opoD
             
-            checkTextAcid[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueL)
-            checkTextAcid[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueL)
-            checkTextAcid[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoL)
-            checkTextAcid[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoL)
-//            checkTextAcid[hue].disabled = newDrawable(getDrawable("check-disabled"), opoL)
+            checkTextAcid[hue].checkboxOn = newDrawable(getDrawable("check-on"), hueD)
+            checkTextAcid[hue].checkboxOff = newDrawable(getDrawable("check-off"), hueD)
+            checkTextAcid[hue].checkboxOffDisabled = newDrawable(getDrawable("check-off"), opoD)
+            checkTextAcid[hue].checkboxOnDisabled = newDrawable(getDrawable("check-on"), opoD)
             checkTextAcid[hue].font = defaultFont
-            checkTextAcid[hue].fontColor = hueL
-            checkTextAcid[hue].disabledFontColor = opoL
+            checkTextAcid[hue].fontColor = hueD
+            checkTextAcid[hue].disabledFontColor = opoD
             
             tfieldTextAcid[hue].cursor = newDrawable(getDrawable("textfield-cursor"), opoL)
             tfieldTextAcid[hue].selection = newDrawable(getDrawable("textfield-selection"), opoL)
-            tfieldTextAcid[hue].background = newDrawable(getDrawable("textfield-background"), opoL)
-            tfieldTextAcid[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), opoL)
-            tfieldTextAcid[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoL)
+            tfieldTextAcid[hue].background = newDrawable(getDrawable("textfield-background"), opoD)
+            tfieldTextAcid[hue].disabledBackground = newDrawable(getDrawable("textfield-disabled"), opoD)
+            tfieldTextAcid[hue].focusedBackground = newDrawable(getDrawable("textfield-focused"), opoD)
             tfieldTextAcid[hue].font = defaultFont
-            tfieldTextAcid[hue].fontColor = hueL
+            tfieldTextAcid[hue].fontColor = hueD
             
             tareaTextAcid[hue] = tfieldTextAcid[hue]
             
-            listTextAcid[hue].background = newDrawable(getDrawable("list-background"), opoL)
-            listTextAcid[hue].selection = newDrawable(getDrawable("list-selection"), opoL)
-            listTextAcid[hue].down = newDrawable(getDrawable("list-down"), opoL)
+            listTextAcid[hue].background = newDrawable(getDrawable("list-background"), opoD)
+            listTextAcid[hue].selection = newDrawable(getDrawable("list-selection"), opoD)
+            listTextAcid[hue].down = newDrawable(getDrawable("list-down"), opoD)
             listTextAcid[hue].font = defaultFont
-            listTextAcid[hue].fontColorSelected = hueL
-            listTextAcid[hue].fontColorUnselected = hueL
+            listTextAcid[hue].fontColorSelected = hueD
+            listTextAcid[hue].fontColorUnselected = opoD
             
             /*separated style for list inside select with scroll, to polish*/
             val sls = ListStyle()
-            sls.background = newDrawable(getDrawable("select-list-background"), opoL)
-            sls.selection = newDrawable(getDrawable("list-selection"), opoL)
-            sls.down = newDrawable(getDrawable("list-down"), opoL)
+            sls.background = newDrawable(getDrawable("select-list-background"), opoD)
+            sls.selection = newDrawable(getDrawable("list-selection"), opoD)
+            sls.down = newDrawable(getDrawable("list-down"), opoD)
             sls.font = defaultFont
-            sls.fontColorSelected = hueL
-            sls.fontColorUnselected = hueL
+            sls.fontColorSelected = hueD
+            sls.fontColorUnselected = opoD
             
             selectTextAcid[hue].listStyle = sls
             selectTextAcid[hue].scrollStyle = scrollTextAcid[hue]
-            selectTextAcid[hue].background = newDrawable(getDrawable("select-background"), opoL)
-            selectTextAcid[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoL)
+            selectTextAcid[hue].background = newDrawable(getDrawable("select-background"), opoD)
+            selectTextAcid[hue].backgroundDisabled = newDrawable(getDrawable("select-disabled"), opoD)
             selectTextAcid[hue].font = defaultFont
-            selectTextAcid[hue].fontColor = hueL
+            selectTextAcid[hue].fontColor = hueD
             
-            progressTextAcid[hue].background = newDrawable(getDrawable("progress-background"), opoL)
-            progressTextAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
-            progressTextAcid[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueL)
-            progressTextAcid[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), opoL)
+            progressTextAcid[hue].knobBefore = newDrawable(getDrawable("progress-knobbefore"), hueD)
+            progressTextAcid[hue].background = newDrawable(getDrawable("progress-background"), opoD)
+            progressTextAcid[hue].disabledKnobBefore = newDrawable(getDrawable("progress-disabledknobbefore"), opoD)
+            progressTextAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoD)
             
-            sliderTextAcid[hue].knob = newDrawable(getDrawable("slider-knob"), hueL)
-            sliderTextAcid[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), opoL)
-            sliderTextAcid[hue].background = newDrawable(getDrawable("progress-background"), opoL)
-            sliderTextAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoL)
+            sliderTextAcid[hue].knob = newDrawable(getDrawable("slider-knob"), hueD)
+            sliderTextAcid[hue].background = newDrawable(getDrawable("progress-background"), opoD)
+            sliderTextAcid[hue].disabledKnob = newDrawable(getDrawable("slider-disabledknob"), opoD)
+            sliderTextAcid[hue].disabledBackground = newDrawable(getDrawable("progress-disabledbackground"), opoD)
             
-            windowTextAcid[hue].background = newDrawable(getDrawable("window-background"), opoL)
-            windowTextAcid[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), opoL)
+            windowTextAcid[hue].background = newDrawable(getDrawable("window-background"), opoD)
+            windowTextAcid[hue].stageBackground = newDrawable(getDrawable("window-stagebackground"), opoD)
             windowTextAcid[hue].titleFont = defaultFont
-            windowTextAcid[hue].titleFontColor = hueL
+            windowTextAcid[hue].titleFontColor = hueD
             
             dialogTextAcid[hue] = windowTextAcid[hue]
             
-            tpadTextAcid[hue].background = newDrawable(getDrawable("touchpad-background"), hueL)
-            tpadTextAcid[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueL)
+            tpadTextAcid[hue].background = newDrawable(getDrawable("touchpad-background"), hueD)
+            tpadTextAcid[hue].knob = newDrawable(getDrawable("touchpad-knob"), hueD)
             
             add("text${hue}acid", scrollTextAcid[hue])
             add("text${hue}acid", splitTextAcid[hue])

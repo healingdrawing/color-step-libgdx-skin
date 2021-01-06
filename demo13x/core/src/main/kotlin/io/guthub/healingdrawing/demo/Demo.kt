@@ -27,6 +27,7 @@ class Demo : ApplicationAdapter() {
     private var table:Table? = null
     
     private var eng_button:TextButton? = null
+    private var eng_button_disabled:TextButton? = null
     private  var eng_cbox: CheckBox? = null
     private  var eng_label: Label? = null
     private  var eng_textfield: TextField? = null
@@ -60,7 +61,7 @@ class Demo : ApplicationAdapter() {
      *
      * Other styles is manually prebalanced hue offset scheme based.
      * */
-    private val styleName = "51"
+    private val styleName = "1"
     
     override fun create() {
         stage = Stage(FitViewport(1280f, 720f))
@@ -148,7 +149,10 @@ class Demo : ApplicationAdapter() {
         slider!!.isDisabled = true
         
         sliderv = Slider(0f,10f,1f,true,css, styleName)
-
+        
+        eng_button_disabled = TextButton("disabled button", css, styleName)
+        eng_button_disabled!!.isDisabled = true
+        
         touchpad = Touchpad(40f, css, styleName)
 
         splitpane = SplitPane(progress, slider, false, css, styleName)
@@ -162,9 +166,13 @@ class Demo : ApplicationAdapter() {
         table!!.add(eng_textfield).expandX().expandY().fillX()
         table!!.row()
         table!!.add(eng_cbox).expandX().expandY()//.fillX().fillY()
-
+        
+        val bandt = Table()
+        bandt.add(eng_button_disabled)
+        bandt.row()
+        bandt.add(touchpad)
         table!!.row()
-        table!!.add(touchpad)
+        table!!.add(bandt)
         table!!.add(scroll).expandX().expandY()//.fillX().fillY()
         table!!.add(list).expandX()
         table!!.add(progressv).expandX().expandY()
