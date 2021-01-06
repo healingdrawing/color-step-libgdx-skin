@@ -86,23 +86,23 @@ Available sizes is 8 .. 80 step 4
 
 <details><summary>`hue21dark` old style gif demo</summary>
 
-![demo](img/demo.gif)
+![demo](img/v10x/demo.gif)
 </details>
 
 <details><summary>old styles</summary>
 
-<img title="hue21sun" src="img/hue21sun.png" width="200">
-<img title="hue21acid" src="img/hue21acid.png" width="200">
-<img title="hue81sun" src="img/hue81sun.png" width="200">
-<img title="hue81dark" src="img/hue81dark.png" width="200">
-<img title="hue1dark" src="img/hue1dark.png" width="200">
-<img title="hue51sun" src="img/new/sun51.png" width="200">
-<img title="hue51acid" src="img/new/acid51.png" width="200">
-<img title="hue51dark" src="img/new/dark51.png" width="200">
-<img title="hue50sun" src="img/new/sun50.png" width="200">
-<img title="hue50acid" src="img/new/acid50.png" width="200">
-<img title="hue50dark" src="img/new/dark50.png" width="200">
-<img title="hue20dark" src="img/hue20dark.png" width="200">
+<img title="hue21sun" src="img/v10x/hue21sun.png" width="200">
+<img title="hue21acid" src="img/v10x/hue21acid.png" width="200">
+<img title="hue81sun" src="img/v10x/hue81sun.png" width="200">
+<img title="hue81dark" src="img/v10x/hue81dark.png" width="200">
+<img title="hue1dark" src="img/v10x/hue1dark.png" width="200">
+<img title="hue51sun" src="img/v11x/sun51.png" width="200">
+<img title="hue51acid" src="img/v11x/acid51.png" width="200">
+<img title="hue51dark" src="img/v11x/dark51.png" width="200">
+<img title="hue50sun" src="img/v11x/sun50.png" width="200">
+<img title="hue50acid" src="img/v11x/acid50.png" width="200">
+<img title="hue50dark" src="img/v11x/dark50.png" width="200">
+<img title="hue20dark" src="img/v10x/hue20dark.png" width="200">
 </details>
 
 ---
