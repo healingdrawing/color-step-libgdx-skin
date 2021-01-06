@@ -1,20 +1,86 @@
 ## DEMO - CLICK THE SPOILERS BOTTOM
-<details><summary>new font sizes v1.2.0</summary>
+<details><summary>v1.3 new styles + old restyled</summary>
+
+<img title="hue1dark" src="img/v13x/hue1dark.png" width="200">
+<img title="hue21dark" src="img/v13x/hue21dark.png" width="200">
+<img title="hue51dark" src="img/v13x/hue51dark.png" width="200">
+
+<img title="hue1acid" src="img/v13x/hue1acid.png" width="200">
+<img title="hue21acid" src="img/v13x/hue21acid.png" width="200">
+<img title="hue51acid" src="img/v13x/hue51acid.png" width="200">
+
+<img title="hue1sun" src="img/v13x/hue1sun.png" width="200">
+<img title="hue21sun" src="img/v13x/hue21sun.png" width="200">
+<img title="hue51sun" src="img/v13x/hue51sun.png" width="200">
+
+<img title="hue1gum" src="img/v13x/hue1gum.png" width="200">
+<img title="hue21gum" src="img/v13x/hue21gum.png" width="200">
+<img title="hue51gum" src="img/v13x/hue51gum.png" width="200">
+
+<img title="hue1snow" src="img/v13x/hue1snow.png" width="200">
+<img title="hue21snow" src="img/v13x/hue21snow.png" width="200">
+<img title="hue51snow" src="img/v13x/hue51snow.png" width="200">
+
+
+<img title="text1dark" src="img/v13x/text1dark.png" width="200">
+<img title="text21dark" src="img/v13x/text21dark.png" width="200">
+<img title="text51dark" src="img/v13x/text51dark.png" width="200">
+
+<img title="text1acid" src="img/v13x/text1acid.png" width="200">
+<img title="text21acid" src="img/v13x/text21acid.png" width="200">
+<img title="text51acid" src="img/v13x/text51acid.png" width="200">
+
+<img title="text1sun" src="img/v13x/text1sun.png" width="200">
+<img title="text21sun" src="img/v13x/text21sun.png" width="200">
+<img title="text51sun" src="img/v13x/text51sun.png" width="200">
+
+<img title="text1gum" src="img/v13x/text1gum.png" width="200">
+<img title="text21gum" src="img/v13x/text21gum.png" width="200">
+<img title="text51gum" src="img/v13x/text51gum.png" width="200">
+
+<img title="text1snow" src="img/v13x/text1snow.png" width="200">
+<img title="text21snow" src="img/v13x/text21snow.png" width="200">
+<img title="text51snow" src="img/v13x/text51snow.png" width="200">
+
+
+<img title="fon1dark" src="img/v13x/fon1dark.png" width="200">
+<img title="fon21dark" src="img/v13x/fon21dark.png" width="200">
+<img title="fon51dark" src="img/v13x/fon51dark.png" width="200">
+
+<img title="fon1acid" src="img/v13x/fon1acid.png" width="200">
+<img title="fon21acid" src="img/v13x/fon21acid.png" width="200">
+<img title="fon51acid" src="img/v13x/fon51acid.png" width="200">
+
+<img title="fon1sun" src="img/v13x/fon1sun.png" width="200">
+<img title="fon21sun" src="img/v13x/fon21sun.png" width="200">
+<img title="fon51sun" src="img/v13x/fon51sun.png" width="200">
+
+<img title="fon1gum" src="img/v13x/fon1gum.png" width="200">
+<img title="fon21gum" src="img/v13x/fon21gum.png" width="200">
+<img title="fon51gum" src="img/v13x/fon51gum.png" width="200">
+
+<img title="fon1snow" src="img/v13x/fon1snow.png" width="200">
+<img title="fon21snow" src="img/v13x/fon21snow.png" width="200">
+<img title="fon51snow" src="img/v13x/fon51snow.png" width="200">
+
+</details>
+
+<details><summary>v1.2 new font sizes</summary>
 
 Available sizes is 8 .. 80 step 4
 
 </details>
 
-<details><summary>new styles v1.1.0</summary>
+<details><summary>v1.1 new styles</summary>
 
-<img title="textSun51" src="img/new/textSun51.png" width="200">
-<img title="fonSun51" src="img/new/fonSun51.png" width="200">
-<img title="fonSun80" src="img/new/fonSun80.png" width="200">
-<img title="fonSun50" src="img/new/fonSun50.png" width="200">
-<img title="fonSun20" src="img/new/fonSun20.png" width="200">
-<img title="textSun80" src="img/new/textSun80.png" width="200">
-<img title="textSun50" src="img/new/textSun50.png" width="200">
-<img title="textSun20" src="img/new/textSun20.png" width="200">
+<img title="textSun51" src="img/v11x/textSun51.png" width="200">
+<img title="fonSun51" src="img/v11x/fonSun51.png" width="200">
+<img title="fonSun80" src="img/v11x/fonSun80.png" width="200">
+<img title="fonSun50" src="img/v11x/fonSun50.png" width="200">
+<img title="fonSun20" src="img/v11x/fonSun20.png" width="200">
+<img title="textSun80" src="img/v11x/textSun80.png" width="200">
+<img title="textSun50" src="img/v11x/textSun50.png" width="200">
+<img title="textSun20" src="img/v11x/textSun20.png" width="200">
 
 </details>
 
@@ -42,7 +108,13 @@ Available sizes is 8 .. 80 step 4
 ---
 
 # color-step-libgdx-skin
-skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` internally generated styles,based on "rainbow color sequence".  
+skin for [libgdx](https://libgdx.badlogicgames.com/) , with `multicolor` internally generated styles,based on "rainbow color sequence"
+
+# v1.3 [demo13x]
+- added two new color schemes `gum` and `snow`
+- fully restyled old color schemes names `dark` , `acid` , `sun`, include texture atlas (removed restriction to `80px` min size of clickable elements)
+
+## v1.2 [demo12x]
 `Mobile oriented` (80px min high of touchable/clickable elements area)
 
 ## how much styles prebuilded
