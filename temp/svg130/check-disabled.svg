@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="check-disabled.svg"
-   inkscape:version="1.0.1 (1.0.1+r74)"
+   inkscape:version="1.0.2 (1.0.2+r75+1)"
    id="svg8"
    version="1.1"
    viewBox="0 0 16 16"
@@ -95,21 +95,10 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
-    <rect
-       ry="8.0000229"
-       y="1042.5197"
-       x="64"
-       height="16.000069"
-       width="16"
-       id="rect30"
-       style="fill:#d9d9d9;fill-opacity:0.99941802;stroke-width:0.500001;stroke-linejoin:round" />
-    <rect
-       style="fill:#d9d9d9;fill-opacity:0.99941802;stroke-width:0.428572;stroke-linejoin:round"
-       id="rect30-3"
-       width="12"
-       height="12.000022"
-       x="66"
-       y="1044.5197"
-       ry="6.000001" />
+    <path
+       id="rect843"
+       style="fill:#d9d9d9;fill-opacity:0.999418;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="m 70,1044.5198 c -2.216002,0 -4,1.784 -4,4 v 4 c 0,2.216 1.783998,4 4,4 h 4 c 2.216002,0 4,-1.784 4,-4 v -4 c 0,-2.216 -1.783998,-4 -4,-4 z"
+       sodipodi:nodetypes="sssssssss" />
   </g>
 </svg>
